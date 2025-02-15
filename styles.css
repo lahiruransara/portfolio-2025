@@ -49,6 +49,13 @@
     font-style: normal;
 }
 
+.archivo-bold {
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 html,
 body {
     width: 100%;
@@ -143,7 +150,6 @@ body {
     display: flex;
     gap: 32px;
     padding: 3%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav a {
@@ -286,6 +292,15 @@ h4 {
     gap: 24px;
 }
 
+#content-contact {
+    height: 100vh;
+    width: 100%;
+    padding-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .resume-btn {
     width: fit-content;
     display: flex;
@@ -316,7 +331,7 @@ h4 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5vw;
+    gap: 1.8vw;
 }
 
 .proj {
@@ -327,7 +342,7 @@ h4 {
 
 .proj-card {
     width: 30vw;
-    height: 15vw;
+    height: 14vw;
     border: 1px solid var(--gray-950);
     border-radius: 8px;
     display: flex;
@@ -343,4 +358,78 @@ h4 {
 .proj-title {
     font-size: 20px;
     max-width: 30vw;
+}
+
+.talk {
+    font-size: 15vw;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--primary-700);
+}
+
+#copyright {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.darkpage {
+    background: var(--gray-950);
+}
+
+.links {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.col11, .col12 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.row1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 {
+    width: 50%;
+    height:fit-content;
+}
+
+.icon {
+    fill: var(--gray-50);
+    stroke: var(--gray-50);
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.link-item:hover {
+    cursor: pointer;
+    .linktext {
+        color: var(--primary-500);
+    }
+    .icon {
+        fill: var(--primary-500);
+        stroke: var(--primary-500);
+    }
+}
+
+.linktext {
+    font-size: 48px;
 }
