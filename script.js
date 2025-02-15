@@ -17,16 +17,6 @@ function pageTransition() {
   });
 }
 
-// function contentAnimation() {
-//   let tl = gsap.timeline();
-//   tl.to("h1", {
-//     top: 0,
-//     duration: 1,
-//     ease: "power3.inOut",
-//     delay: 0.75,
-//   });
-// }
-
 function delay(n) {
   n = n || 0;
   return new Promise((done) => {
@@ -37,23 +27,15 @@ function delay(n) {
 }
 
 barba.init({
-    sync: true,
-    transitions: [
-        {
-            async leave(data) {
-                const done = this.async();
-                pageTransition();
-                await delay(1000);
-                done();
-            },
-
-            // async enter(data) {
-            //     contentAnimation();
-            // },
-
-            // async once(data) {
-            //     contentAnimation();
-            // }
-        }
-    ]
-})
+  sync: true,
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
+        pageTransition();
+        await delay(1000);
+        done();
+      },
+    },
+  ],
+});
