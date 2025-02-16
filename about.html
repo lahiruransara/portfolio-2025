@@ -6,15 +6,16 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="no-scroll">
     <div data-barba="wrapper">
       <div class="transition"></div>
       <div class="wrapper">
         <div class="nav">
-          <a href="index.html">Home</a>
-          <a href="about.html" class="active">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" id="nav-item">Home</a>
+          <a href="about.html" class="active" id="nav-item">About</a>
+          <a href="projects.html" id="nav-item">Projects</a>
+          <a href="contact.html" id="nav-item">Contact</a>
+          <a href="#" class="menu">Menu</a>
         </div>
 
         <main
@@ -35,7 +36,7 @@
                     Currently resides in Moscow, Idaho.
                   </h2>
                 </div>
-                <h3 class="archivo-regular text-gray">
+                <h3 class="archivo-regular text-gray" id="subtext">
                   Passionate about user-centered design and psychology, I
                   specialize in creating user experiences and design systems for
                   software, web, and mobile products.
