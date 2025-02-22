@@ -49,6 +49,9 @@ body {
     /* --fs-medium: clamp(1.25rem, 1vw + 1rem, 2rem); */
     /* --fs-large: clamp(2.5rem, 3.5vw + 1rem, 10rem); */
     --fs-xl: clamp(2rem, 6.5vw + 1rem, 15rem);
+
+    /* Logo Sizing */
+    --s: 4rem;
 }
 
 .dark-mode {
@@ -121,4 +124,9 @@ html {
         background: var(--primary-900);
         transition: all 300ms ease;
     }
+}
+
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
 }
