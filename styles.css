@@ -44,14 +44,11 @@ body {
     --gray-950: #030712;
 
     /* Font Sizes */
-    --fs-small: 0.75rem;
-    --fs-base: 1rem;
-    /* --fs-medium: clamp(1.25rem, 1vw + 1rem, 2rem); */
-    /* --fs-large: clamp(2.5rem, 3.5vw + 1rem, 10rem); */
     --fs-xl: clamp(2rem, 6.5vw + 1rem, 15rem);
 
     /* Logo Sizing */
     --s: 4rem;
+    --reg: 2rem;
 }
 
 .dark-mode {
@@ -129,4 +126,22 @@ html {
 .logo {
     width: 3.5rem;
     height: 3.5rem;
+}
+
+.darker {
+    background-color: var(--primary-900);
+}
+
+.inverse {
+    background-color: var(--gray-100);
+}
+
+.full-bleed-darker {
+    box-shadow: 0 0 0 100vmax var(--primary-900);
+    clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-inverse {
+    box-shadow: 0 0 0 100vmax var(--gray-100);
+    clip-path: inset(0 -100vmax);
 }
