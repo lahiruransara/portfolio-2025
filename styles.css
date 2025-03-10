@@ -31,17 +31,26 @@ body {
     --primary-900: #5b03af;
     --primary-950: #380077;
 
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --gray-950: #030712;
+    --zinc-50: #fafafa;
+    --zinc-100: #f4f4f5;
+    --zinc-200: #e4e4e7;
+    --zinc-300: #d4d4d8;
+    --zinc-400: #a1a1aa;
+    --zinc-500: #71717a;
+    --zinc-600: #52525b;
+    --zinc-700: #3f3f46;
+    --zinc-800: #27272a;
+    --zinc-900: #1a1a1e;
+    --zinc-950: #09090b;
+
+    --pse-gradient1: #FA5B4F;
+    --pse-gradient2: #bd182f;
+    --corona-gradient1: #911A6C;
+    --corona-gradient2: #D41459;
+
+    --text-dark: var(--zinc-950);
+    --text-light: var(--zinc-50);
+    --text-secondary: var(--zinc-500);
 
     /* Font Sizes */
     --fs-xl: clamp(2rem, 6.5vw + 1rem, 15rem);
@@ -67,17 +76,27 @@ body {
     --primary-100: #5b03af;
     --primary-50: #380077;
 
-    --gray-950: #f9fafb;
-    --gray-900: #f3f4f6;
-    --gray-800: #e5e7eb;
-    --gray-700: #d1d5db;
-    --gray-600: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-400: #4b5563;
-    --gray-300: #374151;
-    --gray-200: #1f2937;
-    --gray-100: #111827;
-    --gray-50: #030712;
+    --zinc-950: #fafafa;
+    --zinc-900: #f4f4f5;
+    --zinc-800: #e4e4e7;
+    --zinc-700: #d4d4d8;
+    --zinc-600: #a1a1aa;
+    --zinc-500: #71717a;
+    --zinc-400: #52525b;
+    --zinc-300: #3f3f46;
+    --zinc-200: #27272a;
+    --zinc-100: #1a1a1e;
+    --zinc-50: #09090b;
+
+    --text-dark: var(--zinc-950);
+    --text-light: var(--zinc-50);
+    --text-secondary: var(--zinc-500);
+
+    --pse-gradient1: #ff7469;
+    --pse-gradient2: #F22E49;
+    --corona-gradient1: #fcabe9;
+    --corona-gradient2: #f1438f;
+
 }
 
 /* Smooth Scrolling */
@@ -128,20 +147,21 @@ html {
     height: 3.5rem;
 }
 
-.darker {
-    background-color: var(--primary-900);
-}
+/* .darker {
+    background-color: var(--gray-950);
+    
+} */
 
 .inverse {
-    background-color: var(--gray-100);
+    background-color: var(--zinc-100);
 }
 
-.full-bleed-darker {
-    box-shadow: 0 0 0 100vmax var(--primary-900);
+/* .full-bleed-darker {
+    box-shadow: 0 0 0 100vmax var(--gray-900);
     clip-path: inset(0 -100vmax);
-}
+} */
 
 .full-bleed-inverse {
-    box-shadow: 0 0 0 100vmax var(--gray-100);
+    box-shadow: 0 0 0 100vmax var(--zinc-100);
     clip-path: inset(0 -100vmax);
 }

@@ -9,28 +9,33 @@
     <title>Campaign Builder Manager</title>
 </head>
 
-<body class="bg-[var(--gray-50)]">
+<body class="bg-[var(--zinc-50)]">
     <div class="custom-container mx-auto">
         <!-- Navigation -->
-        <div class="nav flex justify-center items-center py-10 px-4 darker full-bleed-darker">
-            <div class="left-items cursor-pointer">
-                <div class="flex items-center gap-2">
-                    <div class="logo rounded-full border-1 border-[var(--white)]">
-                        <img src="Images/dp2.png" alt="log_dp" class="object-cover bg-no-repeat rounded-full">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <p class="font-bold text-xl text-[var(--gray-100)] leading-none">Lahiru&nbsp;Ransara</p>
-                        <p class="font-regular text-[size:var(--fs-base)] text-[var(--gray-400)] leading-none">UX
-                            Designer</p>
+        <div class="nav flex justify-center items-center py-10">
+            <a href="https://test.lahiruransara.com">
+                <div class="left-items cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="logo rounded-full border-1 border-[var(--white)]">
+                            <img src="Images/dp2.png" alt="log_dp" class="object-cover bg-no-repeat rounded-full">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-bold text-xl text-[var(--text-dark)] leading-none">Lahiru&nbsp;Ransara</p>
+                            <p
+                                class="font-regular text-[size:var(--fs-base)] text-[var(--text-secondary)] leading-none">
+                                UX
+                                Designer</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
+
             <div class="spacer w-full"></div>
-            <div class="right-items flex items-center gap-6">
-                <a href="#"
-                    class="menu font-medium text-[size:var(--fs-base)] text-[var(--gray-400)] hover:text-[var(--primary-600)] duration-300 transition-colors ease-in-out">Menu</a>
+            <div class="right-items flex items-center gap-6 p-2">
+                <!-- <a href="#"
+                class="menu font-medium text-[size:var(--fs-base)] text-[var(--zinc-400)] hover:text-[var(--primary-600)] duration-300 transition-colors ease-in-out">Menu</a> -->
                 <div class="theme-toggle cursor-pointer">
-                    <svg class="fill-[var(--gray-50)] hover:fill-[var(--primary-600)] duration-300 transition-colors ease-in-out"
+                    <svg class="fill-[var(--text-secondary)] hover:fill-[var(--primary-600)] duration-300 transition-colors ease-in-out"
                         width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12Z" />
@@ -40,56 +45,57 @@
                 </div>
             </div>
         </div>
-
-        <!-- Header -->
-        <div class="flex py-20 darker full-bleed-darker">
-            <div class="flex flex-col w-full max-w-6xl gap-6">
-                <div class="title font-regular text-[var(--gray-50)] text-6xl">Campaign Manager</div>
-                <div class="description font-regular text-[var(--gray-50)] text-xl">The new campaign manager at PSE
-                    Retail Holdings aims to help the internal
-                    marketing team to easily build any campaign with branding guidelines.</div>
+        <div class="flex flex-col py-10 md:py-20 gap-6">
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Overview</div>
+            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Campaign Builder Manager
             </div>
-            <div class="spacer flex-grow min-w-[1rem]"></div>
-            <div class="image justify-end">
-                <img src="/Images/PSE.png" alt="PSE_mockup">
-            </div>
-        </div>
-
-        <div class="flex flex-col py-40 gap-8">
-            <div class="font-bold text-[var(--gray-600)] text-2xl">Overview</div>
-            <div class="title font-regular text-[var(--gray-900)] text-6xl">Campaign Builder Manager</div>
-            <div class="text-[var(--gray-900)] text-base">The new campaign manager helps the internal
-                Marketing team to easily build any campaign easily with branding guidelines automatically. We are trying to reduce the
-                design review process to <span class="font-semibold">ZERO</span> and a way update the subscriber’s list
+            <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12">
+                The new campaign manager helps the internal
+                Marketing team to easily build any campaign easily with branding guidelines automatically. We are trying
+                to reduce the
+                design review process to <span class="font-semibold text-[var(--text-dark)]">ZERO</span> and a way
+                update the subscriber’s list
                 easily.</div>
         </div>
 
-        <div class="flex flex-col py-40 gap-8 inverse full-bleed-inverse">
-            <div class="font-bold text-[var(--gray-600)] text-2xl">Problem</div>
-            <div class="title font-regular text-[var(--gray-900)] text-6xl">Understanding the Project</div>
-            <div class="flex flex-col gap-2">
-                <div class="text-[var(--gray-900)] text-base">I use the <span class="font-semibold">"5 Ws and
+        <div class="flex flex-col py-10 md:py-20 gap-6 inverse full-bleed-inverse">
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Problem</div>
+            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Understanding the
+                Project</div>
+            <div class="flex flex-col gap-4">
+                <div
+                    class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                    I use the <span class="font-semibold text-[var(--text-dark)]">"5 Ws and
                         H"
-                        approach,</span> ensuring I cover the <span class="font-semibold">who, what, where, when,
-                        why,</span> and <span class="font-semibold">how</span> of the problem.</div>
-                <div class="text-[var(--gray-900)] text-base">Who: The marketing team at PSE Retail Holdings
+                        approach,</span> ensuring I cover the <span class="font-semibold text-[var(--text-dark)]">who,
+                        what, where, when,
+                        why,</span> and <span class="font-semibold text-[var(--text-dark)]">how</span> of the problem.
+                </div>
+                <div
+                    class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
+                    <span class="font-semibold text-[var(--text-dark)]">Who:</span> The marketing team at PSE Retail
+                    Holdings
                     <br>
-                    What: Wants better campaign builder system <br>
-                    Where: PSE Retail Holdings marketing platforms <br>
-                    When: When conducting business <br>
-                    Why: to help the marketing team to easily create and update the campaigns <br>
-                    How: by reducing design review process
+                    <span class="font-semibold text-[var(--text-dark)]">What:</span> Wants better campaign builder
+                    system <br>
+                    <span class="font-semibold text-[var(--text-dark)]">Where:</span> PSE Retail Holdings marketing
+                    platforms <br>
+                    <span class="font-semibold text-[var(--text-dark)]">When:</span> When conducting business <br>
+                    <span class="font-semibold text-[var(--text-dark)]">Why:</span> to help the marketing team to easily
+                    create and update the campaigns <br>
+                    <span class="font-semibold text-[var(--text-dark)]">How:</span> by reducing design review process
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-8">
-            <div class="font-bold text-[var(--gray-600)] text-2xl">Design Process</div>
-            <div class="text-[var(--gray-900)] text-base">The Double Diamond design model has four stages:
+        <div class="flex flex-col py-10 md:py-20 gap-6">
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Design Process</div>
+            <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
+                The Double Diamond design model has four stages:
                 Discovery, Definition, Development and Delivery Together. <br> I’m using these steps to organize my
                 ideas and make the creative process better.</div>
             <div class="flex w-full justify-center">
-                <svg width="550" height="243" viewBox="0 0 550 243" fill="var(--gray-950)"
+                <svg width="550" height="243" viewBox="0 0 550 243" fill="var(--zinc-950)"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M46.5 117L36 127.5C37.3807 128.881 39.6193 128.881 41 127.5L49 119.5L46.5 117Z" />
                     <path d="M500.5 120L508.5 128C509.881 129.381 512.119 129.381 513.5 128L503 117.5L500.5 120Z" />
@@ -97,9 +103,9 @@
                         d="M54.5 114L52 111.5L152.893 10.6066C158.751 4.74874 168.249 4.74875 174.107 10.6066L266.015 102.515C270.701 107.201 278.299 107.201 282.985 102.515L374.893 10.6066C380.751 4.74874 390.249 4.74875 396.107 10.6066L497 111.5L494.5 114L393.985 13.4853C389.299 8.79899 381.701 8.799 377.015 13.4853L285.107 105.393C279.249 111.251 269.751 111.251 263.893 105.393L171.985 13.4853C167.299 8.79899 159.701 8.79898 155.015 13.4853L54.5 114Z" />
                     <path
                         d="M155.266 217.989L40.9951 103.505C39.6181 102.126 37.3826 102.126 36.0059 103.506L153.142 220.862C159.003 226.733 168.518 226.733 174.377 220.86L266.017 129.014C270.705 124.315 278.318 124.315 283.006 129.014L374.645 220.859C380.505 226.732 390.02 226.733 395.881 220.861L513.006 103.506C511.629 102.126 509.394 102.126 508.017 103.505L393.757 217.989C389.068 222.686 381.456 222.686 376.768 217.987L285.13 126.142C279.269 120.269 269.754 120.269 263.893 126.142L172.254 217.988C167.566 222.686 159.955 222.687 155.266 217.989Z" />
-                    <path d="M163.5 8.5L163.5 222.5" stroke="var(--gray-950)" stroke-width="4" stroke-linecap="round"
+                    <path d="M163.5 8.5L163.5 222.5" stroke="var(--zinc-950)" stroke-width="4" stroke-linecap="round"
                         stroke-dasharray="8 8" />
-                    <path d="M385.5 8.5L385.5 222.5" stroke="var(--gray-950)" stroke-width="4" stroke-linecap="round"
+                    <path d="M385.5 8.5L385.5 222.5" stroke="var(--zinc-950)" stroke-width="4" stroke-linecap="round"
                         stroke-dasharray="8 8" />
                     <path
                         d="M11.692 141.524C12.2573 141.524 12.7907 141.657 13.292 141.924C13.7933 142.191 14.204 142.617 14.524 143.204C14.8333 143.791 14.988 144.543 14.988 145.46L14.988 147.476L19.5 147.476L19.5 149.3L8.38 149.3L8.38 145.46C8.38 144.607 8.52933 143.887 8.828 143.3C9.116 142.703 9.51067 142.26 10.012 141.972C10.5133 141.673 11.0733 141.524 11.692 141.524ZM13.5 145.46C13.5 144.767 13.3453 144.249 13.036 143.908C12.716 143.567 12.268 143.396 11.692 143.396C10.476 143.396 9.868 144.084 9.868 145.46L9.868 147.476L13.5 147.476L13.5 145.46ZM19.5 134.008L15.052 136.568L15.052 137.96L19.5 137.96L19.5 139.784L8.38 139.784L8.38 135.944C8.38 135.091 8.52933 134.371 8.828 133.784C9.12666 133.187 9.52667 132.744 10.028 132.456C10.5293 132.158 11.0893 132.008 11.708 132.008C12.4333 132.008 13.0947 132.222 13.692 132.648C14.2787 133.064 14.6787 133.71 14.892 134.584L19.5 131.832L19.5 134.008ZM13.596 137.96L13.596 135.944C13.596 135.262 13.4253 134.75 13.084 134.408C12.7427 134.056 12.284 133.88 11.708 133.88C11.132 133.88 10.684 134.051 10.364 134.392C10.0333 134.734 9.868 135.251 9.868 135.944L9.868 137.96L13.596 137.96ZM19.612 124.603C19.612 125.638 19.372 126.592 18.892 127.467C18.4013 128.331 17.724 129.019 16.86 129.531C15.9853 130.032 15.004 130.283 13.916 130.283C12.828 130.283 11.852 130.032 10.988 129.531C10.124 129.019 9.452 128.331 8.972 127.467C8.48133 126.592 8.236 125.638 8.236 124.603C8.236 123.558 8.48133 122.603 8.972 121.739C9.452 120.864 10.124 120.176 10.988 119.675C11.852 119.174 12.828 118.923 13.916 118.923C15.004 118.923 15.9853 119.174 16.86 119.675C17.724 120.176 18.4013 120.864 18.892 121.739C19.372 122.603 19.612 123.558 19.612 124.603ZM18.028 124.603C18.028 123.867 17.8627 123.211 17.532 122.635C17.1907 122.059 16.7107 121.611 16.092 121.291C15.4627 120.96 14.7373 120.795 13.916 120.795C13.0947 120.795 12.3747 120.96 11.756 121.291C11.1373 121.611 10.6627 122.059 10.332 122.635C10.0013 123.211 9.836 123.867 9.836 124.603C9.836 125.339 10.0013 125.995 10.332 126.571C10.6627 127.147 11.1373 127.6 11.756 127.931C12.3747 128.251 13.0947 128.411 13.916 128.411C14.7373 128.411 15.4627 128.251 16.092 127.931C16.7107 127.6 17.1907 127.147 17.532 126.571C17.8627 125.995 18.028 125.339 18.028 124.603ZM13.788 111.176C13.8947 110.579 14.2093 110.072 14.732 109.656C15.2547 109.24 15.8467 109.032 16.508 109.032C17.0733 109.032 17.5853 109.181 18.044 109.48C18.492 109.768 18.8493 110.189 19.116 110.744C19.372 111.299 19.5 111.944 19.5 112.68L19.5 117.128L8.38 117.128L8.38 112.888C8.38 112.131 8.508 111.48 8.764 110.936C9.02 110.392 9.36666 109.981 9.804 109.704C10.2307 109.427 10.7107 109.288 11.244 109.288C11.884 109.288 12.4173 109.459 12.844 109.8C13.2707 110.141 13.5853 110.6 13.788 111.176ZM13.052 115.304L13.052 113.048C13.052 112.451 12.9187 111.987 12.652 111.656C12.3747 111.315 11.98 111.144 11.468 111.144C10.9667 111.144 10.5773 111.315 10.3 111.656C10.012 111.987 9.868 112.451 9.868 113.048L9.868 115.304L13.052 115.304ZM18.012 112.84C18.012 112.221 17.8627 111.736 17.564 111.384C17.2653 111.032 16.8493 110.856 16.316 110.856C15.772 110.856 15.34 111.043 15.02 111.416C14.7 111.789 14.54 112.285 14.54 112.904L14.54 115.304L18.012 115.304L18.012 112.84ZM18.028 105.226L18.028 101.466L19.5 101.466L19.5 107.05L8.38 107.05L8.38 105.226L18.028 105.226ZM9.852 98.1166L13.116 98.1166L13.116 94.2766L14.604 94.2766L14.604 98.1166L18.012 98.1166L18.012 93.7966L19.5 93.7966L19.5 99.9406L8.364 99.9406L8.364 93.7966L9.852 93.7966L9.852 98.1166ZM8.38 79.838L19.5 79.838L19.5 81.662L11.884 81.662L19.5 85.054L19.5 86.318L11.884 89.726L19.5 89.726L19.5 91.55L8.38 91.55L8.38 89.582L17.1 85.678L8.38 81.79L8.38 79.838Z" />
@@ -127,29 +133,30 @@
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-20 inverse full-bleed-inverse">
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Discover</div>
-                <div class="flex gap-8">
-                    <svg width="406" height="198" viewBox="0 0 406 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex flex-col py-10 md:py-20 gap-20 inverse full-bleed-inverse">
+            <div class="flex flex-col gap-6">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Discover</div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M101.672 9.32842L14.8358 96.1642C13.2708 97.7292 13.2741 100.268 14.8431 101.828L101.679 188.214C104.202 190.724 108.5 188.937 108.5 185.379V12.1569C108.5 8.59324 104.191 6.80856 101.672 9.32842Z"
                             fill="url(#paint0_linear_310_115)" />
                         <path
                             d="M8.91959 99.8897L0 108.809C1.17289 109.982 3.07453 109.982 4.24742 108.809L11.0433 102.013L8.91959 99.8897Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M394.586 102.438L401.382 109.234C402.555 110.407 404.456 110.407 405.629 109.234L396.71 100.314L394.586 102.438Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M15.7155 97.3412L13.5918 95.2175L99.2992 9.51014C104.275 4.53398 112.343 4.53398 117.319 9.51014L195.394 87.5847C199.375 91.5656 205.829 91.5656 209.81 87.5847L287.885 9.51014C292.861 4.53398 300.929 4.53397 305.905 9.51014L391.612 95.2175L389.489 97.3412L304.103 11.9555C300.122 7.97461 293.668 7.97461 289.687 11.9555L211.612 90.0301C206.636 95.0062 198.568 95.0062 193.592 90.0301L115.517 11.9555C111.537 7.97461 105.082 7.9746 101.101 11.9555L15.7155 97.3412Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M101.316 185.679L4.24415 88.426C3.07437 87.2541 1.17541 87.2542 0.00585938 88.4264L99.5115 188.118C104.49 193.107 112.573 193.106 117.55 188.117L195.396 110.095C199.379 106.104 205.846 106.104 209.829 110.095L287.675 188.116C292.653 193.106 300.735 193.106 305.714 188.118L405.21 88.4264C404.04 87.2542 402.142 87.2541 400.972 88.4261L303.91 185.678C299.927 189.669 293.461 189.668 289.478 185.677L211.633 107.656C206.654 102.666 198.571 102.666 193.592 107.656L115.747 185.677C111.764 189.668 105.299 189.669 101.316 185.679Z"
-                            fill="var(--gray-950)" />
-                        <path d="M108.309 7.72061L108.309 189.51" stroke="var(--gray-950)" stroke-width="3.39794"
+                            fill="var(--zinc-950)" />
+                        <path d="M108.309 7.72061L108.309 189.51" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
-                        <path d="M296.895 7.72061L296.895 189.51" stroke="var(--gray-950)" stroke-width="3.39794"
+                        <path d="M296.895 7.72061L296.895 189.51" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
                         <defs>
                             <linearGradient id="paint0_linear_310_115" x1="108.5" y1="98.75" x2="12" y2="98.75"
@@ -159,96 +166,93 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <div class="text-[var(--gray-900)] text-base">In discover step, I’m trying to discover
-                        <span class="font-semibold">the
-                            targeted users</span> and <span class="font-semibold">their personality</span> and <span
-                            class="font-semibold">user journey</span> by meeting them in a video conference calls to
+                    <div
+                        class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
+                        In discover step, I’m trying to discover
+                        <span class="font-semibold text-[var(--text-dark)]">the
+                            targeted users</span> and <span class="font-semibold text-[var(--text-dark)]">their
+                            personality</span> and <span class="font-semibold text-[var(--text-dark)]">user
+                            journey</span> by meeting them in a video conference calls to
                         know the pain points.
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-950)] text-xl">Persona</div>
+            <div class="flex flex-col gap-6">
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Persona</div>
                 <div class="flex flex-col gap-6">
-                    <div class="text-[var(--gray-900)] text-base">Emily Campaigns Executive at PSE Retail
+                    <div
+                        class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        Emily Campaigns Executive at PSE Retail
                         Holdings. She has experience using many campaign builder tools.
                     </div>
-                    <div class="font-regular text-[var(--gray-950)] text-2xl">Meet Emily Blake</div>
-                    <div class="flex gap-12 items-center">
-                        <svg width="208" height="209" viewBox="0 0 208 209" fill="none"
+                    <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Meet Emily Blake
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-8 w-full items-center">
+                        <svg class="w-full md:w-fit" width="406" height="407" viewBox="0 0 406 407" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_310_135)">
-                                <path
-                                    d="M104 208.156C161.438 208.156 208 162.645 208 106.505C208 50.3646 161.438 4.85397 104 4.85397C46.5624 4.85397 0 50.3646 0 106.505C0 162.645 46.5624 208.156 104 208.156Z"
-                                    fill="var(--primary-50)" />
-                                <path
-                                    d="M164.552 98.3468C171.912 56.4991 154.286 3.30632 105.789 0.265173C90.325 -0.699982 75.215 4.85421 67.4085 15.5802C40.6539 25.8873 38.3995 71.8141 41.3992 87.6208C49.5969 130.962 10.0799 123.495 20.1036 164.178L102.696 159.734H105.864L186.984 160.754C193.822 130.069 161.199 132.127 164.534 98.365L164.552 98.3468Z"
-                                    fill="#4C224B" />
-                                <path d="M128.315 93.1201H79.5938V153.87H128.315V93.1201Z" fill="#E2988F" />
-                                <path
-                                    d="M193.374 158.459C170.439 149.044 128.612 141.942 128.612 141.942C112.552 155.163 92.2435 155.072 79.6114 141.942C79.6114 141.942 37.2438 148.079 13.3398 156.256C30.4248 185.921 62.2843 206.371 99.1929 208.01C100.851 208.065 102.491 208.119 104.168 208.119C142.119 208.065 175.283 188.142 193.393 158.441L193.374 158.459Z"
-                                    fill="var(--primary-800)" />
-                                <path
-                                    d="M147.076 85.7813C145.269 85.7813 143.797 88.349 143.797 91.4994C143.797 94.6498 145.269 97.2175 147.076 97.2175C148.883 97.2175 150.355 94.6498 150.355 91.4994C150.355 88.349 148.883 85.7813 147.076 85.7813ZM147.076 94.7227C145.828 94.7227 144.822 92.9562 144.822 90.7892C144.822 88.6221 145.828 86.8557 147.076 86.8557C148.324 86.8557 149.33 88.6221 149.33 90.7892C149.33 92.9562 148.324 94.7227 147.076 94.7227Z"
-                                    fill="white" />
-                                <path
-                                    d="M57.3848 91.4994C57.3848 94.6498 58.8566 97.2175 60.6639 97.2175C62.4711 97.2175 63.943 94.6498 63.943 91.4994C63.943 88.349 62.4711 85.7813 60.6639 85.7813C58.8566 85.7813 57.3848 88.349 57.3848 91.4994ZM58.4095 90.771C58.4095 88.6039 59.4156 86.8375 60.6639 86.8375C61.9122 86.8375 62.9183 88.6039 62.9183 90.771C62.9183 92.938 61.9122 94.7044 60.6639 94.7044C59.4156 94.7044 58.4095 92.938 58.4095 90.771Z"
-                                    fill="white" />
-                                <path
-                                    d="M103.907 19.5498C72.4942 19.5862 65.3584 42.5679 66.0105 65.7134C66.0105 82.3941 65.8987 94.7044 67.4824 98.82C69.0661 102.936 80.0772 127.756 103.888 127.811C127.699 127.775 138.71 102.954 140.294 98.82C141.877 94.6862 141.784 82.3941 141.784 65.7134C142.436 42.5679 135.3 19.5862 103.888 19.5498H103.907Z"
-                                    fill="#E2988F" />
-                                <path
-                                    d="M103.906 128.503C94.5714 128.503 86.1501 124.77 78.8652 117.486L79.8713 116.539C86.8767 123.568 94.9627 127.137 103.906 127.155C112.7 127.155 120.674 123.677 127.605 116.885L128.592 117.85C121.401 124.916 113.091 128.503 103.906 128.521V128.503Z"
-                                    fill="#C46966" />
-                                <path
-                                    d="M67.3889 64.9303C67.3889 64.9303 61.0729 55.8433 54.5892 61.1608C48.1055 66.4782 54.4215 96.6348 67.3889 91.3173C80.3563 85.9998 67.3889 64.9303 67.3889 64.9303Z"
-                                    fill="#E2988F" />
-                                <path
-                                    d="M140.535 64.9303C140.535 64.9303 146.851 55.8433 153.334 61.1608C159.818 66.4782 153.502 96.6348 140.535 91.3173C127.567 85.9998 140.535 64.9303 140.535 64.9303Z"
-                                    fill="#E2988F" />
-                                <path
-                                    d="M66.3466 81.8652L64.9531 81.9662L65.6928 91.7184L67.0864 91.6175L66.3466 81.8652Z"
-                                    fill="#C46966" />
-                                <path
-                                    d="M141.594 80.8156L140.771 91.6028L142.165 91.7042L142.987 80.9171L141.594 80.8156Z"
-                                    fill="#C46966" />
-                                <path
-                                    d="M57.8132 76.7671C56.3227 71.9231 56.3041 68.5542 57.776 66.7696C58.8566 65.4402 60.3657 65.513 60.4216 65.513L60.3284 66.8788C60.3284 66.8788 59.4714 66.8424 58.8379 67.6437C58.2045 68.4449 57.3847 70.6666 59.136 76.3847L57.7946 76.7853L57.8132 76.7671Z"
-                                    fill="#C46966" />
-                                <path
-                                    d="M150.634 76.7671L149.292 76.3665C151.044 70.6484 150.243 68.4449 149.59 67.6254C148.957 66.8242 148.137 66.8606 148.1 66.8606L148.025 65.4948C148.025 65.4948 149.572 65.4038 150.671 66.7513C152.143 68.5542 152.124 71.9231 150.634 76.7489V76.7671Z"
-                                    fill="#C46966" />
-                                <path
-                                    d="M63.4389 92.9927C63.2153 92.9927 62.9731 92.9562 62.7682 92.9198C62.7123 92.9198 62.6564 92.8652 62.6191 92.8288C62.2279 93.9578 61.5199 94.7227 60.7001 94.7227C59.4518 94.7227 58.4457 92.9562 58.4457 90.7892C58.4457 88.6221 59.4518 86.8739 60.6815 86.8557C61.4267 86.7647 61.2404 85.7631 60.6815 85.7995C58.8742 85.7995 57.4023 88.3672 57.4023 91.5176C57.4023 94.668 58.8742 97.2357 60.6815 97.2357C62.1906 97.2357 63.4575 95.4329 63.8488 93.0109C63.7184 93.0109 63.5879 93.0109 63.4389 93.0109V92.9927Z"
-                                    fill="white" />
-                                <path
-                                    d="M147.094 85.7813C146.535 85.7631 146.349 86.7647 147.094 86.8375C148.342 86.8375 149.33 88.6039 149.33 90.771C149.33 92.938 148.324 94.7044 147.076 94.7044C146.386 94.7044 145.771 94.1399 145.361 93.2658C145.25 93.3569 145.138 93.4479 145.007 93.539C144.728 93.7029 144.448 93.8668 144.15 94.0307C144.691 95.9063 145.79 97.2175 147.076 97.2175C148.883 97.2175 150.355 94.6498 150.355 91.4994C150.355 88.349 148.901 85.7995 147.076 85.7813H147.094Z"
-                                    fill="white" />
-                                <path
-                                    d="M65.8051 63.0728C65.507 46.8109 77.9341 38.3612 77.9341 38.3612C89.1129 57.5187 119.929 64.0198 148.081 54.5139C148.081 54.5139 145.342 8.49606 101.372 11.1912C57.4024 13.8864 65.8237 63.0546 65.8237 63.0546L65.8051 63.0728Z"
-                                    fill="#4C224B" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_310_135">
-                                    <rect width="208" height="208" fill="white" transform="translate(0 0.15567)" />
-                                </clipPath>
-                            </defs>
+                            <path
+                                d="M203 406.155C315.114 406.155 406 317.322 406 207.741C406 98.1594 315.114 9.32617 203 9.32617C90.8862 9.32617 0 98.1594 0 207.741C0 317.322 90.8862 406.155 203 406.155Z"
+                                fill="var(--primary-50)" />
+                            <path
+                                d="M321.191 191.817C335.556 110.134 301.153 6.30552 206.49 0.369436C176.305 -1.51447 146.812 9.32689 131.574 30.2632C79.3513 50.3819 74.9509 140.027 80.806 170.881C96.8074 255.479 19.6732 240.905 39.2386 320.314L200.453 311.641H206.635L364.977 313.631C378.324 253.737 314.645 257.754 321.155 191.853L321.191 191.817Z"
+                                fill="#4C224B" />
+                            <path d="M250.458 181.615H155.358V300.195H250.458V181.615Z" fill="#E2988F" />
+                            <path
+                                d="M377.451 309.153C332.684 290.776 251.04 276.913 251.04 276.913C219.692 302.719 180.052 302.541 155.395 276.913C155.395 276.913 72.6968 288.892 26.0381 304.852C59.3865 362.755 121.574 402.673 193.617 405.872C196.853 405.979 200.054 406.085 203.327 406.085C277.406 405.979 342.139 367.092 377.488 309.117L377.451 309.153Z"
+                                fill="var(--primary-800)" />
+                            <path
+                                d="M287.079 167.29C283.552 167.29 280.679 172.302 280.679 178.451C280.679 184.601 283.552 189.613 287.079 189.613C290.607 189.613 293.48 184.601 293.48 178.451C293.48 172.302 290.607 167.29 287.079 167.29ZM287.079 184.743C284.643 184.743 282.679 181.295 282.679 177.065C282.679 172.835 284.643 169.387 287.079 169.387C289.516 169.387 291.48 172.835 291.48 177.065C291.48 181.295 289.516 184.743 287.079 184.743Z"
+                                fill="white" />
+                            <path
+                                d="M112.009 178.451C112.009 184.601 114.882 189.613 118.409 189.613C121.937 189.613 124.81 184.601 124.81 178.451C124.81 172.302 121.937 167.29 118.409 167.29C114.882 167.29 112.009 172.302 112.009 178.451ZM114.009 177.029C114.009 172.8 115.973 169.352 118.409 169.352C120.846 169.352 122.81 172.8 122.81 177.029C122.81 181.259 120.846 184.707 118.409 184.707C115.973 184.707 114.009 181.259 114.009 177.029Z"
+                                fill="white" />
+                            <path
+                                d="M202.818 38.0117C141.503 38.0828 127.574 82.9412 128.847 128.119C128.847 160.679 128.629 184.708 131.72 192.741C134.811 200.774 156.304 249.223 202.781 249.329C249.258 249.258 270.751 200.81 273.842 192.741C276.933 184.672 276.751 160.679 276.751 128.119C278.024 82.9412 264.096 38.0828 202.781 38.0117H202.818Z"
+                                fill="#E2988F" />
+                            <path
+                                d="M202.818 250.681C184.598 250.681 168.16 243.394 153.94 229.176L155.904 227.327C169.578 241.048 185.361 248.015 202.818 248.05C219.983 248.05 235.548 241.261 249.076 228.003L251.004 229.886C236.966 243.678 220.746 250.68 202.818 250.716V250.681Z"
+                                fill="#C46966" />
+                            <path
+                                d="M131.538 126.591C131.538 126.591 119.209 108.854 106.554 119.233C93.898 129.612 106.226 188.475 131.538 178.096C156.849 167.717 131.538 126.591 131.538 126.591Z"
+                                fill="#E2988F" />
+                            <path
+                                d="M274.315 126.591C274.315 126.591 286.643 108.854 299.299 119.233C311.955 129.612 299.626 188.475 274.315 178.096C249.004 167.717 274.315 126.591 274.315 126.591Z"
+                                fill="#E2988F" />
+                            <path d="M129.505 159.646L126.785 159.843L128.229 178.878L130.949 178.681L129.505 159.646Z"
+                                fill="#C46966" />
+                            <path d="M276.378 157.598L274.773 178.653L277.493 178.851L279.098 157.796L276.378 157.598Z"
+                                fill="#C46966" />
+                            <path
+                                d="M112.845 149.694C109.935 140.239 109.899 133.663 112.772 130.18C114.881 127.585 117.827 127.727 117.936 127.727L117.754 130.393C117.754 130.393 116.081 130.322 114.845 131.886C113.608 133.45 112.008 137.786 115.427 148.948L112.808 149.73L112.845 149.694Z"
+                                fill="#C46966" />
+                            <path
+                                d="M294.025 149.695L291.407 148.913C294.825 137.751 293.261 133.45 291.988 131.851C290.752 130.287 289.152 130.358 289.079 130.358L288.934 127.692C288.934 127.692 291.952 127.514 294.098 130.145C296.971 133.664 296.934 140.24 294.025 149.659V149.695Z"
+                                fill="#C46966" />
+                            <path
+                                d="M123.828 181.367C123.391 181.367 122.919 181.295 122.519 181.224C122.409 181.224 122.3 181.118 122.228 181.047C121.464 183.25 120.082 184.743 118.482 184.743C116.045 184.743 114.081 181.295 114.081 177.066C114.081 172.836 116.045 169.423 118.445 169.388C119.9 169.21 119.537 167.255 118.445 167.326C114.918 167.326 112.045 172.338 112.045 178.487C112.045 184.637 114.918 189.649 118.445 189.649C121.391 189.649 123.864 186.13 124.628 181.402C124.373 181.402 124.119 181.402 123.828 181.402V181.367Z"
+                                fill="white" />
+                            <path
+                                d="M287.116 167.291C286.025 167.255 285.661 169.21 287.116 169.352C289.553 169.352 291.48 172.8 291.48 177.03C291.48 181.26 289.516 184.708 287.08 184.708C285.734 184.708 284.534 183.606 283.734 181.9C283.516 182.077 283.298 182.255 283.043 182.433C282.497 182.753 281.952 183.073 281.37 183.393C282.425 187.054 284.57 189.613 287.08 189.613C290.607 189.613 293.48 184.601 293.48 178.452C293.48 172.302 290.644 167.326 287.08 167.291H287.116Z"
+                                fill="white" />
+                            <path
+                                d="M128.446 122.965C127.864 91.2229 152.121 74.7298 152.121 74.7298C173.941 112.124 234.092 124.813 289.042 106.259C289.042 106.259 283.696 16.4353 197.871 21.696C112.045 26.9567 128.483 122.929 128.483 122.929L128.446 122.965Z"
+                                fill="#4C224B" />
                         </svg>
                         <div class="flex flex-col gap-4">
-                            <div class="text-[var(--gray-950)] text-xl">Campaigns Executive at PSE Retail
-                                Holdings
+                            <div
+                                class="text-base font-semibold md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                Campaigns Executive at PSE Retail Holdings
                             </div>
-                            <div class="text-[var(--gray-900)] text-base">
-                                <ul class="list-disc">
+                            <div
+                                class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                                <ul class="list-disc list-inside">
                                     <li>Emily is a campaign executive working at PSE Retail Holdings.</li>
                                     <li>She loves listening to pop music.</li>
                                     <li>Working on PSE Retail Holdings for +3 years in the marketing team.</li>
                                     <li>Reporting to Head of Marketing.</li>
                                     <li>She thinks that in the new design, we should improve our process to create,
-                                        update
-                                        and
-                                        review the campaign because now it takes a lot of time.</li>
+                                        update and review the campaign because now it takes a lot of time.</li>
                                 </ul>
                             </div>
                         </div>
@@ -256,10 +260,10 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-950)] text-xl">Empathy Map</div>
-                <div class="text-[var(--gray-900)] text-base">
-                    <ul class="list-disc">
+            <div class="flex flex-col gap-6">
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Empathy Map</div>
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                    <ul class="list-disc list-inside">
                         <li>What’s the user's main role in the PSE Retail Holdings?</li>
                         <li>Is there any situation that impacts the daily job in a negative way?</li>
                         <li>What are the issues/pain points?</li>
@@ -268,125 +272,117 @@
                     </ul>
                 </div>
                 <div
-                    class="flex flex-col w-full p-8 gap-6 text-[var(--gray-950)] border border-[var(--gray-400)] border-dashed rounded-lg">
+                    class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg">
                     <div class="flex flex-row gap-6">
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="font-semibold text-[var(--gray-600)]">SAYS:</p>
-                            <p>
-                            <ul class="list-disc">
+                        <div class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                            <p class="font-semibold text-[var(--text-dark)]">SAYS:</p>
+                            <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>It's not easy to understand the company branding guidelines.</li>
                                 <li>It will be great if we have more designs.</li>
                             </ul>
-                            </p>
                         </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="font-semibold text-[var(--gray-600)]">THINK:</p>
-                            <p>
-                            <ul class="list-disc">
+                        <div class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                            <p class="font-semibold text-[var(--text-dark)]">THINK:</p>
+                            <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>Better solution to build campaign faster.</li>
                                 <li>Have more templates with different designs.</li>
                                 <li>Can download the group of subscribers contact to target them later.</li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                     <div class="flex flex-row gap-6">
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="font-semibold text-[var(--gray-600)]">DOES:</p>
-                            <p>
-                            <ul class="list-disc">
+                        <div class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                            <p class="font-semibold text-[var(--text-dark)]">DOES:</p>
+                            <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>Design team must review the campaign design following branding guidelines or not
                                     before send the campaign.</li>
                                 <li>All the time the manager comes back with some mistakes saying “Not following the
-                                    branding guidelines”</li>
+                                    branding guidelines”.</li>
                             </ul>
-                            </p>
                         </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="font-semibold text-[var(--gray-600)]">FEELS:</p>
-                            <p>
-                            <ul class="list-disc">
+                        <div class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                            <p class="font-semibold text-[var(--text-dark)]">FEELS:</p>
+                            <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>Painful to manage the subscribers list and update it.</li>
                                 <li>Design team take more time to review any campaign.</li>
                                 <li>Not good to face same mistakes regarding branding guidelines every time.</li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-950)] text-xl">User Journey</div>
+            <div class="flex flex-col gap-6">
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">User Journey</div>
                 <div
-                    class="flex flex-col w-full p-8 gap-6 text-[var(--gray-950)] border border-[var(--gray-400)] border-dashed rounded-lg">
+                    class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg">
                     <div class="flex flex-col gap-3">
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 1
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Building a new campaign content.</p>
-                                <p class="text-[var(--gray-600)]">Must build everything manually from scratch and apply
+                                <p class="text-[var(--text-secondary)]">Must build everything manually from scratch and apply
                                     the branding guidelines.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 2
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Send a test campaign to internal people to review.</p>
-                                <p class="text-[var(--gray-600)]">Send a test review to the marketing manager and design
+                                <p class="text-[var(--text-secondary)]">Send a test review to the marketing manager and design
                                     lead to review the content and check the branding guidelines.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 3
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Waiting for feedback from the design team and marketing
                                     manager.</p>
-                                <p class="text-[var(--gray-600)]">There is no visibility of when the campaign will be
+                                <p class="text-[var(--text-secondary)]">There is no visibility of when the campaign will be
                                     reviewed and no comments saved to check. I have to follow up personally with
                                     managers.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 4
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Apply the changes coming based on the coming feedback and send
                                     for the second round of review.</p>
-                                <p class="text-[var(--gray-600)]">Take time to apply the changes and sometimes we do
+                                <p class="text-[var(--text-secondary)]">Take time to apply the changes and sometimes we do
                                     more than 2 rounds of changes.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 5
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Select the targeted users and send the campaign.</p>
-                                <p class="text-[var(--gray-600)]">Users are categorised by groups, select a group means
+                                <p class="text-[var(--text-secondary)]">Users are categorised by groups, select a group means
                                     I will send this campaign to all included users.</p>
                             </div>
                         </div>
-                        <div class="flex flex-col p-3 gap-3 w-full border border-[var(--gray-400)] rounded-lg">
+                        <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 6
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Analyze campaign report.</p>
-                                <p class="text-[var(--gray-600)]">No option to get a full list of some users that takes
+                                <p class="text-[var(--text-secondary)]">No option to get a full list of some users that takes
                                     a specific action. Need to remove the unsubscribes list manually.</p>
                             </div>
                         </div>
@@ -395,9 +391,9 @@
             </div>
 
             <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-950)] text-xl">Pain Points</div>
-                <div class="text-[var(--gray-900)] text-base">
-                    <ul class="list-disc">
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Pain Points</div>
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                    <ul class="list-disc list-inside">
                         <li>Wasting time to review whether the design is following the brand guideline or not.</li>
                         <li>Not easy to understand the branding guidelines.</li>
                         <li>Edit the campaign design many times and the mistakes are repeatable.</li>
@@ -408,9 +404,9 @@
             </div>
 
             <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-950)] text-xl">Expected Result</div>
-                <div class="text-[var(--gray-900)] text-base">
-                    <ul class="list-disc">
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Expected Result</div>
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                    <ul class="list-disc list-inside">
                         <li>A better and easier process to create, update and review the campaign.</li>
                         <li>Reduce the design review time as much as we can.</li>
                     </ul>
@@ -418,29 +414,30 @@
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-20">
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Define</div>
-                <div class="flex gap-8">
-                    <svg width="406" height="197" viewBox="0 0 406 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex flex-col py-10 md:py-20 gap-20">
+            <div class="flex flex-col gap-6">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Define</div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <svg class="w-full md:w-fit" width="406" height="197" viewBox="0 0 406 197" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M114.828 187.827L201.664 100.992C203.229 99.4266 203.226 96.8883 201.657 95.3274L114.821 8.94149C112.298 6.43171 108 8.21863 108 11.7772L108 184.999C108 188.563 112.309 190.347 114.828 187.827Z"
                             fill="url(#paint0_linear_310_232)" />
                         <path
                             d="M8.91959 99.5454L0 108.465C1.17289 109.638 3.07453 109.638 4.24742 108.465L11.0433 101.669L8.91959 99.5454Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M394.586 102.094L401.382 108.89C402.555 110.063 404.456 110.063 405.629 108.89L396.71 99.9701L394.586 102.094Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M15.7155 96.997L13.5918 94.8733L99.2992 9.1659C104.275 4.18974 112.343 4.18974 117.319 9.1659L195.394 87.2404C199.375 91.2214 205.829 91.2214 209.81 87.2404L287.885 9.1659C292.861 4.18974 300.929 4.18973 305.905 9.1659L391.612 94.8733L389.489 96.997L304.103 11.6113C300.122 7.63037 293.668 7.63037 289.687 11.6113L211.612 89.6858C206.636 94.662 198.568 94.662 193.592 89.6858L115.517 11.6113C111.537 7.63037 105.082 7.63037 101.101 11.6113L15.7155 96.997Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M101.316 185.334L4.24415 88.0819C3.07437 86.9099 1.17541 86.9101 0.00585938 88.0823L99.5115 187.774C104.49 192.762 112.573 192.762 117.55 187.773L195.396 109.751C199.379 105.759 205.846 105.759 209.829 109.751L287.675 187.772C292.653 192.761 300.735 192.762 305.714 187.774L405.21 88.0823C404.04 86.9101 402.142 86.91 400.972 88.082L303.91 185.334C299.927 189.325 293.461 189.324 289.478 185.333L211.633 107.312C206.654 102.322 198.571 102.322 193.592 107.312L115.747 185.333C111.764 189.324 105.299 189.325 101.316 185.334Z"
-                            fill="var(--gray-950)" />
-                        <path d="M108.309 7.37646L108.309 189.166" stroke="var(--gray-950)" stroke-width="3.39794"
+                            fill="var(--zinc-950)" />
+                        <path d="M108.309 7.37646L108.309 189.166" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
-                        <path d="M296.895 7.37646L296.895 189.166" stroke="var(--gray-950)" stroke-width="3.39794"
+                        <path d="M296.895 7.37646L296.895 189.166" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
                         <defs>
                             <linearGradient id="paint0_linear_310_232" x1="108" y1="98.4058" x2="204.5" y2="98.4058"
@@ -450,54 +447,51 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <div class="text-[var(--gray-900)] text-base">In define step, I’m trying to <span
+                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">In define step, I’m trying to <span
                             class="font-semibold">define the main pain points</span> and <span
                             class="font-semibold">prioritize it</span> with stakeholders based on the value and effort
-                        to
-                        know which features we gonna build first based on (WSJF) Worked Shortest Job First.
+                        to know which features we gonna build first based on (WSJF) Worked Shortest Job First.
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-6">
                 <div class="font-bold text-[var(--gray-600)] text-2xl">Worked Shortest Job First (WSJF)</div>
-                <div class="flex">
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
                     <div class="flex flex-col gap-6 w-full">
-                        <div class="flex gap-3">
+                        <div class="flex items-center gap-4">
                             <div class="flex justify-center items-center h-[var(--reg)]">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                     1
                                 </div>
                             </div>
-                            <p class="text-[var(--gray-600)]">Create a pre-designed templates with a company branding
-                                guidelines, by uploading a HTML file and
-                                an Images "Zip" file in one step.</p>
+                            <p class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">Create a pre-designed templates with a company
+                                branding guidelines, by uploading a HTML file and an Images "Zip" file in one step.</p>
                         </div>
-                        <div class="flex gap-3">
+                        <div class="flex items-center gap-4">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 2
                             </div>
-                            <p class="text-[var(--gray-600)]">Drag and drop the styled components to the campaign
-                                builder.
+                            <p class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">Drag and drop the styled components to the
+                                campaign builder.
                             </p>
                         </div>
-                        <div class="flex gap-3">
+                        <div class="flex items-center gap-4">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 3
                             </div>
-                            <p class="text-[var(--gray-600)]">Campaign report with more details: How many links were
-                                clicked, How many bounced emails, unsubscribed users list, and more.</p>
+                            <p class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">Campaign report with more details: How many
+                                links were clicked, How many bounced emails, unsubscribed users list, and more.</p>
                         </div>
-                        <div class="flex gap-3">
+                        <div class="flex items-center gap-4">
                             <div
                                 class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
                                 4
                             </div>
-                            <p class="text-[var(--gray-600)]">Mass Unsubscribe: Upload the list of unsubscribes users
-                                then
-                                in one click remove them from the main list.</p>
+                            <p class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">Mass Unsubscribe: Upload the list of
+                                unsubscribes users then in one click remove them from the main list.</p>
                         </div>
                     </div>
                     <div class="spacer min-w-4"></div>
@@ -506,11 +500,11 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <rect opacity="0.3" x="111.547" y="19.6377" width="327.188" height="330.093"
                                 fill="var(--primary-100)" />
-                            <line x1="110.838" y1="349.527" x2="438.026" y2="20.3368" stroke="var(--gray-400)"
+                            <line x1="110.838" y1="349.527" x2="438.026" y2="20.3368" stroke="var(--zinc-400)"
                                 stroke-width="2" stroke-dasharray="4 4" />
-                            <line x1="111.547" y1="182.486" x2="438.735" y2="182.486" stroke="var(--gray-400)"
+                            <line x1="111.547" y1="182.486" x2="438.735" y2="182.486" stroke="var(--zinc-400)"
                                 stroke-width="2" stroke-dasharray="4 4" />
-                            <line x1="275.965" y1="19.6377" x2="275.965" y2="349.256" stroke="var(--gray-400)"
+                            <line x1="275.965" y1="19.6377" x2="275.965" y2="349.256" stroke="var(--zinc-400)"
                                 stroke-width="2" stroke-dasharray="4 4" />
                             <rect x="349" y="36.1562" width="32" height="32" rx="8" fill="var(--primary-500)" />
                             <path d="M362.72 48.1562V46.4922H366.048V58.1562H364.208V48.1562H362.72Z" fill="white" />
@@ -528,16 +522,16 @@
                                 fill="white" />
                             <path
                                 d="M71.8027 25.0362V36.1562H69.9787V31.2922H64.7467V36.1562H62.9227V25.0362H64.7467V29.8042H69.9787V25.0362H71.8027ZM75.1319 26.1722C74.8012 26.1722 74.5239 26.0602 74.2999 25.8362C74.0759 25.6122 73.9639 25.3349 73.9639 25.0042C73.9639 24.6736 74.0759 24.3962 74.2999 24.1722C74.5239 23.9482 74.8012 23.8362 75.1319 23.8362C75.4519 23.8362 75.7239 23.9482 75.9479 24.1722C76.1719 24.3962 76.2839 24.6736 76.2839 25.0042C76.2839 25.3349 76.1719 25.6122 75.9479 25.8362C75.7239 26.0602 75.4519 26.1722 75.1319 26.1722ZM76.0279 27.3403V36.1562H74.2039V27.3403H76.0279ZM81.9747 27.1962C82.6573 27.1962 83.26 27.3349 83.7827 27.6122C84.316 27.8789 84.732 28.2149 85.0307 28.6202V27.3403H86.8707V36.3003C86.8707 37.1109 86.7 37.8309 86.3587 38.4603C86.0173 39.1003 85.5213 39.6016 84.8707 39.9643C84.2307 40.3269 83.4627 40.5083 82.5667 40.5083C81.372 40.5083 80.38 40.2256 79.5907 39.6603C78.8013 39.1056 78.3533 38.3483 78.2467 37.3883H80.0547C80.1933 37.8469 80.4867 38.2149 80.9347 38.4923C81.3933 38.7803 81.9373 38.9243 82.5667 38.9243C83.3027 38.9243 83.8947 38.7003 84.3427 38.2523C84.8013 37.8043 85.0307 37.1536 85.0307 36.3003V34.8282C84.7213 35.2442 84.3 35.5962 83.7667 35.8842C83.244 36.1616 82.6467 36.3003 81.9747 36.3003C81.2067 36.3003 80.5027 36.1083 79.8627 35.7242C79.2333 35.3296 78.732 34.7856 78.3587 34.0922C77.996 33.3882 77.8147 32.5936 77.8147 31.7082C77.8147 30.8229 77.996 30.0389 78.3587 29.3562C78.732 28.6736 79.2333 28.1456 79.8627 27.7722C80.5027 27.3882 81.2067 27.1962 81.9747 27.1962ZM85.0307 31.7402C85.0307 31.1322 84.9027 30.6042 84.6467 30.1562C84.4013 29.7082 84.076 29.3669 83.6707 29.1322C83.2653 28.8976 82.828 28.7802 82.3587 28.7802C81.8893 28.7802 81.452 28.8976 81.0467 29.1322C80.6413 29.3562 80.3107 29.6922 80.0547 30.1402C79.8093 30.5776 79.6867 31.1002 79.6867 31.7082C79.6867 32.3162 79.8093 32.8496 80.0547 33.3082C80.3107 33.7669 80.6413 34.1189 81.0467 34.3642C81.4627 34.5989 81.9 34.7162 82.3587 34.7162C82.828 34.7162 83.2653 34.5989 83.6707 34.3642C84.076 34.1296 84.4013 33.7882 84.6467 33.3402C84.9027 32.8816 85.0307 32.3482 85.0307 31.7402ZM93.8264 27.1962C94.4984 27.1962 95.0957 27.3402 95.6184 27.6282C96.1517 27.9162 96.5677 28.3429 96.8664 28.9082C97.1757 29.4736 97.3304 30.1562 97.3304 30.9562V36.1562H95.5224V31.2282C95.5224 30.4389 95.3251 29.8362 94.9304 29.4202C94.5357 28.9936 93.9971 28.7802 93.3144 28.7802C92.6317 28.7802 92.0877 28.9936 91.6824 29.4202C91.2877 29.8362 91.0904 30.4389 91.0904 31.2282V36.1562H89.2664V24.3162H91.0904V28.3642C91.3997 27.9909 91.7891 27.7029 92.2584 27.5002C92.7384 27.2976 93.2611 27.1962 93.8264 27.1962Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                             <path
                                 d="M411.814 362.692V373.812H409.99V368.948H404.758V373.812H402.934V362.692H404.758V367.46H409.99V362.692H411.814ZM415.144 363.828C414.813 363.828 414.536 363.716 414.312 363.492C414.088 363.268 413.976 362.991 413.976 362.66C413.976 362.33 414.088 362.052 414.312 361.828C414.536 361.604 414.813 361.492 415.144 361.492C415.464 361.492 415.736 361.604 415.96 361.828C416.184 362.052 416.296 362.33 416.296 362.66C416.296 362.991 416.184 363.268 415.96 363.492C415.736 363.716 415.464 363.828 415.144 363.828ZM416.04 364.997V373.812H414.216V364.997H416.04ZM421.986 364.852C422.669 364.852 423.272 364.991 423.794 365.268C424.328 365.535 424.744 365.871 425.042 366.276V364.997H426.882V373.957C426.882 374.767 426.712 375.487 426.37 376.117C426.029 376.757 425.533 377.258 424.882 377.621C424.242 377.983 423.474 378.165 422.578 378.165C421.384 378.165 420.392 377.882 419.602 377.317C418.813 376.762 418.365 376.005 418.258 375.045H420.066C420.205 375.503 420.498 375.871 420.946 376.149C421.405 376.437 421.949 376.581 422.578 376.581C423.314 376.581 423.906 376.357 424.354 375.909C424.813 375.461 425.042 374.81 425.042 373.957V372.484C424.733 372.9 424.312 373.252 423.778 373.54C423.256 373.818 422.658 373.957 421.986 373.957C421.218 373.957 420.514 373.765 419.874 373.38C419.245 372.986 418.744 372.442 418.37 371.748C418.008 371.044 417.826 370.25 417.826 369.364C417.826 368.479 418.008 367.695 418.37 367.012C418.744 366.33 419.245 365.802 419.874 365.428C420.514 365.044 421.218 364.852 421.986 364.852ZM425.042 369.396C425.042 368.788 424.914 368.26 424.658 367.812C424.413 367.364 424.088 367.023 423.682 366.788C423.277 366.554 422.84 366.436 422.37 366.436C421.901 366.436 421.464 366.554 421.058 366.788C420.653 367.012 420.322 367.348 420.066 367.796C419.821 368.234 419.698 368.756 419.698 369.364C419.698 369.972 419.821 370.506 420.066 370.964C420.322 371.423 420.653 371.775 421.058 372.02C421.474 372.255 421.912 372.372 422.37 372.372C422.84 372.372 423.277 372.255 423.682 372.02C424.088 371.786 424.413 371.444 424.658 370.996C424.914 370.538 425.042 370.004 425.042 369.396ZM433.838 364.852C434.51 364.852 435.107 364.996 435.63 365.284C436.163 365.572 436.579 365.999 436.878 366.564C437.187 367.13 437.342 367.812 437.342 368.612V373.812H435.534V368.884C435.534 368.095 435.337 367.492 434.942 367.076C434.547 366.65 434.009 366.436 433.326 366.436C432.643 366.436 432.099 366.65 431.694 367.076C431.299 367.492 431.102 368.095 431.102 368.884V373.812H429.278V361.972H431.102V366.02C431.411 365.647 431.801 365.359 432.27 365.156C432.75 364.954 433.273 364.852 433.838 364.852Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                             <path
                                 d="M70.7467 342.268H74.5067V343.74H68.9227V332.62H70.7467V342.268ZM79.856 343.884C79.024 343.884 78.272 343.698 77.6 343.324C76.928 342.94 76.4 342.407 76.016 341.724C75.632 341.031 75.44 340.231 75.44 339.324C75.44 338.428 75.6374 337.634 76.032 336.94C76.4267 336.247 76.9654 335.714 77.648 335.34C78.3307 334.967 79.0934 334.78 79.936 334.78C80.7787 334.78 81.5414 334.967 82.224 335.34C82.9067 335.714 83.4454 336.247 83.84 336.94C84.2347 337.634 84.432 338.428 84.432 339.324C84.432 340.22 84.2294 341.015 83.824 341.708C83.4187 342.402 82.864 342.94 82.16 343.324C81.4667 343.698 80.6987 343.884 79.856 343.884ZM79.856 342.3C80.3254 342.3 80.7627 342.188 81.168 341.964C81.584 341.74 81.92 341.404 82.176 340.956C82.432 340.508 82.56 339.964 82.56 339.324C82.56 338.684 82.4374 338.146 82.192 337.708C81.9467 337.26 81.6214 336.924 81.216 336.7C80.8107 336.476 80.3734 336.364 79.904 336.364C79.4347 336.364 78.9974 336.476 78.592 336.7C78.1974 336.924 77.8827 337.26 77.648 337.708C77.4134 338.146 77.296 338.684 77.296 339.324C77.296 340.274 77.536 341.01 78.016 341.532C78.5067 342.044 79.12 342.3 79.856 342.3ZM98.0752 334.924L95.3392 343.74H93.4192L91.6432 337.228L89.8672 343.74H87.9472L85.1952 334.924H87.0512L88.8912 342.012L90.7632 334.924H92.6672L94.4592 341.98L96.2832 334.924H98.0752Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                             <path
                                 d="M114.571 372.34H118.331V373.812H112.747V362.692H114.571V372.34ZM123.68 373.957C122.848 373.957 122.096 373.77 121.424 373.396C120.752 373.012 120.224 372.479 119.84 371.796C119.456 371.103 119.264 370.303 119.264 369.396C119.264 368.5 119.462 367.706 119.856 367.012C120.251 366.319 120.79 365.786 121.472 365.412C122.155 365.039 122.918 364.852 123.76 364.852C124.603 364.852 125.366 365.039 126.048 365.412C126.731 365.786 127.27 366.319 127.664 367.012C128.059 367.706 128.256 368.5 128.256 369.396C128.256 370.292 128.054 371.087 127.648 371.78C127.243 372.474 126.688 373.012 125.984 373.396C125.291 373.77 124.523 373.957 123.68 373.957ZM123.68 372.372C124.15 372.372 124.587 372.26 124.992 372.036C125.408 371.812 125.744 371.476 126 371.028C126.256 370.58 126.384 370.036 126.384 369.396C126.384 368.756 126.262 368.218 126.016 367.78C125.771 367.332 125.446 366.996 125.04 366.772C124.635 366.548 124.198 366.436 123.728 366.436C123.259 366.436 122.822 366.548 122.416 366.772C122.022 366.996 121.707 367.332 121.472 367.78C121.238 368.218 121.12 368.756 121.12 369.396C121.12 370.346 121.36 371.082 121.84 371.604C122.331 372.116 122.944 372.372 123.68 372.372ZM141.899 364.997L139.163 373.812H137.243L135.467 367.3L133.691 373.812H131.771L129.019 364.997H130.875L132.715 372.084L134.587 364.997H136.491L138.283 372.052L140.107 364.997H141.899Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                             <path
                                 d="M62.8587 177.644L58.7627 188.812H56.0427L51.9467 177.644H54.3467L57.4187 186.524L60.4747 177.644H62.8587ZM63.6257 184.348C63.6257 183.452 63.8017 182.658 64.1537 181.964C64.5163 181.271 65.0017 180.738 65.6097 180.365C66.2283 179.991 66.9163 179.804 67.6737 179.804C68.335 179.804 68.911 179.938 69.4017 180.204C69.903 180.471 70.303 180.807 70.6017 181.212V179.948H72.8577V188.812H70.6017V187.516C70.3137 187.932 69.9137 188.279 69.4017 188.556C68.9003 188.823 68.319 188.957 67.6577 188.957C66.911 188.957 66.2283 188.765 65.6097 188.38C65.0017 187.996 64.5163 187.458 64.1537 186.764C63.8017 186.06 63.6257 185.255 63.6257 184.348ZM70.6017 184.38C70.6017 183.836 70.495 183.372 70.2817 182.988C70.0683 182.594 69.7803 182.295 69.4177 182.092C69.055 181.879 68.6657 181.772 68.2497 181.772C67.8337 181.772 67.4497 181.874 67.0977 182.076C66.7457 182.279 66.4577 182.578 66.2337 182.972C66.0203 183.356 65.9137 183.815 65.9137 184.348C65.9137 184.882 66.0203 185.351 66.2337 185.756C66.4577 186.151 66.7457 186.455 67.0977 186.668C67.4603 186.882 67.8443 186.988 68.2497 186.988C68.6657 186.988 69.055 186.887 69.4177 186.684C69.7803 186.471 70.0683 186.172 70.2817 185.788C70.495 185.394 70.6017 184.924 70.6017 184.38ZM77.2854 176.972V188.812H75.0454V176.972H77.2854ZM87.8665 179.948V188.812H85.6105V187.692C85.3225 188.076 84.9439 188.38 84.4745 188.604C84.0159 188.818 83.5145 188.925 82.9705 188.925C82.2772 188.925 81.6639 188.78 81.1305 188.492C80.5972 188.194 80.1759 187.762 79.8665 187.196C79.5679 186.62 79.4185 185.938 79.4185 185.148V179.948H81.6585V184.828C81.6585 185.532 81.8345 186.076 82.1865 186.461C82.5385 186.834 83.0185 187.02 83.6265 187.02C84.2452 187.02 84.7305 186.834 85.0825 186.461C85.4345 186.076 85.6105 185.532 85.6105 184.828V179.948H87.8665ZM98.3167 184.188C98.3167 184.508 98.2953 184.796 98.2527 185.052H91.7727C91.826 185.692 92.05 186.194 92.4447 186.556C92.8393 186.919 93.3247 187.1 93.9007 187.1C94.7327 187.1 95.3247 186.743 95.6767 186.028H98.0927C97.8367 186.882 97.346 187.586 96.6207 188.14C95.8953 188.684 95.0047 188.957 93.9487 188.957C93.0953 188.957 92.3273 188.77 91.6447 188.396C90.9727 188.012 90.4447 187.474 90.0607 186.78C89.6873 186.087 89.5007 185.287 89.5007 184.38C89.5007 183.463 89.6873 182.658 90.0607 181.964C90.434 181.271 90.9567 180.738 91.6287 180.365C92.3007 179.991 93.074 179.804 93.9487 179.804C94.7913 179.804 95.5433 179.986 96.2047 180.348C96.8767 180.711 97.394 181.228 97.7567 181.9C98.13 182.562 98.3167 183.324 98.3167 184.188ZM95.9967 183.548C95.986 182.972 95.778 182.514 95.3727 182.172C94.9673 181.82 94.4713 181.644 93.8847 181.644C93.33 181.644 92.8607 181.815 92.4767 182.156C92.1033 182.487 91.874 182.951 91.7887 183.548H95.9967Z"
                                 fill="var(--primary-500)" />
@@ -546,18 +540,18 @@
                                 fill="var(--primary-500)" />
                             <path
                                 d="M112.254 4.55071C111.863 4.16018 111.23 4.16018 110.84 4.55071L104.476 10.9147C104.085 11.3052 104.085 11.9384 104.476 12.3289C104.866 12.7194 105.499 12.7194 105.89 12.3289L111.547 6.67203L117.204 12.3289C117.594 12.7194 118.227 12.7194 118.618 12.3289C119.008 11.9384 119.008 11.3052 118.618 10.9147L112.254 4.55071ZM110.547 5.25781L110.547 350.74L112.547 350.74L112.547 5.25781L110.547 5.25781Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                             <path
                                 d="M454.275 350.438C454.666 350.047 454.666 349.414 454.275 349.023L447.912 342.659C447.521 342.269 446.888 342.269 446.497 342.659C446.107 343.05 446.107 343.683 446.497 344.074L452.154 349.73L446.497 355.387C446.107 355.778 446.107 356.411 446.497 356.802C446.888 357.192 447.521 357.192 447.912 356.802L454.275 350.438ZM453.568 348.73L111.547 348.73V350.73L453.568 350.73V348.73Z"
-                                fill="var(--gray-950)" />
+                                fill="var(--zinc-950)" />
                         </svg>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Hypothesis</div>
-                <div class="text-[var(--gray-900)] text-base">We think Marketing is very important for PSE
+            <div class="flex flex-col gap-6">
+                <div class="font-bold text-[var(--text-dark)] text-2xl">Hypothesis</div>
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">We think Marketing is very important for PSE
                     Retail Holdings. We want to make the campaign process easy and faster for the company. To do that,
                     we need a ready-made template that the marketing team can use without needing a design review. They
                     can easily upload the templates, use drag and drop styled-components, make content changes, and get
@@ -566,29 +560,30 @@
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-20 inverse full-bleed-inverse">
-            <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Develop</div>
-                <div class="flex gap-8">
-                    <svg width="406" height="198" viewBox="0 0 406 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex flex-col py-10 md:py-20 gap-6 inverse full-bleed-inverse">
+            <div class="flex flex-col gap-6">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Develop</div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M289.672 9.63995L202.836 96.4757C201.271 98.0407 201.274 100.579 202.843 102.14L289.679 188.526C292.202 191.036 296.5 189.249 296.5 185.69V12.4684C296.5 8.90476 292.191 7.12009 289.672 9.63995Z"
                             fill="url(#paint0_linear_310_299)" />
                         <path
                             d="M8.91959 100.201L0 109.121C1.17289 110.294 3.07453 110.294 4.24742 109.121L11.0433 102.325L8.91959 100.201Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M394.586 102.75L401.382 109.546C402.555 110.719 404.456 110.719 405.629 109.546L396.71 100.626L394.586 102.75Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M15.7155 97.6528L13.5918 95.5291L99.2992 9.82167C104.275 4.8455 112.343 4.8455 117.319 9.82167L195.394 87.8962C199.375 91.8771 205.829 91.8771 209.81 87.8962L287.885 9.82167C292.861 4.8455 300.929 4.8455 305.905 9.82166L391.612 95.5291L389.489 97.6528L304.103 12.2671C300.122 8.28613 293.668 8.28613 289.687 12.2671L211.612 90.3416C206.636 95.3178 198.568 95.3178 193.592 90.3416L115.517 12.2671C111.537 8.28613 105.082 8.28613 101.101 12.2671L15.7155 97.6528Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M101.316 185.99L4.24415 88.7376C3.07437 87.5657 1.17541 87.5658 0.00585938 88.738L99.5115 188.43C104.49 193.418 112.573 193.417 117.55 188.428L195.396 110.407C199.379 106.415 205.846 106.415 209.829 110.407L287.675 188.428C292.653 193.417 300.735 193.418 305.714 188.429L405.21 88.738C404.04 87.5659 402.142 87.5657 400.972 88.7377L303.91 185.99C299.927 189.98 293.461 189.98 289.478 185.988L211.633 107.968C206.654 102.978 198.571 102.978 193.592 107.968L115.747 185.989C111.764 189.98 105.299 189.981 101.316 185.99Z"
-                            fill="var(--gray-950)" />
-                        <path d="M108.309 8.03223L108.309 189.822" stroke="var(--gray-950)" stroke-width="3.39794"
+                            fill="var(--zinc-950)" />
+                        <path d="M108.309 8.03223L108.309 189.822" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
-                        <path d="M296.895 8.03223L296.895 189.822" stroke="var(--gray-950)" stroke-width="3.39794"
+                        <path d="M296.895 8.03223L296.895 189.822" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
                         <defs>
                             <linearGradient id="paint0_linear_310_299" x1="296.5" y1="99.0615" x2="200" y2="99.0615"
@@ -599,8 +594,8 @@
                         </defs>
                     </svg>
 
-                    <div class="text-[var(--gray-900)] text-base">In develop step, I’m trying to <span
-                            class="font-semibold">develop sketches</span> for the ideas helps me to solve the users
+                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">In develop step, I’m trying to <span
+                            class="font-semibold text-[var(--text-dark)]">develop sketches</span> for the ideas helps me to solve the users
                         problems.
                     </div>
                 </div>
@@ -611,29 +606,30 @@
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-20">
+        <div class="flex flex-col py-10 md:py-20 gap-6">
             <div class="flex flex-col gap-8">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Deliver</div>
-                <div class="flex gap-8">
-                    <svg width="406" height="198" viewBox="0 0 406 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Deliver</div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M303.828 188.138L390.664 101.303C392.229 99.7376 392.226 97.1993 390.657 95.6384L303.821 9.25253C301.298 6.74274 297 8.52967 297 12.0883L297 185.31C297 188.874 301.309 190.658 303.828 188.138Z"
                             fill="url(#paint0_linear_310_319)" />
                         <path
                             d="M8.91959 99.8564L0 108.776C1.17289 109.949 3.07453 109.949 4.24742 108.776L11.0433 101.98L8.91959 99.8564Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M394.586 102.405L401.382 109.201C402.555 110.374 404.456 110.374 405.629 109.201L396.71 100.281L394.586 102.405Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M15.7155 97.308L13.5918 95.1843L99.2992 9.47694C104.275 4.50078 112.343 4.50077 117.319 9.47694L195.394 87.5515C199.375 91.5324 205.829 91.5324 209.81 87.5515L287.885 9.47694C292.861 4.50078 300.929 4.50077 305.905 9.47693L391.612 95.1843L389.489 97.308L304.103 11.9223C300.122 7.9414 293.668 7.94141 289.687 11.9223L211.612 89.9969C206.636 94.973 198.568 94.973 193.592 89.9969L115.517 11.9223C111.537 7.9414 105.082 7.9414 101.101 11.9223L15.7155 97.308Z"
-                            fill="var(--gray-950)" />
+                            fill="var(--zinc-950)" />
                         <path
                             d="M101.316 185.645L4.24415 88.3929C3.07437 87.2209 1.17541 87.2211 0.00585938 88.3933L99.5115 188.085C104.49 193.073 112.573 193.073 117.55 188.084L195.396 110.062C199.379 106.071 205.846 106.071 209.829 110.062L287.675 188.083C292.653 193.072 300.735 193.073 305.714 188.085L405.21 88.3933C404.04 87.2211 402.142 87.221 400.972 88.393L303.91 185.645C299.927 189.636 293.461 189.635 289.478 185.644L211.633 107.623C206.654 102.633 198.571 102.633 193.592 107.623L115.747 185.644C111.764 189.635 105.299 189.636 101.316 185.645Z"
-                            fill="var(--gray-950)" />
-                        <path d="M108.309 7.6875L108.309 189.477" stroke="var(--gray-950)" stroke-width="3.39794"
+                            fill="var(--zinc-950)" />
+                        <path d="M108.309 7.6875L108.309 189.477" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
-                        <path d="M296.895 7.6875L296.895 189.477" stroke="var(--gray-950)" stroke-width="3.39794"
+                        <path d="M296.895 7.6875L296.895 189.477" stroke="var(--zinc-950)" stroke-width="3.39794"
                             stroke-linecap="round" stroke-dasharray="6.8 6.8" />
                         <defs>
                             <linearGradient id="paint0_linear_310_319" x1="297" y1="98.7168" x2="393.5" y2="98.7168"
@@ -645,8 +641,8 @@
                     </svg>
 
 
-                    <div class="text-[var(--gray-900)] text-base">In deliver step, I’m trying to <span
-                            class="font-semibold">create a high fidelity prototype with interaction</span> to helps us
+                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">In deliver step, I’m trying to <span
+                            class="font-semibold text-[var(--text-dark)]">create a high fidelity prototype with interaction</span> to helps us
                         test the usability with a real users.
                     </div>
                 </div>
@@ -655,28 +651,27 @@
             <div class="flex flex-col gap-8">
                 <div class="flex flex-col w-full gap-4">
                     <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">GIF goes here</div>
-                    <p class="text-[var(--gray-600)] flex justify-center">Flow Name</p>
+                    <p class="text-[var(--zinc-600)] flex justify-center">Flow Name</p>
                 </div>
                 <div class="flex flex-col w-full gap-4">
                     <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">GIF goes here</div>
-                    <p class="text-[var(--gray-600)] flex justify-center">Flow Name</p>
+                    <p class="text-[var(--zinc-600)] flex justify-center">Flow Name</p>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col py-40 gap-8 inverse full-bleed-inverse">
-            <div class="font-bold text-[var(--gray-600)] text-2xl">Conclusion & Developer Handoff</div>
+        <div class="flex flex-col py-10 md:py-20 gap-6 inverse full-bleed-inverse">
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Conclusion & Developer Handoff</div>
             <div class="flex flex-col gap-4">
-                <div class="text-[var(--gray-900)] text-base">During the final stage of the design process, we
-                    transitioned into the developer handoff phase for the "Save Food, Reduce Waste" app. It involved a
-                    series of collaborative meetings where we reviewed the designs and discussed the implementation details,
-                    ensuring a smooth transition from design to development. The use of prototypes played a crucial role in
-                    facilitating these discussions, allowing us to demonstrate and fine-tune interactions and user flows.
-                </div>
-                <div class="text-[var(--gray-900)] text-base">Overall, the "Save Food, Reduce Waste" project was a
-                    rewarding experience. It provided opportunities to collaborate with talented individuals with extensive
-                    knowledge. The enthusiasm and passion that surrounded this project made it truly enjoyable, and I am
-                    proud of the collective effort we put into creating a meaningful and impactful solution.
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">After finalizing the design iterations, I moved to the
+                    next stage, which involved transitioning the designs to the development phase. We conducted multiple
+                    meetings to go through the design and discuss how some interactions would work on the design.
+                    Creating prototypes proved to be immensely beneficial during these discussions. In the initial
+                    stages, we actively engaged cross-functional team members in product meetings, ensuring their
+                    involvement in the solution and making it easier for us all to conclude the design phase
+                    successfully. Recognizing that the developers intended to use React for the application alongside
+                    their framework, I aligned my designs with their Tailwind-based design system, which made their life
+                    much easier.
                 </div>
             </div>
         </div>
