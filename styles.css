@@ -1,6 +1,6 @@
 /* Typography Configuration */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
 * {
     font-family: "Archivo", serif;
@@ -43,10 +43,10 @@ body {
     --zinc-900: #1a1a1e;
     --zinc-950: #09090b;
 
-    --pse-gradient1: #FA5B4F;
+    --pse-gradient1: #fa5b4f;
     --pse-gradient2: #bd182f;
-    --corona-gradient1: #911A6C;
-    --corona-gradient2: #D41459;
+    --corona-gradient1: #911a6c;
+    --corona-gradient2: #d41459;
 
     --text-dark: var(--zinc-950);
     --text-light: var(--zinc-50);
@@ -63,6 +63,7 @@ body {
 .dark-mode {
     --white: #000000;
     --black: #ffffff;
+    --nav-grad: #643733;
 
     --primary-950: #f5f0ff;
     --primary-900: #ede4ff;
@@ -93,10 +94,9 @@ body {
     --text-secondary: var(--zinc-500);
 
     --pse-gradient1: #ff7469;
-    --pse-gradient2: #F22E49;
+    --pse-gradient2: #f22e49;
     --corona-gradient1: #fcabe9;
     --corona-gradient2: #f1438f;
-
 }
 
 /* Smooth Scrolling */
@@ -126,6 +126,7 @@ html {
 .resume-btn:hover {
     border-color: var(--primary-600);
     transition: all 300ms ease;
+
     .btn-text {
         color: var(--primary-900);
         transition: all 300ms ease;
@@ -164,4 +165,9 @@ html {
 .full-bleed-inverse {
     box-shadow: 0 0 0 100vmax var(--zinc-100);
     clip-path: inset(0 -100vmax);
+}
+
+.displacement {
+    backdrop-filter: url(#displacement);
+    -webkit-backdrop-filter: url(#displacement);
 }
