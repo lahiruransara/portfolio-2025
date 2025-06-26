@@ -1,5 +1,6 @@
 const cursor = document.querySelector(".cursor");
 const btns = document.querySelectorAll(".hoverbtn");
+const shrinkBtns = document.querySelectorAll(".shrinkbtn");
 
 const cursorSize = 8;
 let mouseX = 0;
@@ -34,5 +35,15 @@ btns.forEach(btn => {
 
   btn.addEventListener("mouseleave", () => {
     cursor.classList.remove("large");
+  });
+});
+
+shrinkBtns.forEach(btn => {
+  btn.addEventListener("mouseenter", () => {
+    cursor.classList.add("small");
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    cursor.classList.remove("small");
   });
 });
