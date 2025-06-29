@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Campaign Builder Manager</title>
 </head>
 
 <body class="bg-[var(--zinc-50)]">
-
     <!-- cursor -->
     <div class="cursor hidden lg:block"></div>
 
@@ -38,7 +37,6 @@
     </svg>
 
     <div class="custom-container mx-auto">
-
         <!-- Navigation -->
         <div class="nav fixed z-[999] w-[90%]">
             <div class="flex justify-center items-center py-10">
@@ -46,14 +44,16 @@
                     <div class="left-items cursor-pointer">
                         <div class="flex items-center gap-2">
                             <div class="logo rounded-full border-1 border-[var(--black)] shadow-xl">
-                                <img src="Images/dp2.png" alt="log_dp" class="object-cover bg-no-repeat rounded-full">
+                                <img src="Images/dp2.png" alt="log_dp" class="object-cover bg-no-repeat rounded-full" />
                             </div>
                             <div class="flex flex-col gap-2">
                                 <p class="font-bold text-xl text-[var(--text-dark)] leading-none text-shadow-lg">
-                                    Lahiru&nbsp;Ransara</p>
+                                    Lahiru&nbsp;Ransara
+                                </p>
                                 <p
                                     class="font-regular text-base text-[var(--text-secondary)] leading-none text-shadow-lg">
-                                    UX Designer</p>
+                                    UX Designer
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -62,15 +62,14 @@
                 <div class="spacer w-full"></div>
 
                 <div class="right-items flex items-center gap-6 p-2">
-
                     <!-- Photography -->
                     <div
                         class="flex justify-center items-center w-[170px] h-[40px] rounded-full cursor-pointer hoverbtn">
-
                         <!-- Text Layer -->
                         <p
                             class="absolute z-3 w-[170px] h-[40px] content-center text-center font-regular text-base leading-none text-[var(--text-dark)] opacity-80 hover:text-[var(--text-light)] duration-300 transition-colors ease-in-out">
-                            Photography</p>
+                            Photography
+                        </p>
 
                         <!-- Border & Shadow Layer -->
                         <svg class="absolute z-2 top-[32px] pointer-events-none" width="234" height="104"
@@ -119,7 +118,6 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-
 
                         <!-- Effects Layer -->
                         <div class="displacement w-full h-full rounded-full"></div>
@@ -200,56 +198,107 @@
             </div>
         </div>
 
+        <!-- Header -->
+        <div class="relative flex items-center justify-center w-full h-auto pt-[136px]">
+            <!-- BG Cover -->
+            <div class="absolute top-[136px] h-[720px] w-full z-[-999] overflow-hidden">
+                <img class="absolute w-full h-full object-cover object-center z-0 
+           [mask-image:radial-gradient(ellipse_at_center,white_0%,transparent_60%)] 
+           [-webkit-mask-image:radial-gradient(ellipse_at_center,white_0%,transparent_60%)] 
+           [mask-repeat:no-repeat] [mask-size:100%_100%] opacity-10" src="Images/bgcover.png" alt="Masked background image" />
+            </div>
+
+             <div class="flex gap-20">
+                <!-- Logo -->
+                <div class="flex items-center justify-center w-full h-[720px] blend">
+                <svg width="320" viewBox="0 0 480 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M63.4992 31.9158C63.4992 36.3906 62.464 40.4646 60.3936 44.1379C58.3232 47.7444 55.251 50.6163 51.1769 52.7535C47.1697 54.8907 42.2942 55.9593 36.5505 55.9593H27.7346V78.5H5.4944V7.57186H36.5505C45.2329 7.57186 51.8782 9.77584 56.4865 14.1838C61.1616 18.5918 63.4992 24.5024 63.4992 31.9158ZM34.046 38.4276C38.6543 38.4276 40.9585 36.257 40.9585 31.9158C40.9585 27.5747 38.6543 25.4041 34.046 25.4041H27.7346V38.4276H34.046ZM98.3035 79.2013C89.8215 79.2013 82.8088 77.231 77.2655 73.2906C71.7889 69.2833 68.8169 63.4395 68.3494 55.7589H91.9921C92.326 59.8329 94.1293 61.87 97.4019 61.87C98.604 61.87 99.6058 61.6028 100.407 61.0685C101.276 60.4674 101.71 59.5658 101.71 58.3636C101.71 56.6939 100.808 55.3582 99.0047 54.3564C97.2015 53.2878 94.3964 52.0856 90.5895 50.7499C86.048 49.147 82.2745 47.5775 79.2691 46.0414C76.3305 44.5052 73.7925 42.2679 71.6553 39.3292C69.5181 36.3906 68.4829 32.6171 68.5497 28.0088C68.5497 23.4005 69.7185 19.4934 72.0561 16.2876C74.4604 13.015 77.6996 10.5439 81.7736 8.87421C85.9144 7.20452 90.5562 6.36968 95.6988 6.36968C104.381 6.36968 111.26 8.3733 116.336 12.3805C121.479 16.3878 124.184 22.0313 124.451 29.3111H100.507C100.441 27.3075 99.9398 25.8716 99.0047 25.0033C98.0697 24.1351 96.9343 23.701 95.5986 23.701C94.6636 23.701 93.8955 24.0349 93.2944 24.7028C92.6933 25.3039 92.3928 26.1721 92.3928 27.3075C92.3928 28.9104 93.261 30.2462 94.9975 31.3148C96.8008 32.3166 99.6392 33.5521 103.513 35.0214C107.988 36.6911 111.661 38.294 114.533 39.8301C117.471 41.3662 120.009 43.5034 122.147 46.2417C124.284 48.98 125.352 52.4195 125.352 56.5604C125.352 60.9015 124.284 64.8086 122.147 68.2815C120.009 71.6877 116.904 74.3592 112.83 76.296C108.756 78.2329 103.914 79.2013 98.3035 79.2013ZM155.407 25.3039V34.0196H177.446V50.7499H155.407V60.768H180.452V78.5H133.166V7.57186H180.452V25.3039H155.407Z"
+                        fill="#F12848" />
+                    <path
+                        d="M209.994 33.3472L204.208 23.1287H201.729V33.3472H196.469V7.12479H206.312C208.341 7.12479 210.069 7.48795 211.496 8.21426C212.924 8.91553 213.988 9.87977 214.69 11.107C215.416 12.3092 215.779 13.6616 215.779 15.1643C215.779 16.8924 215.278 18.4578 214.276 19.8603C213.275 21.2378 211.784 22.1895 209.806 22.7155L216.08 33.3472H209.994ZM201.729 19.1841H206.124C207.552 19.1841 208.616 18.846 209.317 18.1697C210.019 17.4685 210.369 16.5042 210.369 15.277C210.369 14.0748 210.019 13.1482 209.317 12.497C208.616 11.8208 207.552 11.4827 206.124 11.4827H201.729V19.1841ZM225.796 11.37V17.9443H234.624V22.1144H225.796V29.0644H235.751V33.3472H220.536V7.08722H235.751V11.37H225.796ZM258.375 7.12479V11.37H251.388V33.3472H246.128V11.37H239.141V7.12479H258.375ZM278.292 28.3506H267.848L266.12 33.3472H260.597L270.027 7.08722H276.151L285.58 33.3472H280.02L278.292 28.3506ZM276.864 24.143L273.07 13.1732L269.276 24.143H276.864ZM294.364 7.12479V33.3472H289.105V7.12479H294.364ZM304.82 29.1771H313.461V33.3472H299.561V7.12479H304.82V29.1771Z"
+                        fill="#5F5F5F" />
+                    <path
+                        d="M218.221 52.43V78.6523H212.961V67.4947H201.729V78.6523H196.469V52.43H201.729V63.2119H212.961V52.43H218.221ZM235.57 78.9153C233.115 78.9153 230.861 78.3393 228.807 77.1872C226.754 76.0351 225.126 74.4447 223.924 72.4161C222.721 70.3624 222.12 68.0457 222.12 65.466C222.12 62.9114 222.721 60.6198 223.924 58.5911C225.126 56.5374 226.754 54.9345 228.807 53.7824C230.861 52.6303 233.115 52.0543 235.57 52.0543C238.049 52.0543 240.303 52.6303 242.332 53.7824C244.386 54.9345 246.001 56.5374 247.178 58.5911C248.38 60.6198 248.981 62.9114 248.981 65.466C248.981 68.0457 248.38 70.3624 247.178 72.4161C246.001 74.4447 244.386 76.0351 242.332 77.1872C240.278 78.3393 238.024 78.9153 235.57 78.9153ZM235.57 74.2193C237.148 74.2193 238.538 73.8687 239.74 73.1674C240.942 72.4411 241.881 71.4143 242.557 70.0869C243.234 68.7595 243.572 67.2192 243.572 65.466C243.572 63.7129 243.234 62.1851 242.557 60.8827C241.881 59.5553 240.942 58.541 239.74 57.8397C238.538 57.1385 237.148 56.7878 235.57 56.7878C233.992 56.7878 232.589 57.1385 231.362 57.8397C230.16 58.541 229.221 59.5553 228.544 60.8827C227.868 62.1851 227.53 63.7129 227.53 65.466C227.53 67.2192 227.868 68.7595 228.544 70.0869C229.221 71.4143 230.16 72.4411 231.362 73.1674C232.589 73.8687 233.992 74.2193 235.57 74.2193ZM258.154 74.4823H266.794V78.6523H252.894V52.43H258.154V74.4823ZM279.304 52.43C282.059 52.43 284.476 52.9684 286.555 54.0454C288.658 55.1223 290.274 56.6626 291.401 58.6662C292.553 60.6448 293.129 62.949 293.129 65.5787C293.129 68.2085 292.553 70.5126 291.401 72.4912C290.274 74.4447 288.658 75.96 286.555 77.0369C284.476 78.1139 282.059 78.6523 279.304 78.6523H270.137V52.43H279.304ZM279.116 74.1818C281.871 74.1818 284 73.4304 285.503 71.9277C287.005 70.425 287.757 68.3087 287.757 65.5787C287.757 62.8488 287.005 60.7199 285.503 59.1922C284 57.6394 281.871 56.863 279.116 56.863H275.397V74.1818H279.116ZM302.325 52.43V78.6523H297.066V52.43H302.325ZM329.95 78.6523H324.69L312.781 60.6573V78.6523H307.522V52.3924H312.781L324.69 70.425V52.3924H329.95V78.6523ZM353.405 60.3192C352.804 59.2172 351.978 58.3782 350.926 57.8022C349.874 57.2261 348.647 56.9381 347.244 56.9381C345.691 56.9381 344.314 57.2887 343.112 57.99C341.91 58.6913 340.97 59.6931 340.294 60.9954C339.618 62.2978 339.28 63.8005 339.28 65.5036C339.28 67.2568 339.618 68.7845 340.294 70.0869C340.995 71.3892 341.96 72.391 343.187 73.0923C344.414 73.7936 345.842 74.1442 347.47 74.1442C349.473 74.1442 351.114 73.6182 352.391 72.5663C353.668 71.4894 354.507 69.9992 354.908 68.0958H345.892V64.076H360.092V68.6593C359.742 70.4876 358.99 72.1781 357.838 73.731C356.686 75.2838 355.196 76.536 353.368 77.4877C351.565 78.4144 349.536 78.8778 347.282 78.8778C344.752 78.8778 342.461 78.3142 340.407 77.1872C338.378 76.0351 336.775 74.4447 335.598 72.4161C334.446 70.3874 333.87 68.0832 333.87 65.5036C333.87 62.9239 334.446 60.6198 335.598 58.5911C336.775 56.5374 338.378 54.947 340.407 53.82C342.461 52.6679 344.74 52.0919 347.244 52.0919C350.2 52.0919 352.767 52.8182 354.946 54.2708C357.125 55.6984 358.627 57.7145 359.454 60.3192H353.405ZM373.038 78.9153C371.209 78.9153 369.556 78.6023 368.079 77.9761C366.626 77.35 365.474 76.4484 364.622 75.2712C363.771 74.0941 363.333 72.7041 363.307 71.1012H368.943C369.018 72.1781 369.393 73.0297 370.07 73.6558C370.771 74.2819 371.723 74.595 372.925 74.595C374.152 74.595 375.116 74.307 375.818 73.731C376.519 73.1299 376.869 72.3535 376.869 71.4017C376.869 70.6253 376.632 69.9867 376.156 69.4858C375.68 68.9849 375.079 68.5967 374.352 68.3212C373.651 68.0206 372.674 67.695 371.422 67.3444C369.719 66.8435 368.329 66.3551 367.252 65.8793C366.2 65.3784 365.286 64.6395 364.51 63.6628C363.758 62.661 363.383 61.3336 363.383 59.6806C363.383 58.1278 363.771 56.7753 364.547 55.6232C365.324 54.4712 366.413 53.5946 367.816 52.9935C369.218 52.3674 370.821 52.0543 372.624 52.0543C375.329 52.0543 377.521 52.718 379.199 54.0454C380.902 55.3477 381.841 57.176 382.016 59.5303H376.231C376.181 58.6287 375.793 57.8898 375.066 57.3138C374.365 56.7127 373.426 56.4122 372.249 56.4122C371.222 56.4122 370.395 56.6751 369.769 57.2011C369.168 57.727 368.868 58.4909 368.868 59.4927C368.868 60.194 369.093 60.7826 369.544 61.2584C370.02 61.7092 370.596 62.0849 371.272 62.3855C371.973 62.661 372.95 62.9865 374.202 63.3622C375.905 63.8631 377.295 64.364 378.372 64.8649C379.449 65.3658 380.376 66.1172 381.152 67.119C381.929 68.1208 382.317 69.4357 382.317 71.0636C382.317 72.4662 381.954 73.7685 381.227 74.9707C380.501 76.1729 379.437 77.1371 378.034 77.8634C376.632 78.5647 374.966 78.9153 373.038 78.9153ZM392.625 73.1299L388.229 83.6864H384.848L387.29 73.1299H392.625ZM410.627 52.43V78.6523H405.367V52.43H410.627ZM438.251 78.6523H432.991L421.082 60.6573V78.6523H415.823V52.3924H421.082L432.991 70.425V52.3924H438.251V78.6523ZM442.171 65.5036C442.171 62.9239 442.747 60.6198 443.899 58.5911C445.077 56.5374 446.667 54.947 448.671 53.82C450.699 52.6679 452.966 52.0919 455.47 52.0919C458.401 52.0919 460.968 52.8432 463.172 54.3459C465.376 55.8486 466.916 57.9274 467.793 60.5822H461.744C461.143 59.3299 460.291 58.3907 459.19 57.7646C458.113 57.1385 456.86 56.8254 455.433 56.8254C453.905 56.8254 452.54 57.1886 451.338 57.9149C450.161 58.6161 449.234 59.618 448.558 60.9203C447.907 62.2227 447.581 63.7504 447.581 65.5036C447.581 67.2317 447.907 68.7595 448.558 70.0869C449.234 71.3892 450.161 72.4036 451.338 73.1299C452.54 73.8311 453.905 74.1818 455.433 74.1818C456.86 74.1818 458.113 73.8687 459.19 73.2426C460.291 72.5914 461.143 71.6397 461.744 70.3874H467.793C466.916 73.0673 465.376 75.1585 463.172 76.6612C460.993 78.1389 458.426 78.8778 455.47 78.8778C452.966 78.8778 450.699 78.3142 448.671 77.1872C446.667 76.0351 445.077 74.4447 443.899 72.4161C442.747 70.3874 442.171 68.0832 442.171 65.5036ZM474.614 78.9153C473.662 78.9153 472.873 78.6273 472.247 78.0513C471.646 77.4502 471.346 76.7113 471.346 75.8348C471.346 74.9582 471.646 74.2319 472.247 73.6558C472.873 73.0547 473.662 72.7542 474.614 72.7542C475.541 72.7542 476.305 73.0547 476.906 73.6558C477.507 74.2319 477.807 74.9582 477.807 75.8348C477.807 76.7113 477.507 77.4502 476.906 78.0513C476.305 78.6273 475.541 78.9153 474.614 78.9153Z"
+                        fill="#5F5F5F" />
+                </svg>
+                </div>
+                
+                <!-- Mockup Image -->
+                <div class="flex items-center justify-center w-full h-[720px] blend">
+                <img src="/Images/PSE.png" alt="" />
+            </div>
+            
+             </div>
+            
+        </div>
+
         <!-- Overview -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Overview</div>
-            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Campaign Builder Manager
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                Overview
             </div>
-            <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
-                The new campaign manager helps the internal
-                Marketing team to easily build any campaign easily with branding guidelines automatically. We are trying
-                to reduce the
-                design review process to <span class="font-semibold text-[var(--text-dark)]">ZERO</span> and a way
-                update the subscriber’s list
-                easily.</div>
+            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                Campaign Builder Manager
+            </div>
+            <div
+                class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+                The new campaign manager helps the internal Marketing team to easily
+                build any campaign easily with branding guidelines automatically. We
+                are trying to reduce the design review process to
+                <span class="font-semibold text-[var(--text-dark)]">ZERO</span> and a
+                way update the subscriber’s list easily.
+            </div>
         </div>
 
         <!-- Problem Statement -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Problem</div>
-            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Understanding the
-                Project</div>
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                Problem
+            </div>
+            <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                Understanding the Project
+            </div>
             <div class="flex flex-col gap-4">
                 <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                    I use the <span class="font-semibold text-[var(--text-dark)]">"5 Ws and
-                        H"
-                        approach,</span> ensuring I cover the <span class="font-semibold text-[var(--text-dark)]">who,
-                        what, where, when,
-                        why,</span> and <span class="font-semibold text-[var(--text-dark)]">how</span> of the problem.
+                    I use the
+                    <span class="font-semibold text-[var(--text-dark)]">"5 Ws and H" approach,</span>
+                    ensuring I cover the
+                    <span class="font-semibold text-[var(--text-dark)]">who, what, where, when, why,</span>
+                    and
+                    <span class="font-semibold text-[var(--text-dark)]">how</span> of
+                    the problem.
                 </div>
                 <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
-                    <span class="font-semibold text-[var(--text-dark)]">Who:</span> The marketing team at PSE Retail
-                    Holdings
-                    <br>
-                    <span class="font-semibold text-[var(--text-dark)]">What:</span> Wants better campaign builder
-                    system <br>
-                    <span class="font-semibold text-[var(--text-dark)]">Where:</span> PSE Retail Holdings marketing
-                    platforms <br>
-                    <span class="font-semibold text-[var(--text-dark)]">When:</span> When conducting business <br>
-                    <span class="font-semibold text-[var(--text-dark)]">Why:</span> to help the marketing team to easily
-                    create and update the campaigns <br>
-                    <span class="font-semibold text-[var(--text-dark)]">How:</span> by reducing design review process
+                    <span class="font-semibold text-[var(--text-dark)]">Who:</span> The
+                    marketing team at PSE Retail Holdings
+                    <br />
+                    <span class="font-semibold text-[var(--text-dark)]">What:</span>
+                    Wants better campaign builder system <br />
+                    <span class="font-semibold text-[var(--text-dark)]">Where:</span>
+                    PSE Retail Holdings marketing platforms <br />
+                    <span class="font-semibold text-[var(--text-dark)]">When:</span>
+                    When conducting business <br />
+                    <span class="font-semibold text-[var(--text-dark)]">Why:</span> to
+                    help the marketing team to easily create and update the campaigns
+                    <br />
+                    <span class="font-semibold text-[var(--text-dark)]">How:</span> by
+                    reducing design review process
                 </div>
             </div>
         </div>
 
         <!-- Design Process -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Design Process</div>
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                Design Process
+            </div>
             <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full blend">
-                The Double Diamond design model has four stages:
-                Discovery, Definition, Development and Delivery Together. <br> I’m using these steps to organize my
-                ideas and make the creative process better.</div>
+                The Double Diamond design model has four stages: Discovery,
+                Definition, Development and Delivery Together. <br />
+                I’m using these steps to organize my ideas and make the creative
+                process better.
+            </div>
             <div class="flex w-full justify-center">
                 <svg width="550" height="243" viewBox="0 0 550 243" fill="var(--zinc-950)"
                     xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +341,9 @@
         <!-- Discover -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-20 inverse full-bleed-inverse">
             <div class="flex flex-col gap-6">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Discover</div>
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    Discover
+                </div>
                 <div class="flex flex-col md:flex-row gap-8">
                     <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -325,23 +376,28 @@
                     </svg>
                     <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
                         In discover step, I’m trying to discover
-                        <span class="font-semibold text-[var(--text-dark)]">the
-                            targeted users</span> and <span class="font-semibold text-[var(--text-dark)]">their
-                            personality</span> and <span class="font-semibold text-[var(--text-dark)]">user
-                            journey</span> by meeting them in a video conference calls to
-                        know the pain points.
+                        <span class="font-semibold text-[var(--text-dark)]">the targeted users</span>
+                        and
+                        <span class="font-semibold text-[var(--text-dark)]">their personality</span>
+                        and
+                        <span class="font-semibold text-[var(--text-dark)]">user journey</span>
+                        by meeting them in a video conference calls to know the pain
+                        points.
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-6">
-                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Persona</div>
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    Persona
+                </div>
                 <div class="flex flex-col gap-6">
                     <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                        Emily Campaigns Executive at PSE Retail
-                        Holdings. She has experience using many campaign builder tools.
+                        Emily Campaigns Executive at PSE Retail Holdings. She has
+                        experience using many campaign builder tools.
                     </div>
-                    <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Meet Emily Blake
+                    <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                        Meet Emily Blake
                     </div>
                     <div class="flex flex-col md:flex-row gap-8 w-full items-center">
                         <svg class="w-full md:w-fit" width="406" height="407" viewBox="0 0 406 407" fill="none"
@@ -402,12 +458,21 @@
                             <div
                                 class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
                                 <ul class="list-disc list-inside">
-                                    <li>Emily is a campaign executive working at PSE Retail Holdings.</li>
+                                    <li>
+                                        Emily is a campaign executive working at PSE Retail
+                                        Holdings.
+                                    </li>
                                     <li>She loves listening to pop music.</li>
-                                    <li>Working on PSE Retail Holdings for +3 years in the marketing team.</li>
+                                    <li>
+                                        Working on PSE Retail Holdings for +3 years in the
+                                        marketing team.
+                                    </li>
                                     <li>Reporting to Head of Marketing.</li>
-                                    <li>She thinks that in the new design, we should improve our process to create,
-                                        update and review the campaign because now it takes a lot of time.</li>
+                                    <li>
+                                        She thinks that in the new design, we should improve our
+                                        process to create, update and review the campaign because
+                                        now it takes a lot of time.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -416,13 +481,20 @@
             </div>
 
             <div class="flex flex-col gap-6">
-                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Empathy Map</div>
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    Empathy Map
+                </div>
                 <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
                     <ul class="list-disc list-inside">
                         <li>What’s the user's main role in the PSE Retail Holdings?</li>
-                        <li>Is there any situation that impacts the daily job in a negative way?</li>
+                        <li>
+                            Is there any situation that impacts the daily job in a negative
+                            way?
+                        </li>
                         <li>What are the issues/pain points?</li>
-                        <li>What is the current process user follow to send a campaign?</li>
+                        <li>
+                            What is the current process user follow to send a campaign?
+                        </li>
                         <li>What makes the user feel happy?</li>
                     </ul>
                 </div>
@@ -433,7 +505,9 @@
                             class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                             <p class="font-semibold text-[var(--text-dark)]">SAYS:</p>
                             <ul class="list-disc list-inside text-[var(--text-secondary)]">
-                                <li>It's not easy to understand the company branding guidelines.</li>
+                                <li>
+                                    It's not easy to understand the company branding guidelines.
+                                </li>
                                 <li>It will be great if we have more designs.</li>
                             </ul>
                         </div>
@@ -443,7 +517,10 @@
                             <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>Better solution to build campaign faster.</li>
                                 <li>Have more templates with different designs.</li>
-                                <li>Can download the group of subscribers contact to target them later.</li>
+                                <li>
+                                    Can download the group of subscribers contact to target them
+                                    later.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -452,10 +529,14 @@
                             class="flex flex-col gap-1 text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                             <p class="font-semibold text-[var(--text-dark)]">DOES:</p>
                             <ul class="list-disc list-inside text-[var(--text-secondary)]">
-                                <li>Design team must review the campaign design following branding guidelines or not
-                                    before send the campaign.</li>
-                                <li>All the time the manager comes back with some mistakes saying “Not following the
-                                    branding guidelines”.</li>
+                                <li>
+                                    Design team must review the campaign design following
+                                    branding guidelines or not before send the campaign.
+                                </li>
+                                <li>
+                                    All the time the manager comes back with some mistakes
+                                    saying “Not following the branding guidelines”.
+                                </li>
                             </ul>
                         </div>
                         <div
@@ -464,7 +545,10 @@
                             <ul class="list-disc list-inside text-[var(--text-secondary)]">
                                 <li>Painful to manage the subscribers list and update it.</li>
                                 <li>Design team take more time to review any campaign.</li>
-                                <li>Not good to face same mistakes regarding branding guidelines every time.</li>
+                                <li>
+                                    Not good to face same mistakes regarding branding guidelines
+                                    every time.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -472,7 +556,9 @@
             </div>
 
             <div class="flex flex-col gap-6">
-                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">User Journey</div>
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    User Journey
+                </div>
                 <div
                     class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg">
                     <div class="flex flex-col gap-3">
@@ -484,9 +570,10 @@
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Building a new campaign content.</p>
-                                <p class="text-[var(--text-secondary)]">Must build everything manually from scratch and
-                                    apply
-                                    the branding guidelines.</p>
+                                <p class="text-[var(--text-secondary)]">
+                                    Must build everything manually from scratch and apply the
+                                    branding guidelines.
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
@@ -496,10 +583,13 @@
                             </div>
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
-                                <p class="font-semibold">Send a test campaign to internal people to review.</p>
-                                <p class="text-[var(--text-secondary)]">Send a test review to the marketing manager and
-                                    design
-                                    lead to review the content and check the branding guidelines.</p>
+                                <p class="font-semibold">
+                                    Send a test campaign to internal people to review.
+                                </p>
+                                <p class="text-[var(--text-secondary)]">
+                                    Send a test review to the marketing manager and design lead
+                                    to review the content and check the branding guidelines.
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
@@ -509,12 +599,15 @@
                             </div>
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
-                                <p class="font-semibold">Waiting for feedback from the design team and marketing
-                                    manager.</p>
-                                <p class="text-[var(--text-secondary)]">There is no visibility of when the campaign will
-                                    be
-                                    reviewed and no comments saved to check. I have to follow up personally with
-                                    managers.</p>
+                                <p class="font-semibold">
+                                    Waiting for feedback from the design team and marketing
+                                    manager.
+                                </p>
+                                <p class="text-[var(--text-secondary)]">
+                                    There is no visibility of when the campaign will be reviewed
+                                    and no comments saved to check. I have to follow up
+                                    personally with managers.
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
@@ -524,11 +617,14 @@
                             </div>
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
-                                <p class="font-semibold">Apply the changes coming based on the coming feedback and send
-                                    for the second round of review.</p>
-                                <p class="text-[var(--text-secondary)]">Take time to apply the changes and sometimes we
-                                    do
-                                    more than 2 rounds of changes.</p>
+                                <p class="font-semibold">
+                                    Apply the changes coming based on the coming feedback and
+                                    send for the second round of review.
+                                </p>
+                                <p class="text-[var(--text-secondary)]">
+                                    Take time to apply the changes and sometimes we do more than
+                                    2 rounds of changes.
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
@@ -538,10 +634,13 @@
                             </div>
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
-                                <p class="font-semibold">Select the targeted users and send the campaign.</p>
-                                <p class="text-[var(--text-secondary)]">Users are categorised by groups, select a group
-                                    means
-                                    I will send this campaign to all included users.</p>
+                                <p class="font-semibold">
+                                    Select the targeted users and send the campaign.
+                                </p>
+                                <p class="text-[var(--text-secondary)]">
+                                    Users are categorized by groups, select a group means I will
+                                    send this campaign to all included users.
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
@@ -552,9 +651,11 @@
                             <div
                                 class="flex flex-col text-base md:text-xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
                                 <p class="font-semibold">Analyze campaign report.</p>
-                                <p class="text-[var(--text-secondary)]">No option to get a full list of some users that
-                                    takes
-                                    a specific action. Need to remove the unsubscribes list manually.</p>
+                                <p class="text-[var(--text-secondary)]">
+                                    No option to get a full list of some users that takes a
+                                    specific action. Need to remove the unsubscribes list
+                                    manually.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -562,23 +663,39 @@
             </div>
 
             <div class="flex flex-col gap-8">
-                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Pain Points</div>
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    Pain Points
+                </div>
                 <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
                     <ul class="list-disc list-inside">
-                        <li>Wasting time to review whether the design is following the brand guideline or not.</li>
+                        <li>
+                            Wasting time to review whether the design is following the brand
+                            guideline or not.
+                        </li>
                         <li>Not easy to understand the branding guidelines.</li>
-                        <li>Edit the campaign design many times and the mistakes are repeatable.</li>
-                        <li>The campaign is delayed because waiting for the Design team to review it first.</li>
+                        <li>
+                            Edit the campaign design many times and the mistakes are
+                            repeatable.
+                        </li>
+                        <li>
+                            The campaign is delayed because waiting for the Design team to
+                            review it first.
+                        </li>
                         <li>Remove the unsubscribe list manually.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="flex flex-col gap-8">
-                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Expected Result</div>
+                <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    Expected Result
+                </div>
                 <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
                     <ul class="list-disc list-inside">
-                        <li>A better and easier process to create, update and review the campaign.</li>
+                        <li>
+                            A better and easier process to create, update and review the
+                            campaign.
+                        </li>
                         <li>Reduce the design review time as much as we can.</li>
                     </ul>
                 </div>
@@ -588,9 +705,11 @@
         <!-- Define -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-20">
             <div class="flex flex-col gap-6">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Define</div>
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    Define
+                </div>
                 <div class="flex flex-col md:flex-row gap-8">
-                    <svg class="w-full md:w-fit" width="406" height="197" viewBox="0 0 406 197" fill="none"
+                    <svg class="w-full md:w-fit blend" width="406" height="197" viewBox="0 0 406 197" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M114.828 187.827L201.664 100.992C203.229 99.4266 203.226 96.8883 201.657 95.3274L114.821 8.94149C112.298 6.43171 108 8.21863 108 11.7772L108 184.999C108 188.563 112.309 190.347 114.828 187.827Z"
@@ -619,64 +738,74 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">In
-                        define step, I’m trying to <span class="font-semibold text-[var(--text-dark)]">define the main
-                            pain points</span> and <span class="font-semibold text-[var(--text-dark)]">prioritize
-                            it</span> with stakeholders based on the value and effort
-                        to know which features we gonna build first based on (WSJF) Worked Shortest Job First.
+                    <div
+                        class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                        In define step, I’m trying to
+                        <span class="font-semibold text-[var(--text-dark)]">define the main pain points</span>
+                        and
+                        <span class="font-semibold text-[var(--text-dark)]">prioritize it</span>
+                        with stakeholders based on the value and effort to know which
+                        features we gonna build first based on (WSJF) Worked Shortest Job
+                        First.
                     </div>
                 </div>
             </div>
             <div class="flex flex-col gap-6">
-                <div class="font-bold text-[var(--gray-600)] text-2xl">Worked Shortest Job First (WSJF)</div>
+                <div class="font-bold text-[var(--gray-600)] text-2xl">
+                    Worked Shortest Job First (WSJF)
+                </div>
                 <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
                     <div class="flex flex-col gap-6 w-full">
                         <div class="flex items-center gap-4">
                             <div class="flex justify-center items-center h-[var(--reg)]">
                                 <div
-                                    class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
+                                    class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white blend">
                                     1
                                 </div>
                             </div>
                             <p
-                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                                Create a pre-designed templates with a company
-                                branding guidelines, by uploading a HTML file and an Images "Zip" file in one step.</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
-                                2
-                            </div>
-                            <p
-                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                                Drag and drop the styled components to the
-                                campaign builder.
+                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                                Create a pre-designed templates with a company branding
+                                guidelines, by uploading a HTML file and an Images "Zip" file
+                                in one step.
                             </p>
                         </div>
                         <div class="flex items-center gap-4">
                             <div
-                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
-                                3
+                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white blend">
+                                2
                             </div>
                             <p
-                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                                Campaign report with more details: How many
-                                links were clicked, How many bounced emails, unsubscribed users list, and more.</p>
+                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                                Drag and drop the styled components to the campaign builder.
+                            </p>
                         </div>
                         <div class="flex items-center gap-4">
                             <div
-                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white">
+                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white blend">
+                                3
+                            </div>
+                            <p
+                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                                Campaign report with more details: How many links were
+                                clicked, How many bounced emails, unsubscribed users list, and
+                                more.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--primary-500)] flex justify-center items-center text-white blend">
                                 4
                             </div>
                             <p
-                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
-                                Mass Unsubscribe: Upload the list of
-                                unsubscribes users then in one click remove them from the main list.</p>
+                                class="flex text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                                Mass Unsubscribe: Upload the list of unsubscribes users then
+                                in one click remove them from the main list.
+                            </p>
                         </div>
                     </div>
                     <div class="spacer min-w-4"></div>
-                    <div class="w-full flex items-center justify-center">
+                    <div class="w-full flex items-center justify-center blend">
                         <svg width="513" height="385" viewBox="0 0 513 385" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect opacity="0.3" x="111.547" y="19.6377" width="327.188" height="330.093"
@@ -731,13 +860,16 @@
             </div>
 
             <div class="flex flex-col gap-6">
-                <div class="font-bold text-[var(--text-dark)] text-2xl">Hypothesis</div>
-                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">We
-                    think Marketing is very important for PSE
-                    Retail Holdings. We want to make the campaign process easy and faster for the company. To do that,
-                    we need a ready-made template that the marketing team can use without needing a design review. They
-                    can easily upload the templates, use drag and drop styled-components, make content changes, and get
-                    going with the campaign.
+                <div class="font-bold text-[var(--text-dark)] text-2xl">
+                    Hypothesis
+                </div>
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                    We think Marketing is very important for PSE Retail Holdings. We
+                    want to make the campaign process easy and faster for the company.
+                    To do that, we need a ready-made template that the marketing team
+                    can use without needing a design review. They can easily upload the
+                    templates, use drag and drop styled-components, make content
+                    changes, and get going with the campaign.
                 </div>
             </div>
         </div>
@@ -745,7 +877,9 @@
         <!-- Develop -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
             <div class="flex flex-col gap-6">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Develop</div>
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    Develop
+                </div>
                 <div class="flex flex-col md:flex-row gap-8">
                     <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -777,25 +911,29 @@
                         </defs>
                     </svg>
 
-                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">In
-                        develop step, I’m trying to <span class="font-semibold text-[var(--text-dark)]">develop
-                            sketches</span> for the ideas helps me to solve the users
-                        problems.
+                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        In develop step, I’m trying to
+                        <span class="font-semibold text-[var(--text-dark)]">develop sketches</span>
+                        for the ideas helps me to solve the users problems.
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-8">
-                <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">Sketch goes here</div>
+                <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">
+                    Sketch goes here
+                </div>
             </div>
         </div>
 
         <!-- Deliver -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
             <div class="flex flex-col gap-8">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Deliver</div>
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    Deliver
+                </div>
                 <div class="flex flex-col md:flex-row gap-8">
-                    <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                    <svg class="w-full md:w-fit blend" width="406" height="198" viewBox="0 0 406 198" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M303.828 188.138L390.664 101.303C392.229 99.7376 392.226 97.1993 390.657 95.6384L303.821 9.25253C301.298 6.74274 297 8.52967 297 12.0883L297 185.31C297 188.874 301.309 190.658 303.828 188.138Z"
@@ -825,48 +963,59 @@
                         </defs>
                     </svg>
 
-
-                    <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">In
-                        deliver step, I’m trying to <span class="font-semibold text-[var(--text-dark)]">create a high
-                            fidelity prototype with interaction</span> to helps us
-                        test the usability with a real users.
+                    <div
+                        class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                        In deliver step, I’m trying to
+                        <span class="font-semibold text-[var(--text-dark)]">create a high fidelity prototype with
+                            interaction</span>
+                        to helps us test the usability with a real users.
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-8">
                 <div class="flex flex-col w-full gap-4">
-                    <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">GIF goes here</div>
-                    <p class="text-[var(--zinc-600)] flex justify-center">Flow Name</p>
+                    <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)] blend">
+                        GIF goes here
+                    </div>
+                    <p class="text-[var(--zinc-600)] flex justify-center blend">Flow Name</p>
                 </div>
                 <div class="flex flex-col w-full gap-4">
-                    <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)]">GIF goes here</div>
-                    <p class="text-[var(--zinc-600)] flex justify-center">Flow Name</p>
+                    <div class="flex justify-center w-full p-4 text-4xl text-[var(--primary-600)] blend">
+                        GIF goes here
+                    </div>
+                    <p class="text-[var(--zinc-600)] flex justify-center blend">Flow Name</p>
                 </div>
             </div>
         </div>
 
-        <!-- Conclution & Developer Handoff -->
+        <!-- Conclusion & Developer Handoff -->
         <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Conclusion & Developer Handoff</div>
+            <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                Conclusion & Developer Handoff
+            </div>
             <div class="flex flex-col gap-4">
-                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">After
-                    finalizing the design iterations, I moved to the
-                    next stage, which involved transitioning the designs to the development phase. We conducted multiple
-                    meetings to go through the design and discuss how some interactions would work on the design.
-                    Creating prototypes proved to be immensely beneficial during these discussions. In the initial
-                    stages, we actively engaged cross-functional team members in product meetings, ensuring their
-                    involvement in the solution and making it easier for us all to conclude the design phase
-                    successfully. Recognizing that the developers intended to use React for the application alongside
-                    their framework, I aligned my designs with their Tailwind-based design system, which made their life
-                    much easier.
+                <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                    After finalizing the design iterations, I moved to the next stage,
+                    which involved transitioning the designs to the development phase.
+                    We conducted multiple meetings to go through the design and discuss
+                    how some interactions would work on the design. Creating prototypes
+                    proved to be immensely beneficial during these discussions. In the
+                    initial stages, we actively engaged cross-functional team members in
+                    product meetings, ensuring their involvement in the solution and
+                    making it easier for us all to conclude the design phase
+                    successfully. Recognizing that the developers intended to use React
+                    for the application alongside their framework, I aligned my designs
+                    with their Tailwind-based design system, which made their life much
+                    easier.
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- JS Scripts -->
-        <script src="js/cursor.js"></script>
-        <script src="js/darkMode.js"></script>
+    <!-- JS Scripts -->
+    <script src="js/cursor.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 
 </html>
