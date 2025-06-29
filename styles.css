@@ -172,6 +172,7 @@ html {
 
 .inverse {
     background-color: var(--zinc-100);
+    mix-blend-mode: var(--blendmode);
 }
 
 /* .full-bleed-darker {
@@ -182,6 +183,7 @@ html {
 .full-bleed-inverse {
     box-shadow: 0 0 0 100vmax var(--zinc-100);
     clip-path: inset(0 -100vmax);
+    mix-blend-mode: var(--blendmode);
 }
 
 .displacement {
