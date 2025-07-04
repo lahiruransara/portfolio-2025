@@ -65,8 +65,7 @@ body {
   /* blend mode */
   --blendmode: multiply;
 
-  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%2309090b' /%3E%3C/svg%3E")
-      12 12,
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%2309090b' /%3E%3C/svg%3E") 12 12,
     auto;
 }
 
@@ -111,8 +110,7 @@ body {
 
   --blendmode: screen;
 
-  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%23fafafa' /%3E%3C/svg%3E")
-      12 12,
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%23fafafa' /%3E%3C/svg%3E") 12 12,
     auto;
 }
 
@@ -234,11 +232,11 @@ html {
 }
 
 .cursor-home {
-    background-color: var(--primary-500);
+  background-color: var(--primary-500);
 }
 
 .cursor-pse {
-    background-color: var(--pse-red3);
+  background-color: var(--pse-red3);
 }
 
 .blend {
@@ -255,4 +253,67 @@ html {
 
 .mix-darker {
   mix-blend-mode: plus-darker;
+}
+
+/* Mobile Navigation Button */
+.target-burger {
+  width: 40px;
+  height: 40px;
+
+  &.toggled {
+    ul.buns {
+      li.bun {
+        -webkit-transform: rotate(45deg) translateZ(0);
+        transform: rotate(45deg) translateZ(0);
+
+        &:last-child {
+          -webkit-transform: rotate(-45deg) translateZ(0);
+          transform: rotate(-45deg) translateZ(0);
+        }
+      }
+    }
+  }
+
+  ul.buns {
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    li.bun {
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: var(--text-dark);
+      top: 50%;
+      -webkit-transform: translateY(-3.75px) translateZ(0);
+      transform: translateY(-3.75px) translateZ(0);
+
+      &:last-child {
+        -webkit-transform: translateY(3.75px) translateZ(0);
+        transform: translateY(3.75px) translateZ(0);
+      }
+    }
+  }
+}
+
+nav.main-nav {
+  opacity: 0;
+  transition: all 0.3s;
+  &.toggled {
+    display: block;
+    z-index: 100;
+    opacity: 1;
+  }
+}
+
+.blur-container{
+    &.toggled{
+        -webkit-filter: blur(16px);
+        -moz-filter: blur(16px);
+        -o-filter: blur(16px);
+        -ms-filter: blur(16px);
+        filter: blur(16px);
+    }
 }
