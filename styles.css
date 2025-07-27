@@ -8,7 +8,6 @@
 
 body {
   transition: background-color 300ms ease, color 300ms ease;
-  /* cursor: url('Images/cursor.png'), auto; */
 }
 
 .font-majormono {
@@ -185,20 +184,10 @@ html {
   }
 }
 
-/* .darker {
-    background-color: var(--gray-950);
-    
-} */
-
 .inverse {
   background-color: var(--zinc-100);
   mix-blend-mode: var(--blendmode);
 }
-
-/* .full-bleed-darker {
-    box-shadow: 0 0 0 100vmax var(--gray-900);
-    clip-path: inset(0 -100vmax);
-} */
 
 .full-bleed-inverse {
   box-shadow: 0 0 0 100vmax var(--zinc-100);
