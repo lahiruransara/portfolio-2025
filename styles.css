@@ -200,11 +200,6 @@ html {
   clip-path: inset(0 -100vmax);
 }
 
-.displacement {
-  backdrop-filter: url(#displacement);
-  -webkit-backdrop-filter: url(#displacement);
-}
-
 .cursor {
   position: fixed;
   width: 200px;
