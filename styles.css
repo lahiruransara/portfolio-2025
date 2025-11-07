@@ -47,8 +47,7 @@ body {
   --pse-red2: #bd182f;
   --pse-red3: #F12848;
   --pse-red4: #E53935;
-  --corona-gradient1: #911a6c;
-  --corona-gradient2: #d41459;
+  --corona-green: #7ACF9C;
 
   --text-dark: var(--zinc-950);
   --text-light: var(--zinc-50);
@@ -104,8 +103,7 @@ body {
   --pse-red2: #f22e49;
   --pse-red3: #F12848;
   --pse-red4: #E53935;
-  --corona-gradient1: #fcabe9;
-  --corona-gradient2: #f1438f;
+  --corona-green: #7ACF9C;
 
   --blendmode: screen;
 
@@ -147,12 +145,16 @@ html {
   -webkit-text-stroke-color: var(--pse-red4);
 }
 
+.talk-corona {
+  -webkit-text-stroke-color: var(--corona-green);
+}
+
 .proj-card:hover {
-  border-color: var(--primary-300);
+  border-color: var(--primary-600);
   transition: all 300ms ease;
 }
 
-.resume-btn:hover {
+.main-btn:hover {
   border-color: var(--primary-600);
   transition: all 300ms ease;
 
@@ -168,6 +170,15 @@ html {
 
   .btn-icon {
     /* background: var(--primary-900); */
+    transition: all 300ms ease;
+  }
+}
+
+.main-btn-home:hover {
+  border-color: var(--zinc-600);
+  transition: all 300ms ease;
+  .btn-text-home {
+    color: var(--zinc-50);
     transition: all 300ms ease;
   }
 }
@@ -200,6 +211,11 @@ html {
   clip-path: inset(0 -100vmax);
 }
 
+.full-bleed-inverse-corona {
+  box-shadow: 0 0 0 100vmax var(--corona-green);
+  clip-path: inset(0 -100vmax);
+}
+
 .cursor {
   position: fixed;
   width: 200px;
@@ -221,6 +237,10 @@ html {
 
 .cursor-pse {
   background-color: var(--pse-red3);
+}
+
+.cursor-corona {
+  background-color: var(--corona-green);
 }
 
 .blend {
