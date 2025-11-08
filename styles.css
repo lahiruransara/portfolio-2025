@@ -321,3 +321,14 @@ nav.main-nav {
         filter: blur(16px);
     }
 }
+
+.observe {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.observe.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

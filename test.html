@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Scrollbar Test</title>
+  <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #my-scrollbar {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: white;
+    }
+
+    section:nth-child(1) { background: #ff6b6b; }
+    section:nth-child(2) { background: #4ecdc4; }
+    section:nth-child(3) { background: #1a535c; }
+  </style>
+</head>
+<body>
+  <div id="my-scrollbar">
+    <section>Section 1</section>
+    <section>Section 2</section>
+    <section>Section 3</section>
+  </div>
+
+  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      Scrollbar.init(document.querySelector('#my-scrollbar'), {
+        damping: 0.07,
+      });
+    });
+  </script>
+</body>
+</html>
