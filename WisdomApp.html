@@ -13,7 +13,7 @@
 
 <body class="bg-[var(--zinc-50)]">
   <!-- cursor -->
-  <div class="cursor cursor-corona hidden lg:block"></div>
+  <div class="cursor cursor-worldwise hidden lg:block"></div>
 
   <div class="custom-container mx-auto">
 
@@ -24,7 +24,7 @@
           <div class="left-items cursor-pointer">
             <div class="flex items-center gap-2">
               <div
-                class="logo cursor-pointer shrinkbtn fill-[var(--text-dark)] stroke-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:stroke-[var(--corona-green)] duration-300 transition-colors ease-in-out">
+                class="logo cursor-pointer shrinkbtn fill-[var(--text-dark)] stroke-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:stroke-[var(--wisdom-blue)] duration-300 transition-colors ease-in-out">
                 <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M14.0186 1H48.9671V10.3255L26.8352 32.4911L36.712 42.383H42.4078V26.0257L49.0001 19.4234V49H33.9702L17.5033 32.5079L42.4927 7.48034H14.0186V1Z"
@@ -126,9 +126,10 @@
             alt="Masked background image" />
         </div>
 
-        <div class="flex flex-col justify-center items-center md:flex-row gap-8 md:gap-20">
+        <div class="flex flex-col justify-center items-center md:flex-row gap-8 md:gap-20 observe">
           <!-- Logo -->
-          <div class="flex flex-col gap-4 md:gap-8 items-center justify-center w-[320px] md:w-full h-fit md:h-[720px] blend">
+          <div
+            class="flex flex-col gap-4 md:gap-8 items-center justify-center w-[320px] md:w-full h-fit md:h-[720px] blend">
             <div>
               <img class="w-[80px] h-[80px]" src="Images/worldwiseHeader.png" alt="Wisdom Logo" />
             </div>
@@ -311,11 +312,12 @@
 
       <!-- Overview -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Overview</div>
-        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">Worldwise: The Wisdom App
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Overview</div>
+        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)] observe">Worldwise: The
+          Wisdom App
         </div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend observe">
           Worldwise: The Wisdom App is a mindfulness and learning experience that brings daily quotes, ideas, and
           cultural wisdom from around the world, all in one beautifully designed space.
           The goal was to create an app that feels calm, thoughtful, and globally inclusive, helping users discover,
@@ -324,7 +326,7 @@
 
       <!-- Feature Images -->
       <div class="flex flex-col pb-10 md:pb-20 lg:pb-30 gap-6">
-        <div class="carousel flex w-full blend">
+        <div class="carousel flex w-full blend observe">
           <div class="group flex content-center items-center">
             <div class="card flex-[0_0_200px] md:flex-[0_0_320px] lg:flex-[0_0_400px]">
               <img src="Images/WisdomPreview1.png" alt="preview image">
@@ -399,11 +401,11 @@
 
       <!-- Design Challenge -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Design Challenge</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Design Challenge</div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           The challenge was to design a product that:
         </div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           <ul class="list-disc list-outside pl-6">
             <li>Feels human and emotionally intelligent — <span class="font-semibold">not just another quote app.</span>
             </li>
@@ -416,21 +418,117 @@
 
       <!-- Target Audience -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Target Audience</div>
-        <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Target Audience</div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           This app is designed for individuals seeking daily inspiration, mindfulness, and cultural insight, people who
           value reflection and personal growth in a fast-paced world.</div>
+        <div class="carousel flex w-full pt-8 blend observe">
+          <div class="group2 flex content-center items-center">
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user1.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user2.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user3.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user4.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user5.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user6.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user7.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user8.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user9.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user10.png">
+            </div>
+          </div>
+          <div aria-hidden class="group2 flex content-center items-center">
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user1.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user2.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user3.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user4.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user5.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user6.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user7.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user8.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user9.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user10.png">
+            </div>
+          </div>
+          <div aria-hidden class="group2 hidden lg:flex content-center items-center">
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user1.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user2.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user3.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user4.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user5.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user6.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user7.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user8.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user9.png">
+            </div>
+            <div class="card2 flex-[0_0_180px]">
+              <img src="Images/worldwise/user10.png">
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- My Role -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">My Role</div>
-        <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">My Role</div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           As the product designer for Worldwise, I was responsible for shaping the entire user experience and visual
           language:</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           <ul class="list-disc list-outside pl-6">
             <li><span class="font-semibold">Core Experience:</span> Designing the main flows for daily quotes and
               cultural discovery.</li>
@@ -447,20 +545,28 @@
         </div>
       </div>
 
+      <!-- Logo Preview -->
+      <div class="flex flex-col pt-10 md:pt-20 lg:pt-30 gap-6">
+        <div class="flex flex-col lg:flex-row gap-8 w-full blend">
+          <img class="w-full lg:w-1/2 h-auto object-contain observe" src="Images/worldwise/logoPreview1.png"
+            alt="Logo Preview 01">
+          <img class="w-full lg:w-1/2 h-auto object-contain observe" src="Images/worldwise/logoPreview2.png"
+            alt="Logo Preview 01">
+        </div>
+      </div>
+
       <!-- Design Process -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Design Process</div>
-        <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Design Process</div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           We explored how users interact with reflective and motivational apps (e.g., Headspace, Stoic, Insight Timer)
           and found that <span class="font-semibold">users seek meaning, not just motivation</span> — wisdom with
           cultural depth and a calm, focused
           experience.</div>
-        <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           I designed Worldwise around a <span class="font-semibold">simple, personalized,</span> and <span
             class="font-semibold">culturally diverse</span> experience:</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           <ul class="list-disc list-outside pl-6">
             <li><span class="font-semibold">Culture Selection:</span> Users choose one or more cultures from a large
               list, and the app surfaces quotes relevant to their selection.</li>
@@ -478,10 +584,21 @@
         </div>
       </div>
 
+      <!-- App Preview -->
+      <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-8">
+        <div class="flex flex-col lg:flex-row gap-8 w-full blend">
+          <img class="w-full lg:w-1/2 h-auto object-contain observe" src="Images/worldwise/appPreview1.png"
+            alt="App Preview 01">
+          <img class="w-full lg:w-1/2 h-auto object-contain observe" src="Images/worldwise/appPreview2.png"
+            alt="App Preview 02">
+        </div>
+        <img class="w-full h-auto blend observe" src="Images/worldwise/appPreview3.png" alt="App Preview 03">
+      </div>
+
       <!-- Key Features Designed -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Key Features Designed</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Key Features Designed</div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           <ul class="list-disc list-outside pl-6">
             <li><span class="font-semibold">Frequently Updating Widgets:</span> Seamlessly blends into users’ daily
               routine.</li>
@@ -494,26 +611,143 @@
         </div>
       </div>
 
-      <!-- Conclusion & Developer Handoff -->
+      <!-- Typography & Colors -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Conclusion & Developer Handoff</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] blend observe">Typography</div>
+
+        <div class="flex flex-col gap-6 md:gap-8 lg:gap-12 w-full blend">
+          <div class="flex flex-col gap-2 md:gap-4 lg:gap-6">
+            <div
+              class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
+              Font</div>
+            <div class="flex w-full h-auto object-contain content-left max-w-[1245px] blend observe">
+              <svg width="100%" viewBox="0 0 1245 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.6001 96H9.7692e-05C0.840099 86.4 1.0801 81.24 1.0801 71.28V24.72C1.0801 14.76 0.840099 9.6 9.7692e-05 -1.43051e-06H26.1601C48.4801 -1.43051e-06 68.0401 4.56 68.0401 25.8C68.0401 47.04 48.4801 51.6 26.1601 51.6H17.5201V71.28C17.5201 81.24 17.7601 86.4 18.6001 96ZM17.5201 2.28V49.32H26.0401C39.1201 49.32 51.3601 44.52 51.3601 25.8C51.3601 7.07999 39.1201 2.28 26.0401 2.28H17.5201ZM99.3704 96H80.7704C81.6104 86.4 81.8504 81.24 81.8504 71.28V24.72C81.8504 14.76 81.6104 9.6 80.7704 -1.43051e-06H106.93C129.25 -1.43051e-06 148.81 4.56 148.81 25.8C148.81 47.04 129.25 51.6 106.93 51.6H98.2904V71.28C98.2904 81.24 98.5304 86.4 99.3704 96ZM98.2904 2.28V49.32H106.81C119.89 49.32 132.13 44.52 132.13 25.8C132.13 7.07999 119.89 2.28 106.81 2.28H98.2904ZM275.361 24.72V71.28C275.361 81.24 275.601 86.4 276.441 96H257.841C258.681 86.4 258.921 81.24 258.921 71.28V49.08H217.761V71.28C217.761 81.24 218.001 86.4 218.841 96H200.241C201.081 86.4 201.321 81.24 201.321 71.28V24.72C201.321 14.76 201.081 9.6 200.241 -1.43051e-06H218.841C218.001 9.6 217.761 14.76 217.761 24.72V46.92H258.921V24.72C258.921 14.76 258.681 9.6 257.841 -1.43051e-06H276.441C275.601 9.6 275.361 14.76 275.361 24.72ZM309.689 98.4C299.729 98.4 289.409 93.96 289.409 82.44C289.409 68.28 304.769 64.44 316.769 62.4C327.089 60.6 333.089 58.44 333.089 50.88C333.089 42.84 329.489 38.52 322.529 38.52C311.489 38.52 308.249 45.72 304.889 49.8C300.569 55.44 292.649 54.24 291.329 46.92C299.369 41.4 311.369 36.24 324.329 36.24C337.769 36.24 347.249 40.92 347.369 54.48V71.76C347.369 80.4 347.369 86.28 349.169 96H334.169C333.449 90.36 333.209 86.76 333.209 82.44C330.209 91.32 322.889 98.4 309.689 98.4ZM316.409 93.48C326.609 93.48 333.089 84.24 333.089 72V58.2C330.689 61.56 325.889 62.64 319.529 64.08C309.809 66.6 305.009 71.64 305.009 80.28C305.009 89.16 309.689 93.48 316.409 93.48ZM383.75 99C372.71 99 367.91 92.88 367.91 78.6V40.92H354.95V38.64H356.63C372.95 38.64 372.35 26.76 372.35 13.44H384.59C384.59 23.64 382.67 34.32 371.15 38.64H399.47V40.92H382.19V80.64C382.19 91.68 384.35 95.16 388.79 95.16C394.19 95.16 398.27 88.92 400.79 71.52H402.83C399.83 92.88 393.83 99 383.75 99ZM431.825 99C420.785 99 415.985 92.88 415.985 78.6V40.92H403.025V38.64H404.705C421.025 38.64 420.425 26.76 420.425 13.44H432.665C432.665 23.64 430.745 34.32 419.225 38.64H447.545V40.92H430.265V80.64C430.265 91.68 432.425 95.16 436.865 95.16C442.265 95.16 446.345 88.92 448.865 71.52H450.905C447.905 92.88 441.905 99 431.825 99ZM496.088 98.4C475.328 98.4 460.208 86.64 460.208 67.32C460.208 48 475.328 36.24 496.088 36.24C516.728 36.24 531.968 48 531.968 67.32C531.968 86.64 516.728 98.4 496.088 98.4ZM496.088 96.12C509.408 96.12 516.248 85.56 516.248 67.32C516.248 49.2 509.408 38.52 496.088 38.52C482.648 38.52 475.808 49.2 475.808 67.32C475.808 85.56 482.648 96.12 496.088 96.12ZM602.529 96H585.969C587.169 84.36 587.169 79.68 587.169 71.76V54.84C587.169 45.24 584.169 40.08 577.329 40.08C568.929 40.08 562.689 47.4 558.609 55.56V62.28V72.48C558.609 80.4 558.609 86.28 559.689 96H543.129C544.329 86.28 544.329 80.4 544.329 72.48V62.28C544.329 54.36 544.329 48.36 543.129 38.64H559.689C559.089 43.68 558.849 47.76 558.729 51.6C563.049 43.8 570.609 36.24 582.609 36.24C594.609 36.24 601.449 42.84 601.449 59.52V71.76C601.449 79.68 601.449 84.36 602.529 96ZM655.477 68.04V61.68C675.757 62.64 701.077 62.64 721.237 61.68V68.04C701.077 66.96 675.757 66.96 655.477 68.04ZM822.341 98.4H819.341L778.541 6.12V71.28C778.541 81.24 778.781 86.4 779.741 96H775.181C776.021 86.4 776.261 81.24 776.261 71.28V24.72C776.261 14.76 776.021 9.6 775.181 -1.43051e-06H794.141L828.461 76.44L860.741 -1.43051e-06H878.261C877.421 9.6 877.061 14.76 877.061 24.72V71.28C877.061 81.24 877.421 86.4 878.261 96H859.661C860.501 86.4 860.741 81.24 860.741 71.28V5.76L822.341 98.4ZM925.355 98.4C906.635 98.4 891.275 87.12 891.275 67.32C891.275 47.64 906.995 36.24 924.155 36.24C942.275 36.24 952.715 47.76 952.835 60.6H907.355C906.995 62.4 906.875 64.32 906.875 66.24C906.875 81.48 914.555 94.56 929.795 94.56C940.835 94.56 949.595 87.6 953.795 74.04H955.835C951.515 88.92 942.035 98.4 925.355 98.4ZM907.475 58.32H937.715C937.715 46.8 933.515 38.52 923.915 38.52C915.275 38.52 909.275 45.24 907.475 58.32ZM994.168 98.4C979.048 98.4 965.248 88.44 965.248 67.32C965.248 46.2 979.768 36.24 993.088 36.24C1003.41 36.24 1011.69 41.28 1017.69 48.6V24.24C1017.69 16.32 1017.69 11.64 1016.25 -1.43051e-06H1031.97V72.48C1031.97 80.4 1031.97 84.96 1033.89 96H1018.89C1018.05 89.4 1017.81 86.28 1017.69 81C1014.69 90.96 1007.13 98.4 994.168 98.4ZM998.968 94.56C1010.37 94.56 1017.69 84.72 1017.69 69.12V51.72C1012.77 45.24 1005.33 39.6 997.528 39.6C987.328 39.6 980.848 49.56 980.848 67.32C980.848 82.32 986.008 94.56 998.968 94.56ZM1067.51 16.08L1057.43 25.08L1047.35 16.08L1057.43 7.07999L1067.51 16.08ZM1065.71 96H1049.15C1050.35 86.28 1050.35 80.4 1050.35 72.48V62.28C1050.35 54.36 1050.35 48.36 1049.15 38.64H1065.71C1064.63 48.36 1064.63 54.36 1064.63 62.28V72.48C1064.63 80.4 1064.63 86.28 1065.71 96ZM1102.58 98.4C1090.58 98.4 1083.74 91.8 1083.74 75.12V62.88C1083.74 54.96 1083.74 50.4 1082.3 38.64H1098.14V79.92C1098.14 89.52 1101.14 94.56 1107.86 94.56C1116.26 94.56 1122.5 87.84 1126.58 79.8V62.88C1126.58 54.96 1126.58 50.4 1125.14 38.64H1140.86V96H1125.5C1125.98 90.48 1126.22 86.64 1126.46 83.28C1122.02 91.08 1114.46 98.4 1102.58 98.4ZM1172.83 96H1156.27C1157.47 86.28 1157.47 80.4 1157.47 72.48V62.28C1157.47 54.36 1157.47 48.36 1156.27 38.64H1172.83C1172.35 43.56 1171.99 47.64 1171.87 51.6C1175.71 44.28 1182.55 36.24 1192.63 36.24C1200.91 36.24 1205.83 41.28 1207.27 51.72C1211.59 44.4 1218.55 36.24 1228.63 36.24C1238.35 36.24 1243.75 42.84 1243.75 57.48V71.76C1243.75 79.68 1243.75 84.36 1244.83 96H1228.27C1229.47 84.36 1229.47 79.68 1229.47 71.76V53.4C1229.47 45.12 1228.15 40.68 1223.35 40.68C1216.99 40.68 1211.95 47.16 1207.63 54.84C1207.75 55.92 1207.75 57 1207.75 58.32V71.76C1207.75 79.68 1207.75 84.36 1208.83 96H1192.39C1193.47 84.36 1193.47 79.68 1193.47 71.76V53.4C1193.47 45.12 1192.15 40.68 1187.47 40.68C1180.87 40.68 1175.83 47.4 1171.75 55.44V72.48C1171.75 80.4 1171.75 86.28 1172.83 96Z"
+                  fill="var(--text-dark)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 md:gap-4 lg:gap-6">
+            <div
+              class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
+              Font</div>
+            <div class="flex w-full content-left max-w-[302px] pb-4 blend observe">
+              <svg width="100%" viewBox="0 0 302 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.2002 24.8793L23.7602 0.279295H26.4002L14.2802 28.2793H12.1202L0.000195369 0.279295H2.6402L13.2002 24.8793ZM31.568 -0.000703812H34.008V2.4793H31.568V-0.000703812ZM31.568 7.4793H34.008V28.2793H31.568V7.4793ZM52.8764 11.4393L50.8764 12.0793C49.9564 10.1193 48.4364 9.1193 46.3964 9.1193C44.1164 9.1193 42.5164 10.4793 42.5164 12.4393C42.5164 14.0793 43.6364 15.2793 45.8364 16.0393L47.7564 16.7193C51.7964 18.1593 53.7564 19.6793 53.7564 22.7593C53.7564 24.6393 53.0364 26.1193 51.6364 27.1593C50.2364 28.1593 48.5564 28.6793 46.6364 28.6793C42.9164 28.6793 40.0364 26.6393 39.3564 23.2393L41.3564 22.6793C42.0364 25.1193 44.1164 26.6393 46.6764 26.6393C49.2364 26.6393 51.4364 25.2793 51.4364 22.8393C51.4364 21.0393 50.1164 19.7193 47.4364 18.7993L45.1164 17.9993C41.8364 16.8393 40.1964 14.9993 40.1964 12.4393C40.1964 10.8793 40.7964 9.5993 41.9564 8.5993C43.1164 7.5993 44.5964 7.0793 46.3564 7.0793C49.5164 7.0793 51.7964 8.7193 52.8764 11.4393ZM70.038 7.0793C71.718 7.0793 73.318 7.4793 74.878 8.2393C77.958 9.7993 80.478 13.3593 80.478 17.8793C80.478 20.1593 79.918 22.1193 78.838 23.8393C76.638 27.1993 73.398 28.6793 70.038 28.6793C66.398 28.6793 63.238 26.5993 61.958 23.8393H61.758V28.2793H59.318V-0.000703812H61.758V11.9193H61.958C63.238 9.1593 66.398 7.0793 70.038 7.0793ZM69.838 26.4793C71.958 26.4793 73.878 25.7193 75.558 24.1993C77.238 22.6793 78.078 20.5593 78.078 17.8793C78.078 15.1993 77.238 13.0793 75.558 11.5593C73.878 10.0393 71.958 9.2793 69.838 9.2793C67.718 9.2793 65.838 10.0393 64.158 11.5593C62.518 13.0793 61.678 15.1993 61.678 17.8793C61.678 20.5593 62.518 22.6793 64.158 24.1993C65.838 25.7193 67.718 26.4793 69.838 26.4793ZM94.9608 24.9593L102.481 7.4793H105.041L95.9208 28.2793L92.5208 35.8793H90.0408L93.7208 27.6793L84.8408 7.4793H87.4008L94.9608 24.9593ZM121.789 16.0393H134.189V18.0393H121.789V16.0393ZM164.606 17.5593L172.446 28.2793H169.686L162.206 17.9193C162.006 17.9593 161.686 17.9593 161.246 17.9593H154.846V28.2793H152.366V0.279295H161.246C164.286 0.279295 166.686 1.1193 168.406 2.7993C170.166 4.4393 171.046 6.5593 171.046 9.1193C171.046 13.2793 168.726 16.4393 164.606 17.5593ZM161.246 2.6393H154.846V15.6793H161.246C165.726 15.6793 168.566 13.2393 168.566 9.1193C168.566 5.0793 165.726 2.6393 161.246 2.6393ZM187.438 7.0793C189.878 7.0793 192.478 8.0393 194.558 9.9193C196.678 11.7193 197.998 14.9993 197.678 18.8793H179.398C179.638 21.3193 180.558 23.1993 182.198 24.5193C183.838 25.8393 185.718 26.5193 187.878 26.5193C190.758 26.5193 192.998 25.6393 194.558 23.9193L196.038 25.2393C194.198 27.5193 191.478 28.6793 187.878 28.6793C184.958 28.6793 182.438 27.7193 180.238 25.8393C178.078 23.9193 176.998 21.2793 176.998 17.8793C176.998 10.7593 182.718 7.0793 187.438 7.0793ZM187.438 9.2393C183.998 9.1193 179.878 11.9193 179.398 16.8793H195.478C195.358 14.5193 194.438 12.6393 192.798 11.2793C191.158 9.9193 189.358 9.2393 187.438 9.2393ZM221.155 11.9193V7.4793H223.595V28.2793C223.595 34.5193 218.355 36.5193 214.475 36.5193C211.555 36.5193 209.395 35.9593 208.075 34.7993V32.6393C209.435 33.7993 211.555 34.3993 214.475 34.3993C218.315 34.3993 221.155 32.2393 221.155 28.2793V23.8393H220.955C219.675 26.5993 216.515 28.6793 212.875 28.6793C211.195 28.6793 209.595 28.2793 208.035 27.5193C204.955 25.9593 202.435 22.3993 202.435 17.8793C202.435 15.5993 202.995 13.6393 204.075 11.9593C206.275 8.5593 209.515 7.0793 212.875 7.0793C216.515 7.0793 219.675 9.1593 220.955 11.9193H221.155ZM213.075 26.4793C215.195 26.4793 217.075 25.7193 218.715 24.1993C220.395 22.6793 221.235 20.5593 221.235 17.8793C221.235 15.1993 220.395 13.0793 218.715 11.5593C217.075 10.0393 215.195 9.2793 213.075 9.2793C210.955 9.2793 209.035 10.0393 207.355 11.5593C205.675 13.0793 204.835 15.1993 204.835 17.8793C204.835 20.5593 205.675 22.6793 207.355 24.1993C209.035 25.7193 210.955 26.4793 213.075 26.4793ZM237.678 28.6793C235.478 28.6793 233.598 27.9193 232.038 26.3993C230.518 24.8793 229.758 22.5993 229.758 19.5993V7.4793H232.198V19.5993C232.198 24.0793 234.758 26.4793 238.278 26.4793C240.318 26.4793 241.958 25.8393 243.198 24.5193C244.438 23.1993 245.198 21.7593 245.478 20.2793V7.4793H247.918V28.2793H245.478V23.3993C245.198 24.1993 244.598 25.2393 243.358 26.5193C242.198 27.7593 240.078 28.6793 237.678 28.6793ZM254.623 -0.000703812H257.063V28.2793H254.623V-0.000703812ZM273.211 28.6793C271.531 28.6793 269.931 28.2793 268.371 27.5193C265.291 25.9593 262.771 22.3993 262.771 17.8793C262.771 15.5993 263.331 13.6393 264.411 11.9593C266.611 8.5593 269.851 7.0793 273.211 7.0793C276.851 7.0793 280.011 9.1593 281.291 11.9193H281.491V7.4793H283.931V28.2793H281.491V23.8393H281.291C280.011 26.5993 276.851 28.6793 273.211 28.6793ZM273.411 26.4793C275.531 26.4793 277.411 25.7193 279.051 24.1993C280.731 22.6793 281.571 20.5593 281.571 17.8793C281.571 15.1993 280.731 13.0793 279.051 11.5593C277.411 10.0393 275.531 9.2793 273.411 9.2793C271.291 9.2793 269.371 10.0393 267.691 11.5593C266.011 13.0793 265.171 15.1993 265.171 17.8793C265.171 20.5593 266.011 22.6793 267.691 24.1993C269.371 25.7193 271.291 26.4793 273.411 26.4793ZM300.974 7.1593C301.374 7.1593 301.654 7.1593 301.854 7.1993V9.5193C301.654 9.4793 301.374 9.4393 301.014 9.4393C296.894 9.4393 293.734 12.4393 293.094 17.2393V28.2793H290.654V7.4793H293.094V13.0393C293.454 11.4393 294.374 10.0793 295.774 8.9193C297.214 7.7593 298.934 7.1593 300.974 7.1593Z"
+                  fill="var(--text-dark)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Colors</div>
+          <div class="flex flex-row flex-wrap justify-center md:justify-start max-w-6xl w-full gap-6 observe">
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#F8F9F4" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Wisdom Light</p>
+                <p class="text-[var(--text-secondary)]">#F8F9F4</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#21222B" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Wisdom Dark</p>
+                <p class="text-[var(--text-secondary)]">#21222B</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#B7B7B7" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Wisdom Gray</p>
+                <p class="text-[var(--text-secondary)]">#B7B7B7</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#9832FE" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Primary</p>
+                <p class="text-[var(--text-secondary)]">#9832FE</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#22E36F" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Success</p>
+                <p class="text-[var(--text-secondary)]">#22E36F</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="#E32222" stroke="var(--zinc-400)" />
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)]">Error</p>
+                <p class="text-[var(--text-secondary)]">#E32222</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <svg width="148" height="120" viewBox="0 0 148 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M72.9482 0.299805C98.9909 0.299806 121.136 16.9767 129.294 40.2334C119.938 41.9521 112.849 50.1469 112.849 60C112.849 69.853 119.938 78.0458 129.294 79.7646C121.136 103.022 98.9915 119.7 72.9482 119.7C46.9047 119.7 24.7582 103.023 16.6006 79.7646C25.9574 78.0465 33.0479 69.8536 33.0479 60C33.0479 50.1463 25.9576 41.9514 16.6006 40.2334C24.7587 16.9764 46.9054 0.299805 72.9482 0.299805Z"
+                  fill="url(#paint0_linear_40000056_8291)" stroke="#9CA3AF" stroke-width="0.6" />
+                <path
+                  d="M12.9004 47.1885C19.8463 47.1887 25.5 53.0857 25.5 60.3887C25.5 67.6917 19.8463 73.5886 12.9004 73.5889C5.95431 73.5889 0.299805 67.6918 0.299805 60.3887C0.299805 53.0855 5.95431 47.1885 12.9004 47.1885Z"
+                  fill="#29AAE2" stroke="#9CA3AF" stroke-width="0.6" />
+                <path
+                  d="M133.1 47.0322C140.734 47.0322 146.9 52.9544 146.9 60.2324C146.9 67.5104 140.734 73.4326 133.1 73.4326C125.466 73.4324 119.3 67.5103 119.3 60.2324C119.3 52.9545 125.466 47.0324 133.1 47.0322Z"
+                  fill="#3AF2CA" stroke="#9CA3AF" stroke-width="0.6" />
+                <defs>
+                  <linearGradient id="paint0_linear_40000056_8291" x1="12.9482" y1="60" x2="132.948" y2="60"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#29AAE2" />
+                    <stop offset="1" stop-color="#3AF2CA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="flex flex-col gap-0 items-center">
+                <p class="text-[var(--text-secondary)] w-48 text-center">Picton Blue ⇢ Aquamarine</p>
+                <p class="text-[var(--text-secondary)] w-48 text-center">#29AAE2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #3AF2CA
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion & Developer Handoff -->
+      <div class="flex flex-col py-10 md:py-20 lg:py-30 inverse full-bleed-inverse gap-6">
+        <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Conclusion & Developer Handoff
+        </div>
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           The first version of Worldwise brought to life a calm, culturally rich experience that helps people slow down
           and reflect each day. For this release, I designed the mobile and tablet UIs, created responsive layouts, and
           worked on App Store visuals, branding logos, and marketing content to ensure everything felt cohesive and true
           to the app’s purpose.</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           Throughout the process, I collaborated closely with developers to refine details and make sure every
           interaction felt smooth and intentional. As the app grows, I’ll continue supporting future updates, improving
           usability and discoverability, and listening to user feedback to shape new features that make the experience
           even more meaningful.</div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
           Designing Worldwise reminded me that digital products can feel human when they’re created with empathy and
           restraint.</div>
       </div>
 
       <!-- Page Controls -->
-      <div class="flex flex-col bg-[var(--corona-green)] full-bleed-inverse-corona blend">
+      <div class="flex flex-col bg-[var(--wisdom-blue)] full-bleed-inverse-worldwise blend observe">
         <div class="flex flex-col md:flex-row justify-evenly w-full py-10 md:py-20 gap-8">
           <div class="shrinkbtn cursor-pointer">
             <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4"
@@ -537,8 +771,8 @@
       <!-- Contact -->
       <div class="contact flex gap-6 md:gap-10 flex-col w-full h-auto py-6 md:py-10 lg:py-16 xl:py-20">
         <div class="flex flex-col gap-1">
-          <h4 class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Got an interesting idea?</h4>
-          <h1 class="talk talk-corona font-extrabold blend text-7xl md:text-8xl xl:text-9xl leading-none">
+          <h4 class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Got an interesting idea?</h4>
+          <h1 class="talk talk-worldwise font-extrabold blend text-7xl md:text-8xl xl:text-9xl leading-none observe">
             Let's talk!
           </h1>
         </div>
@@ -546,7 +780,7 @@
           <div class="w-6/12 flex flex-col gap-3 xl:flex-row">
             <div class="flex flex-col gap-3 w-6/12 h-fit">
               <div
-                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
                 <div class="icon">
                   <svg width="32" height="33" viewBox="0 0 32 33" stroke="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -556,7 +790,7 @@
                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">LinkedIn</p>
               </div>
               <div
-                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
                 <div class="icon">
                   <svg width="32" height="33" viewBox="0 0 32 33" stroke="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -566,7 +800,7 @@
                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Instagram</p>
               </div>
               <div
-                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
                 <div class="icon">
                   <svg width="32" height="33" viewBox="0 0 32 33" stroke="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -578,7 +812,7 @@
             </div>
             <div class="flex flex-col gap-3 w-6/12 h-fit">
               <div
-                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--corona-green)] hover:text-[var(--corona-green)]">
+                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
                 <div class="icon">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -601,7 +835,7 @@
                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Dribbble</p>
               </div>
               <div
-                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
                 <div class="icon">
                   <svg width="32" height="32" viewBox="0 0 32 32" stroke="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -614,7 +848,7 @@
           </div>
           <div class="flex flex-col w-auto gap-3 h-fit">
             <div
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+              class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
               <div class="icon">
                 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -626,7 +860,7 @@
               </p>
             </div>
             <div
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--corona-green)] hover:text-[var(--corona-green)]">
+              class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--wisdom-blue)] hover:text-[var(--wisdom-blue)]">
               <div class="icon">
                 <svg width="32" height="32" viewBox="0 0 32 32" stroke="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -641,7 +875,7 @@
         </div>
 
         <div class="footer" id="copyright">
-          <div class="copyright">
+          <div class="copyright observe">
             <p class="text-[var(--text-dark)]">
               This site is hand-crafted and coded, with care. ‭❤
             </p>
@@ -655,6 +889,7 @@
   </div>
 
   <!-- JS Scripts -->
+  <script src="js/observer.js"></script>
   <script src="js/mobileNavBtn.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/darkMode.js"></script>
