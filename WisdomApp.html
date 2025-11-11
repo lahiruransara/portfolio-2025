@@ -4,9 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/wisdomReviewCarousel.js" defer></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="wisdomcarousel.css" />
   <link rel="stylesheet" href="wisdomreviews.css" />
@@ -14,13 +11,28 @@
 </head>
 
 <body class="bg-[var(--zinc-50)]">
+  <h1 class="counter font-majormono text-[var(--text-secondary)] text-[size:var(--fs-xl)]">0</h1>
+
+  <div class="overlay">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
   <!-- cursor -->
   <div class="cursor cursor-worldwise hidden lg:block"></div>
 
   <div class="custom-container mx-auto">
 
     <!-- Navigation -->
-    <div class="nav fixed z-[999] w-[90%]">
+    <div class="nav fixed z-[100] w-[90%]">
       <div class="flex justify-center items-center py-4 md:py-10">
         <a href="https://test.lahiruransara.com">
           <div class="left-items cursor-pointer">
@@ -47,7 +59,7 @@
           <div class="flex md:hidden justify-center items-center w-[40px] h-[40px] rounded-full cursor-pointer">
             <!-- Icon Layer -->
             <a
-              class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn-corona bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
+              class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
               <ul class="buns absolute">
                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
@@ -56,15 +68,15 @@
           </div>
 
           <!-- Back to Home -->
-          <div
-            class="hidden md:block main-btn-home hoverbtn w-fit py-2 px-6 items-center rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
-            <p class="btn-text-home font-regular text-xl text-[var(--text-dark)] w-fit whitespace-nowrap">Back to Home
+          <a class="hidden md:block main-btn hoverbtn w-fit py-2 px-6 items-center rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer"
+            href="index.html">
+            <p class="btn-text font-regular text-xl text-[var(--text-dark)] w-fit whitespace-nowrap">Back to Home
             </p>
-          </div>
+          </a>
 
           <!-- Dark Mode Switch -->
           <div
-            class="hidden md:flex theme-toggle justify-center items-center w-[48px] h-[48px] rounded-full main-btn-corona hoverbtn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
+            class="hidden md:flex theme-toggle justify-center items-center w-[48px] h-[48px] rounded-full main-btn hoverbtn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
             <!-- Icon Layer -->
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
               class="iconLight absolute z-3 fill-[var(--text-dark)] rounded-full opacity-80 hover:fill-[var(--text-light)] duration-300 transition-colors ease-in-out">
@@ -755,12 +767,12 @@
           </div>
           <div class="flex gap-2">
             <!-- Left arrow button -->
-            <div id="left" class="arrow arrow-btn left border border-[var(--zinc-600)]/20 hover:cursor-pointer hoverbtn blend">
+            <div id="left"
+              class="arrow arrow-btn left border border-[var(--zinc-600)]/20 hover:cursor-pointer hoverbtn blend">
               <svg class="btn-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_40000075_9531)">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M7.93966 13.0609C7.65876 12.7796 7.50098 12.3984 7.50098 12.0009C7.50098 11.6034 7.65876 11.2221 7.93966 10.9409L13.5957 5.28288C13.8771 5.00161 14.2587 4.84366 14.6565 4.84375C14.8535 4.8438 15.0486 4.88264 15.2306 4.95808C15.4125 5.03351 15.5779 5.14404 15.7172 5.28338C15.8564 5.42271 15.9669 5.58811 16.0422 5.77013C16.1176 5.95215 16.1563 6.14723 16.1563 6.34423C16.1562 6.54123 16.1174 6.73629 16.042 6.91828C15.9665 7.10026 15.856 7.26561 15.7167 7.40488L11.1217 12.0009L15.7177 16.5969C15.861 16.7352 15.9753 16.9006 16.054 17.0836C16.1327 17.2666 16.1742 17.4634 16.176 17.6626C16.1779 17.8617 16.14 18.0593 16.0647 18.2436C15.9893 18.428 15.878 18.5955 15.7373 18.7365C15.5965 18.8774 15.4291 18.9888 15.2447 19.0643C15.0604 19.1398 14.8629 19.1779 14.6638 19.1762C14.4646 19.1746 14.2678 19.1333 14.0847 19.0548C13.9017 18.9763 13.7361 18.8621 13.5977 18.7189L7.93766 13.0609H7.93966Z"
-                    />
+                    d="M7.93966 13.0609C7.65876 12.7796 7.50098 12.3984 7.50098 12.0009C7.50098 11.6034 7.65876 11.2221 7.93966 10.9409L13.5957 5.28288C13.8771 5.00161 14.2587 4.84366 14.6565 4.84375C14.8535 4.8438 15.0486 4.88264 15.2306 4.95808C15.4125 5.03351 15.5779 5.14404 15.7172 5.28338C15.8564 5.42271 15.9669 5.58811 16.0422 5.77013C16.1176 5.95215 16.1563 6.14723 16.1563 6.34423C16.1562 6.54123 16.1174 6.73629 16.042 6.91828C15.9665 7.10026 15.856 7.26561 15.7167 7.40488L11.1217 12.0009L15.7177 16.5969C15.861 16.7352 15.9753 16.9006 16.054 17.0836C16.1327 17.2666 16.1742 17.4634 16.176 17.6626C16.1779 17.8617 16.14 18.0593 16.0647 18.2436C15.9893 18.428 15.878 18.5955 15.7373 18.7365C15.5965 18.8774 15.4291 18.9888 15.2447 19.0643C15.0604 19.1398 14.8629 19.1779 14.6638 19.1762C14.4646 19.1746 14.2678 19.1333 14.0847 19.0548C13.9017 18.9763 13.7361 18.8621 13.5977 18.7189L7.93766 13.0609H7.93966Z" />
                 </g>
                 <defs>
                   <clipPath id="clip0_40000075_9531">
@@ -770,12 +782,12 @@
               </svg>
             </div>
             <!-- Right arrow button -->
-            <div id="right" class="arrow arrow-btn right border border-[var(--zinc-600)]/20 hover:cursor-pointer hoverbtn blend">
+            <div id="right"
+              class="arrow arrow-btn right border border-[var(--zinc-600)]/20 hover:cursor-pointer hoverbtn blend">
               <svg class="btn-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_40000075_9535)">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.0604 10.9399C16.3413 11.2212 16.4991 11.6024 16.4991 11.9999C16.4991 12.3974 16.3413 12.7787 16.0604 13.0599L10.4044 18.7179C10.123 18.9992 9.74138 19.1571 9.34352 19.157C8.94567 19.1569 8.56414 18.9988 8.28288 18.7174C8.00162 18.436 7.84366 18.0544 7.84375 17.6566C7.84384 17.2587 8.00198 16.8772 8.28338 16.5959L12.8794 11.9999L8.28338 7.40391C8.01 7.12114 7.85863 6.7423 7.86186 6.34901C7.86509 5.95571 8.02267 5.57941 8.30065 5.30117C8.57863 5.02292 8.95478 4.86499 9.34807 4.86139C9.74137 4.85779 10.1203 5.0088 10.4034 5.28191L16.0614 10.9389L16.0604 10.9399Z"
-                    />
+                    d="M16.0604 10.9399C16.3413 11.2212 16.4991 11.6024 16.4991 11.9999C16.4991 12.3974 16.3413 12.7787 16.0604 13.0599L10.4044 18.7179C10.123 18.9992 9.74138 19.1571 9.34352 19.157C8.94567 19.1569 8.56414 18.9988 8.28288 18.7174C8.00162 18.436 7.84366 18.0544 7.84375 17.6566C7.84384 17.2587 8.00198 16.8772 8.28338 16.5959L12.8794 11.9999L8.28338 7.40391C8.01 7.12114 7.85863 6.7423 7.86186 6.34901C7.86509 5.95571 8.02267 5.57941 8.30065 5.30117C8.57863 5.02292 8.95478 4.86499 9.34807 4.86139C9.74137 4.85779 10.1203 5.0088 10.4034 5.28191L16.0614 10.9389L16.0604 10.9399Z" />
                 </g>
                 <defs>
                   <clipPath id="clip0_40000075_9535">
@@ -810,7 +822,8 @@
                     fill="#9832FE" />
                 </svg>
               </div>
-              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">The education I never had</p>
+              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">The education I never had
+              </p>
               <p class="text-sm md:text-md font-light text-[var(--text-secondary)]">Mar 30 | daoren888</p>
               <p
                 class="text-center text-base md:text-lg xl:text-2xl text-[var(--text-secondary)] leading-normal w-full">
@@ -841,7 +854,8 @@
                     fill="#9832FE" />
                 </svg>
               </div>
-              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">A Fresh Look at the Ages</p>
+              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">A Fresh Look at the Ages
+              </p>
               <p class="text-sm md:text-md font-light text-[var(--text-secondary)]">Apr 8 | 4bess</p>
               <p
                 class="text-center text-base md:text-lg xl:text-2xl text-[var(--text-secondary)] leading-normal w-full">
@@ -872,7 +886,8 @@
                     fill="#9832FE" />
                 </svg>
               </div>
-              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Getting great inspiration from
+              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Getting great inspiration
+                from
                 Worldwise</p>
               <p class="text-sm md:text-md font-light text-[var(--text-secondary)]">Apr 5 | ChachaCryptoX</p>
               <p
@@ -902,7 +917,8 @@
                     fill="#9832FE" />
                 </svg>
               </div>
-              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Great Historical Perspective</p>
+              <p class="text-center text-xl md:text-2xl font-semibold text-[var(--text-dark)]">Great Historical
+                Perspective</p>
               <p class="text-sm md:text-md font-light text-[var(--text-secondary)]">Apr 3 | Historybuff47</p>
               <p
                 class="text-center text-base md:text-lg xl:text-2xl text-[var(--text-secondary)] leading-normal w-full">
@@ -917,22 +933,20 @@
       </div>
 
       <!-- Page Controls -->
-      <div class="flex flex-col bg-[var(--wisdom-blue)] full-bleed-inverse-worldwise blend observe">
-        <div class="flex flex-col md:flex-row justify-evenly w-full py-10 md:py-20 gap-8">
+      <div class="flex flex-col bg-[var(--wisdom-blue)] full-bleed-inverse-worldwise blend">
+        <div class="flex flex-col md:flex-row justify-evenly w-full py-10 md:py-20 gap-8 observe">
           <div class="shrinkbtn cursor-pointer">
             <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4"
-              href="/UnderConstruction.html">
+              href="/CampaignManager.html">
               <p class="text-white font-bold text-4xl lg:text-8xl text-center w-fit"> Previous </p>
-              <p class="text-white text-xl md:text-3xl">The Wisdom App</p>
+              <p class="text-white text-xl md:text-3xl">Campaign Builder Manager</p>
             </a>
           </div>
           <div class="shrinkbtn cursor-pointer">
             <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4"
-              href="/UnderConstruction.html">
+              href="/CoronaAdmin.html">
               <p class="text-white font-bold text-4xl lg:text-8xl text-center w-fit"> Next </p>
-              <p class="text-white text-center max-w-xs lg:max-w-none text-xl md:text-3xl">Save Food Reduce Waste
-                Mobile
-                App</p>
+              <p class="text-white text-center max-w-xs lg:max-w-none text-xl md:text-3xl">Corona Admin Design System</p>
             </a>
           </div>
         </div>
@@ -1059,10 +1073,18 @@
   </div>
 
   <!-- JS Scripts -->
-  <script src="js/observer.js"></script>
-  <script src="js/mobileNavBtn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/wisdomReviewCarousel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/darkMode.js"></script>
+  <script src="js/mobileNavBtn.js"></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 
 </html>

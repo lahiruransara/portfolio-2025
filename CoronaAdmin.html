@@ -11,13 +11,28 @@
 </head>
 
 <body class="bg-[var(--zinc-50)]">
+  <h1 class="counter font-majormono text-[var(--text-secondary)] text-[size:var(--fs-xl)]">0</h1>
+
+  <div class="overlay">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
   <!-- cursor -->
   <div class="cursor cursor-corona hidden lg:block"></div>
 
   <div class="custom-container mx-auto">
 
     <!-- Navigation -->
-    <div class="nav fixed z-[999] w-[90%]">
+    <div class="nav fixed z-[100] w-[90%]">
       <div class="flex justify-center items-center py-4 md:py-10">
         <a href="https://test.lahiruransara.com">
           <div class="left-items cursor-pointer">
@@ -45,7 +60,7 @@
 
             <!-- Icon Layer -->
             <a
-              class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn-corona bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
+              class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
               <ul class="buns absolute">
                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
@@ -53,11 +68,12 @@
             </a>
           </div>
 
-          <!-- Photography -->
-          <div
-            class="hidden md:flex main-btn-home hoverbtn w-fit py-2 px-6 px-4 flex items-center gap-4 rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
-            <p class="btn-text-home font-regular text-xl text-[var(--text-dark)]">Photograpghy</p>
-          </div>
+          <!-- Back to Home -->
+          <a class="hidden md:block main-btn hoverbtn w-fit py-2 px-6 items-center rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer"
+            href="index.html">
+            <p class="btn-text font-regular text-xl text-[var(--text-dark)] w-fit whitespace-nowrap">Back to Home
+            </p>
+          </a>
 
           <!-- Dark Mode Switch -->
           <div
@@ -127,7 +143,8 @@
 
         <div class="flex flex-col justify-center items-center md:flex-row gap-1 md:gap-20">
           <!-- Logo -->
-          <div class="flex flex-col gap-8 items-center justify-center w-[400px] md:w-full h-[200px] md:h-[720px] blend">
+          <div
+            class="flex flex-col gap-8 items-center justify-center w-[400px] md:w-full h-[200px] md:h-[720px] blend">
             <svg width="234" height="122" viewBox="0 0 234 122" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_658_1292)">
                 <mask id="mask0_658_1292" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="234"
@@ -182,9 +199,6 @@
               </defs>
             </svg>
 
-
-
-
             <!-- Community button -->
             <div
               class="px-6 py-4 flex items-center content-center gap-4 rounded-xl border-1 border-[var(--zinc-400)] cursor-pointer hoverbtn">
@@ -210,17 +224,18 @@
       <!-- Overview -->
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
         <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Overview</div>
-        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">CORONA Admin Unofficial
+        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">CORONA Admin
+          Unofficial
           Design System
         </div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full lg:md:w-9/12 blend">
           The Unofficial CORONA Admin Design System is a Figma-based design resource that reimagines the popular
           BootstrapDash CORONA Admin template into a structured, reusable design system. It’s publicly available on
           Figma Community for designers and developers who need a clean, componentized version of the UI for faster
           prototyping and handoff.</div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full lg:w-9/12 blend">
           This Design system was built using <a class="font-semibold text-[var(--corona-green)] blend hoverbtn"
             href="https://bradfrost.com/blog/post/atomic-web-design/">atomic design principles</a> and has captured most
           of the components.</div>
@@ -244,11 +259,11 @@
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
         <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Goal</div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
           My main goal was to create a Figma-native design system that:
         </div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
           <ul class="list-disc list-outside pl-6">
             <li>Mirrors the CORONA Admin UI accurately.</li>
             <li>Enables designers to quickly mock up dashboards and interfaces.</li>
@@ -262,10 +277,11 @@
       <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
         <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Outcome</div>
         <div
-          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
           The final design system includes:
         </div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12">
+        <div
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
           <ul class="list-disc list-outside pl-6">
             <li>50+ reusable Figma components</li>
             <li>Organized style tokens for colors, typography, and spacing</li>
@@ -273,7 +289,8 @@
             <li>Compatibility with the original BootstrapDash codebase</li>
           </ul>
         </div>
-        <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12">
+        <div
+          class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
           It has since been downloaded and duplicated by designers who use CORONA Admin as a foundation for their
           dashboard projects.
         </div>
@@ -292,7 +309,7 @@
             <div class="flex gap-1 md:gap-2 lg:gap-4">
               <div class="w-full"><img src="Images/Badge.png" alt="badge"
                   class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
-              <div class="w-full "><img src="Images/Radio.png" alt="radio"
+              <div class="w-full"><img src="Images/Radio.png" alt="radio"
                   class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
             </div>
             <div class="flex gap-1 md:gap-2 lg:gap-4">
@@ -320,7 +337,7 @@
         <div class="flex flex-col md:flex-row justify-evenly w-full py-10 md:py-20 gap-8">
           <div class="shrinkbtn cursor-pointer">
             <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4"
-              href="/UnderConstruction.html">
+              href="/WisdomApp.html">
               <p class="text-white font-bold text-4xl lg:text-8xl text-center w-fit"> Previous </p>
               <p class="text-white text-xl md:text-3xl">The Wisdom App</p>
             </a>
@@ -457,9 +474,15 @@
   </div>
 
   <!-- JS Scripts -->
-  <script src="js/mobileNavBtn.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/darkMode.js"></script>
+  <script src="js/mobileNavBtn.js"></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 
 </html>

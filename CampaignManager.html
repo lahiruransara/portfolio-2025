@@ -5,19 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Campaign Builder Manager</title>
 </head>
 
 <body class="bg-[var(--zinc-50)]">
-    <!-- cursor -->
-    <div class="cursor cursor-pse hidden lg:block"></div>
+    <h1 class="counter font-majormono text-[var(--text-secondary)] text-[size:var(--fs-xl)]">0</h1>
+
+    <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
 
     <div class="custom-container mx-auto">
 
+        <!-- cursor -->
+        <div class="cursor cursor-pse hidden lg:block"></div>
+
         <!-- Navigation -->
-        <div class="nav fixed z-[999] w-[90%]">
+        <div class="nav fixed z-[100] w-[90%]">
             <div class="flex justify-center items-center py-4 md:py-10">
                 <a href="https://test.lahiruransara.com">
                     <div class="left-items cursor-pointer">
@@ -46,7 +60,7 @@
 
                         <!-- Icon Layer -->
                         <a
-                            class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn-pse bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
+                            class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full main-btn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 z-3">
                             <ul class="buns absolute">
                                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
                                 <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
@@ -54,15 +68,17 @@
                         </a>
                     </div>
 
-                    <!-- Photography -->
-                    <div
-                        class="hidden md:flex main-btn-home hoverbtn w-fit py-2 px-6 px-4 flex items-center gap-4 rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
-                        <p class="btn-text-home font-regular text-xl text-[var(--text-dark)]">Photograpghy</p>
-                    </div>
+                    <!-- Back to Home -->
+                    <a class="hidden md:block main-btn hoverbtn w-fit py-2 px-6 items-center rounded-full bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 cursor-pointer"
+                        href="index.html">
+                        <p class="btn-text font-regular text-xl text-[var(--text-dark)] w-fit whitespace-nowrap">
+                            Back to Home
+                        </p>
+                    </a>
 
                     <!-- Dark Mode Switch -->
                     <div
-                        class="hidden md:flex theme-toggle justify-center items-center w-[48px] h-[48px] rounded-full main-btn-pse hoverbtn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 hover:cursor-pointer">
+                        class="hidden md:flex theme-toggle justify-center items-center w-[48px] h-[48px] rounded-full main-btn hoverbtn bg-[var(--zinc-600)]/2 border-1 border-[var(--zinc-600)]/20 cursor-pointer">
                         <!-- Icon Layer -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
                             class="iconLight absolute z-3 fill-[var(--text-dark)] rounded-full opacity-80 hover:fill-[var(--text-light)] duration-300 transition-colors ease-in-out">
@@ -128,7 +144,8 @@
 
                 <div class="flex flex-col justify-center items-center md:flex-row gap-1 md:gap-20">
                     <!-- Logo -->
-                    <div class="flex items-center justify-center w-[200px] md:w-full h-[120px] md:h-[720px] blend">
+                    <div
+                        class="flex items-center justify-center w-[200px] md:w-full h-[120px] md:h-[720px] blend observe">
                         <svg width="320" viewBox="0 0 480 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M63.4992 31.9158C63.4992 36.3906 62.464 40.4646 60.3936 44.1379C58.3232 47.7444 55.251 50.6163 51.1769 52.7535C47.1697 54.8907 42.2942 55.9593 36.5505 55.9593H27.7346V78.5H5.4944V7.57186H36.5505C45.2329 7.57186 51.8782 9.77584 56.4865 14.1838C61.1616 18.5918 63.4992 24.5024 63.4992 31.9158ZM34.046 38.4276C38.6543 38.4276 40.9585 36.257 40.9585 31.9158C40.9585 27.5747 38.6543 25.4041 34.046 25.4041H27.7346V38.4276H34.046ZM98.3035 79.2013C89.8215 79.2013 82.8088 77.231 77.2655 73.2906C71.7889 69.2833 68.8169 63.4395 68.3494 55.7589H91.9921C92.326 59.8329 94.1293 61.87 97.4019 61.87C98.604 61.87 99.6058 61.6028 100.407 61.0685C101.276 60.4674 101.71 59.5658 101.71 58.3636C101.71 56.6939 100.808 55.3582 99.0047 54.3564C97.2015 53.2878 94.3964 52.0856 90.5895 50.7499C86.048 49.147 82.2745 47.5775 79.2691 46.0414C76.3305 44.5052 73.7925 42.2679 71.6553 39.3292C69.5181 36.3906 68.4829 32.6171 68.5497 28.0088C68.5497 23.4005 69.7185 19.4934 72.0561 16.2876C74.4604 13.015 77.6996 10.5439 81.7736 8.87421C85.9144 7.20452 90.5562 6.36968 95.6988 6.36968C104.381 6.36968 111.26 8.3733 116.336 12.3805C121.479 16.3878 124.184 22.0313 124.451 29.3111H100.507C100.441 27.3075 99.9398 25.8716 99.0047 25.0033C98.0697 24.1351 96.9343 23.701 95.5986 23.701C94.6636 23.701 93.8955 24.0349 93.2944 24.7028C92.6933 25.3039 92.3928 26.1721 92.3928 27.3075C92.3928 28.9104 93.261 30.2462 94.9975 31.3148C96.8008 32.3166 99.6392 33.5521 103.513 35.0214C107.988 36.6911 111.661 38.294 114.533 39.8301C117.471 41.3662 120.009 43.5034 122.147 46.2417C124.284 48.98 125.352 52.4195 125.352 56.5604C125.352 60.9015 124.284 64.8086 122.147 68.2815C120.009 71.6877 116.904 74.3592 112.83 76.296C108.756 78.2329 103.914 79.2013 98.3035 79.2013ZM155.407 25.3039V34.0196H177.446V50.7499H155.407V60.768H180.452V78.5H133.166V7.57186H180.452V25.3039H155.407Z"
@@ -143,7 +160,7 @@
                     </div>
 
                     <!-- Mockup Image -->
-                    <div class="flex items-center justify-center w-full h-[360px] md:h-[720px] blend">
+                    <div class="flex items-center justify-center w-full h-[360px] md:h-[720px] blend observe">
                         <img src="/Images/PSE.png" alt="header" />
                     </div>
 
@@ -153,14 +170,14 @@
 
             <!-- Overview -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                     Overview
                 </div>
-                <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)] observe">
                     Campaign Builder Manager
                 </div>
                 <div
-                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend">
+                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full md:w-9/12 blend observe">
                     The new campaign manager helps the internal Marketing team to easily
                     build any campaign easily with branding guidelines automatically. We
                     are trying to reduce the design review process to
@@ -171,15 +188,15 @@
 
             <!-- Problem Statement -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                     Problem
                 </div>
-                <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)] observe">
                     Understanding the Project
                 </div>
                 <div class="flex flex-col gap-4">
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                         I use the
                         <span class="font-semibold text-[var(--text-dark)]">"5 Ws and H" approach,</span>
                         ensuring I cover the
@@ -189,7 +206,7 @@
                         the problem.
                     </div>
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full observe">
                         <span class="font-semibold text-[var(--text-dark)]">Who:</span> The
                         marketing team at PSE Retail Holdings
                         <br />
@@ -210,17 +227,17 @@
 
             <!-- Design Process -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                     Design Process
                 </div>
                 <div
-                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full blend">
+                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full blend observe">
                     The Double Diamond design model has four stages: Discovery,
                     Definition, Development and Delivery Together. <br />
                     I’m using these steps to organize my ideas and make the creative
                     process better.
                 </div>
-                <div class="flex w-full justify-center">
+                <div class="flex w-full justify-center observe">
                     <svg width="550" height="243" viewBox="0 0 550 243" fill="var(--zinc-950)"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M46.5 117L36 127.5C37.3807 128.881 39.6193 128.881 41 127.5L49 119.5L46.5 117Z" />
@@ -262,11 +279,11 @@
             <!-- Discover -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-20 inverse full-bleed-inverse">
                 <div class="flex flex-col gap-6">
-                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                         Discover
                     </div>
                     <div class="flex flex-col md:flex-row gap-8">
-                        <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                        <svg class="w-full md:w-fit observe" width="406" height="198" viewBox="0 0 406 198" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M101.672 9.32842L14.8358 96.1642C13.2708 97.7292 13.2741 100.268 14.8431 101.828L101.679 188.214C104.202 190.724 108.5 188.937 108.5 185.379V12.1569C108.5 8.59324 104.191 6.80856 101.672 9.32842Z"
@@ -296,7 +313,7 @@
                             </defs>
                         </svg>
                         <div
-                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full">
+                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-loose w-full observe">
                             In discover step, I’m trying to discover
                             <span class="font-semibold text-[var(--text-dark)]">the targeted users</span>
                             and
@@ -310,20 +327,20 @@
                 </div>
                 <!-- Persona  -->
                 <div class="flex flex-col gap-6">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Persona
                     </div>
                     <div class="flex flex-col gap-6">
                         <div
-                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                             Emily Campaigns Executive at PSE Retail Holdings. She has
                             experience using many campaign builder tools.
                         </div>
-                        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)]">
+                        <div class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)] observe">
                             Meet Emily Blake
                         </div>
                         <div class="flex flex-col md:flex-row gap-8 w-full items-center">
-                            <svg class="w-full max-w-xs md:w-fit" width="406" height="407" viewBox="0 0 406 407"
+                            <svg class="w-full max-w-xs md:w-fit observe" width="406" height="407" viewBox="0 0 406 407"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M203 406.155C315.114 406.155 406 317.322 406 207.741C406 98.1594 315.114 9.32617 203 9.32617C90.8862 9.32617 0 98.1594 0 207.741C0 317.322 90.8862 406.155 203 406.155Z"
@@ -377,11 +394,11 @@
                             </svg>
                             <div class="flex flex-col gap-4">
                                 <div
-                                    class="font-semibold text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                    class="font-semibold text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full observe">
                                     Campaigns Executive at PSE Retail Holdings
                                 </div>
                                 <div
-                                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                                    class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                                     <ul class="list-disc list-outside pl-6">
                                         <li>
                                             Emily is a campaign executive working at PSE Retail
@@ -406,11 +423,11 @@
                 </div>
                 <!-- Empathy Map -->
                 <div class="flex flex-col gap-6">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Empathy Map
                     </div>
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                         <ul class="list-disc list-outside pl-6">
                             <li>What’s the user's main role in the PSE Retail Holdings?</li>
                             <li>
@@ -425,10 +442,10 @@
                         </ul>
                     </div>
                     <div
-                        class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg">
+                        class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg observe">
                         <div class="flex flex-col md:flex-row gap-6">
                             <div
-                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full observe">
                                 <p class="font-semibold text-[var(--text-dark)]">SAYS:</p>
                                 <ul class="list-disc list-outside pl-6 text-[var(--text-secondary)]">
                                     <li>
@@ -438,7 +455,7 @@
                                 </ul>
                             </div>
                             <div
-                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full observe">
                                 <p class="font-semibold text-[var(--text-dark)]">THINK:</p>
                                 <ul class="list-disc list-outside pl-6 text-[var(--text-secondary)]">
                                     <li>Better solution to build campaign faster.</li>
@@ -452,7 +469,7 @@
                         </div>
                         <div class="flex flex-col md:flex-row gap-6">
                             <div
-                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full observe">
                                 <p class="font-semibold text-[var(--text-dark)]">DOES:</p>
                                 <ul class="list-disc list-outside pl-6 text-[var(--text-secondary)]">
                                     <li>
@@ -466,7 +483,7 @@
                                 </ul>
                             </div>
                             <div
-                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full">
+                                class="flex flex-col gap-1 text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-dark)] leading-normal w-full observe">
                                 <p class="font-semibold text-[var(--text-dark)]">FEELS:</p>
                                 <ul class="list-disc list-outside pl-6 text-[var(--text-secondary)]">
                                     <li>Painful to manage the subscribers list and update it.</li>
@@ -482,14 +499,14 @@
                 </div>
                 <!-- User Journey -->
                 <div class="flex flex-col gap-6">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         User Journey
                     </div>
                     <div
-                        class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg">
+                        class="flex flex-col w-full p-4 md:p-8 gap-6 text-[var(--text-dark)] border border-[var(--zinc-400)] border-dashed rounded-lg observe">
                         <div class="flex flex-col gap-3">
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     1
@@ -504,7 +521,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     2
@@ -521,7 +538,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     3
@@ -540,7 +557,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     4
@@ -558,7 +575,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     5
@@ -575,7 +592,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg">
+                                class="flex flex-col p-3 md:p-8 gap-3 w-full border border-[var(--zinc-400)] rounded-lg observe">
                                 <div
                                     class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white">
                                     6
@@ -595,11 +612,11 @@
                 </div>
                 <!-- Pain Points -->
                 <div class="flex flex-col gap-8">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Pain Points
                     </div>
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                         <ul class="list-disc list-outside pl-6">
                             <li>
                                 Wasting time to review whether the design is following the brand
@@ -620,11 +637,11 @@
                 </div>
                 <!-- Expected Result -->
                 <div class="flex flex-col gap-8">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Expected Result
                     </div>
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                         <ul class="list-disc list-outside pl-6">
                             <li>
                                 A better and easier process to create, update and review the
@@ -639,12 +656,12 @@
             <!-- Define -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-20">
                 <div class="flex flex-col gap-6">
-                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                         Define
                     </div>
                     <div class="flex flex-col md:flex-row gap-8">
-                        <svg class="w-full md:w-fit blend" width="406" height="197" viewBox="0 0 406 197" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-full md:w-fit blend observe" width="406" height="197" viewBox="0 0 406 197"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M114.828 187.827L201.664 100.992C203.229 99.4266 203.226 96.8883 201.657 95.3274L114.821 8.94149C112.298 6.43171 108 8.21863 108 11.7772L108 184.999C108 188.563 112.309 190.347 114.828 187.827Z"
                                 fill="url(#paint0_linear_310_232)" />
@@ -673,7 +690,7 @@
                             </defs>
                         </svg>
                         <div
-                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
                             In define step, I’m trying to
                             <span class="font-semibold text-[var(--text-dark)]">define the main pain points</span>
                             and
@@ -686,12 +703,12 @@
                 </div>
                 <!-- WSJF -->
                 <div class="flex flex-col gap-6">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Worked Shortest Job First (WSJF)
                     </div>
                     <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
                         <div class="flex flex-col gap-6 w-full">
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 observe">
                                 <div class="flex justify-center items-center pt-0 md:pt-3 h-[var(--reg)]">
                                     <div
                                         class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white blend">
@@ -705,7 +722,7 @@
                                     in one step.
                                 </p>
                             </div>
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 observe">
                                 <div class="flex justify-center items-center pt-0 md:pt-3 h-[var(--reg)]">
                                     <div
                                         class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white blend">
@@ -717,7 +734,7 @@
                                     Drag and drop the styled components to the campaign builder.
                                 </p>
                             </div>
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 observe">
                                 <div class="flex justify-center items-center pt-0 md:pt-3 h-[var(--reg)]">
                                     <div
                                         class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white blend">
@@ -731,7 +748,7 @@
                                     more.
                                 </p>
                             </div>
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 observe">
                                 <div class="flex justify-center items-center pt-0 md:pt-3 h-[var(--reg)]">
                                     <div
                                         class="w-[var(--reg)] h-[var(--reg)] rounded-md bg-[var(--pse-red2)] flex justify-center items-center text-white blend">
@@ -747,7 +764,7 @@
                             </div>
                         </div>
                         <div class="spacer min-w-4"></div>
-                        <div class="w-full flex items-center justify-center blend">
+                        <div class="w-full flex items-center justify-center blend observe">
                             <svg width="513" height="385" viewBox="0 0 513 385" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect opacity="0.3" x="111.547" y="19.6377" width="327.188" height="330.093"
@@ -803,11 +820,11 @@
                 </div>
                 <!-- Hypothesis -->
                 <div class="flex flex-col gap-6">
-                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-xl md:text-2xl font-semibold text-[var(--text-dark)] observe">
                         Hypothesis
                     </div>
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
                         We think Marketing is very important for PSE Retail Holdings. We
                         want to make the campaign process easy and faster for the company.
                         To do that, we need a ready-made template that the marketing team
@@ -821,11 +838,11 @@
             <!-- Develop -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
                 <div class="flex flex-col gap-6">
-                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                         Develop
                     </div>
                     <div class="flex flex-col md:flex-row gap-8">
-                        <svg class="w-full md:w-fit" width="406" height="198" viewBox="0 0 406 198" fill="none"
+                        <svg class="w-full md:w-fit observe" width="406" height="198" viewBox="0 0 406 198" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M289.672 9.63995L202.836 96.4757C201.271 98.0407 201.274 100.579 202.843 102.14L289.679 188.526C292.202 191.036 296.5 189.249 296.5 185.69V12.4684C296.5 8.90476 292.191 7.12009 289.672 9.63995Z"
@@ -856,7 +873,7 @@
                         </svg>
 
                         <div
-                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                             In develop step, I’m trying to
                             <span class="font-semibold text-[var(--text-dark)]">develop sketches</span>
                             for the ideas helps me to solve the users problems.
@@ -864,11 +881,11 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-8">
+                <div class="flex flex-col gap-8 observe">
                     <div class="flex justify-center w-full p-4 text-4xl text-[var(--pse-red2)]">
                         <div class="w-full">
-                            <svg width="100%" height="auto" viewBox="0 0 16380 12745"
-                                preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-full h-auto" viewBox="0 0 16380 12745" preserveAspectRatio="xMidYMid meet"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_652_3693)" fill="var(--text-dark)">
                                     <path
                                         d="M4774.2 9134.92C4773.22 9133.99 4764.01 9137.15 4766.2 9131.95C4783.68 9109.33 4808.63 9119.56 4831.18 9120.89C4852.56 9122.16 4873.79 9123.52 4895.14 9124.89C5061.11 9135.6 5224.79 9133.31 5390.93 9130.99C5679.44 9126.97 5967.93 9114.29 6256.44 9109C6591.23 9102.86 6925.49 9114.33 7259.86 9118.82C7400.58 9120.72 7533.17 9118.23 7673.53 9112.89C7752.63 9109.87 7828.31 9114.27 7907.33 9116.98C7955.65 9118.64 8005.03 9115.63 8053.15 9123.06C8060.07 9124.13 8065.98 9126.71 8067.75 9134.12C8059.74 9181.03 8063.48 9228.46 8062.41 9275.85C8057.15 9507.35 8042.37 9737.92 8034.43 9969.29C8024.49 10258.8 8039.63 10549.2 8028.44 10838.6C8026.5 10888.5 8026.39 10938.4 8030.37 10988.4C8039.16 11099.1 8072.03 11205.2 8062.41 11318.2C8061.73 11326.1 8059.42 11340.1 8050.43 11342.3C8047.5 11343 8044.79 11341.1 8041.89 11341.6C7967.26 11355.8 7872.55 11344.2 7795.58 11343.1C7554.16 11339.5 7312.93 11351.7 7071.83 11357C6677.17 11365.8 6286.04 11324.5 5890.68 11337.2C5680.06 11344 5469.1 11357.3 5258.93 11369.1C5151.15 11375.2 5044.61 11384.2 4937.15 11393.1C4916.56 11394.8 4895.64 11399.8 4875.14 11401.1C4858.07 11402.2 4836.6 11398.6 4821.09 11400C4814.73 11400.6 4812.06 11411 4802.18 11406.1C4793.92 11402 4800.1 11385.4 4800.28 11378.2C4803.84 11229.6 4780.39 11074.5 4766.24 10926.5C4738.05 10632 4739.75 10342.6 4744.16 10047.1C4748.06 9785.11 4759.82 9523.72 4762.15 9261.77C4769.43 9219.87 4771.31 9177.33 4774.24 9134.95L4774.2 9134.92ZM8044.33 9142.92C8021.43 9142.1 7998.28 9137.81 7975.44 9136.85C7714.66 9125.83 7454.53 9148.22 7193.73 9139.01C6893.49 9132.67 6593.13 9124.33 6292.4 9129.02C6074.25 9132.43 5856.92 9142.55 5638.77 9147.01C5589.13 9148.02 5539.38 9147.23 5489.78 9148.94C5491.51 9154.84 5492.03 9159.65 5491.77 9165.88C5488.79 9236.79 5466.5 9312.66 5461.82 9385.77C5447 9616.77 5474.15 9860.01 5489.76 10091.2C5504.34 10307.1 5525.3 10519.7 5529.67 10736.7C5531.49 10827.7 5532.67 10919.4 5533.67 11010.5C5533.72 11015.2 5535.79 11019.6 5535.83 11024.3L5536.66 11333.3C5538.24 11335.6 5539.86 11334.9 5542.13 11334.7C5677.17 11322.7 5817.15 11318.3 5952.59 11315.3C6324.62 11306.8 6694.25 11345.7 7065.78 11337.1C7222.65 11333.4 7378.88 11327.5 7535.62 11325.2C7553.57 11324.9 7571.87 11323.3 7589.48 11323.1C7722.49 11321.5 7857.53 11331.6 7989.25 11325.1C7999.53 11324.6 8010.02 11325.6 8020.31 11325.2L8018.34 11315.2C8025.38 11319.2 8031.28 11326.5 8040.29 11325.2C8042.63 11298.4 8043.22 11271.1 8042.39 11244.1C8039.79 11159.8 8017.49 11077 8010.34 10992.4C8003.5 10911.6 8009.14 10842.4 8012.4 10762.7C8017.8 10630.4 8011.17 10497.2 8010.23 10365C8008.82 10166.3 8013.05 9971.47 8022.34 9773.44C8031.39 9580.58 8039.96 9392.94 8040.12 9199.89C8040.12 9191.61 8047.5 9145.94 8044.33 9142.93V9142.92ZM5469.8 9148.91L5252.99 9154.99C5110.54 9158.53 4968.89 9150.14 4827.18 9140.89C4821.72 9140.54 4795.68 9133.02 4794.07 9140.24C4792.19 9155.93 4793.46 9172.22 4792.14 9187.87C4786.44 9255.58 4776.97 9320.75 4782.24 9389.8C4773.74 9610.54 4767.34 9831.93 4764.08 10053.1C4760.49 10297.3 4758.05 10538.9 4774.18 10782.6C4782.4 10906.8 4799.84 11030.3 4810.13 11154.3C4815.77 11222.5 4824.63 11300.6 4822.24 11368.2C4822.11 11372.1 4820.76 11375.4 4820.12 11379.1C4857.81 11386.1 4895.56 11376.3 4933.07 11373.1C5095.45 11359.6 5257.69 11345.1 5420.69 11339.1L5515.7 11335.1C5516.47 11210.9 5515.46 11086.4 5513.8 10962.4C5512.51 10866.1 5510.08 10769 5507.64 10672.8C5502.08 10453.1 5478.63 10234.2 5463.66 10015.3C5448.8 9798.03 5420.88 9549.38 5446 9334.03C5452.01 9282.49 5464.84 9231.45 5469.43 9179.61C5470.39 9168.89 5470.79 9159.71 5469.74 9148.91H5469.8Z" />
@@ -2940,12 +2957,12 @@
             <!-- Deliver -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
                 <div class="flex flex-col gap-8">
-                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                    <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                         Deliver
                     </div>
                     <div class="flex flex-col md:flex-row gap-8">
-                        <svg class="w-full md:w-fit blend" width="406" height="198" viewBox="0 0 406 198" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-full md:w-fit blend observe" width="406" height="198" viewBox="0 0 406 198"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M303.828 188.138L390.664 101.303C392.229 99.7376 392.226 97.1993 390.657 95.6384L303.821 9.25253C301.298 6.74274 297 8.52967 297 12.0883L297 185.31C297 188.874 301.309 190.658 303.828 188.138Z"
                                 fill="url(#paint0_linear_310_319)" />
@@ -2975,9 +2992,10 @@
                         </svg>
 
                         <div
-                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend">
+                            class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full blend observe">
                             In deliver step, I’m trying to
-                            <span class="font-semibold text-[var(--text-dark)]">create a high fidelity prototype with
+                            <span class="font-semibold text-[var(--text-dark)]">create a high fidelity prototype
+                                with
                                 interaction</span>
                             to helps us test the usability with a real users.
                         </div>
@@ -2985,7 +3003,7 @@
                 </div>
 
                 <div class="flex flex-col gap-12">
-                    <div class="flex flex-col w-full gap-2">
+                    <div class="flex flex-col w-full gap-2 observe">
                         <div class="flex justify-center w-full p-4 text-4xl text-[var(--pse-red2)] blend">
                             <div class="box-border border-1 border-[var(--text-secondary)] rounded-lg overflow-hidden">
                                 <img src="Images/flow1.gif" class="w-full h-auto">
@@ -2993,7 +3011,7 @@
                         </div>
                         <p class="text-[var(--zinc-600)] flex justify-center blend">Flow 01: Create New Campaign</p>
                     </div>
-                    <div class="flex flex-col w-full gap-2">
+                    <div class="flex flex-col w-full gap-2 observe">
                         <div class="flex justify-center w-full p-4 text-4xl text-[var(--pse-red2)] blend">
                             <div class="box-border border-1 border-[var(--text-secondary)] rounded-lg overflow-hidden">
                                 <img src="Images/flow2.gif" class="w-full h-auto">
@@ -3001,7 +3019,7 @@
                         </div>
                         <p class="text-[var(--zinc-600)] flex justify-center blend">Flow 02: Mass Unsubscribe</p>
                     </div>
-                    <div class="flex flex-col w-full gap-2">
+                    <div class="flex flex-col w-full gap-2 observe">
                         <div class="flex justify-center w-full p-4 text-4xl text-[var(--pse-red2)] blend">
                             <div class="box-border border-1 border-[var(--text-secondary)] rounded-lg overflow-hidden">
                                 <img src="Images/flow3.gif" class="w-full h-auto">
@@ -3009,7 +3027,7 @@
                         </div>
                         <p class="text-[var(--zinc-600)] flex justify-center blend">Flow 03: Campaign Reports</p>
                     </div>
-                    <div class="flex flex-col w-full gap-2">
+                    <div class="flex flex-col w-full gap-2 observe">
                         <div class="flex justify-center w-full p-4 text-4xl text-[var(--pse-red2)] blend">
                             <div class="box-border border-1 border-[var(--text-secondary)] rounded-lg overflow-hidden">
                                 <img src="Images/flow4.gif" class="w-full h-auto">
@@ -3022,12 +3040,12 @@
 
             <!-- Conclusion & Developer Handoff -->
             <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6 inverse full-bleed-inverse">
-                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">
+                <div class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">
                     Conclusion & Developer Handoff
                 </div>
                 <div class="flex flex-col gap-4">
                     <div
-                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full">
+                        class="text-base md:text-xl lg:text-2xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full observe">
                         After finalizing the design iterations, I moved to the next stage,
                         which involved transitioning the designs to the development phase.
                         We conducted multiple meetings to go through the design and discuss
@@ -3047,13 +3065,9 @@
             <!-- Page Controls -->
             <div class="flex flex-col bg-[var(--pse-red4)] full-bleed-inverse-pse blend">
                 <div class="flex flex-col md:flex-row justify-evenly w-full py-10 md:py-20 gap-8">
-                    <!-- <div class="shrinkbtn flex flex-col w-fit items-center justify-center">
-                    <p class="text-white font-bold text-8xl text-center w-fit"> Previous </p>
-                    <p class="text-white text-3xl">text</p>
-                </div> -->
                     <div class="shrinkbtn cursor-pointer">
-                        <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4"
-                            href="/UnderConstruction.html">
+                        <a class="flex flex-col w-full md:w-fit content-center items-center justify-center gap-2 md:gap-4 observe"
+                            href="/WisdomApp.html">
                             <p class="text-white font-bold text-4xl lg:text-8xl text-center w-fit"> Next </p>
                             <p class="text-white text-xl md:text-3xl">The Wisdom App</p>
                         </a>
@@ -3064,8 +3078,11 @@
             <!-- Contact -->
             <div class="contact flex gap-6 md:gap-10 flex-col w-full h-auto py-6 md:py-10 lg:py-16 xl:py-20">
                 <div class="flex flex-col gap-1">
-                    <h4 class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)]">Got an interesting idea?</h4>
-                    <h1 class="talk talk-pse font-extrabold blend text-7xl md:text-8xl xl:text-9xl leading-none">
+                    <h4 class="text-2xl md:text-4xl font-semibold text-[var(--text-dark)] observe">Got an
+                        interesting
+                        idea?</h4>
+                    <h1
+                        class="talk talk-pse font-extrabold blend text-7xl md:text-8xl xl:text-9xl leading-none observe">
                         Let's talk!
                     </h1>
                 </div>
@@ -3073,7 +3090,7 @@
                     <div class="w-6/12 flex flex-col gap-3 xl:flex-row">
                         <div class="flex flex-col gap-3 w-6/12 h-fit">
                             <div
-                                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                                 <div class="icon">
                                     <svg width="32" height="33" viewBox="0 0 32 33" stroke="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -3084,7 +3101,7 @@
                                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">LinkedIn</p>
                             </div>
                             <div
-                                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                                 <div class="icon">
                                     <svg width="32" height="33" viewBox="0 0 32 33" stroke="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -3095,7 +3112,7 @@
                                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Instagram</p>
                             </div>
                             <div
-                                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                                 <div class="icon">
                                     <svg width="32" height="33" viewBox="0 0 32 33" stroke="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -3108,7 +3125,7 @@
                         </div>
                         <div class="flex flex-col gap-3 w-6/12 h-fit">
                             <div
-                                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                                 <div class="icon">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -3132,7 +3149,7 @@
                                 <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Dribbble</p>
                             </div>
                             <div
-                                class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                                class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                                 <div class="icon">
                                     <svg width="32" height="32" viewBox="0 0 32 32" stroke="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -3146,7 +3163,7 @@
                     </div>
                     <div class="flex flex-col w-auto gap-3 h-fit">
                         <div
-                            class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                            class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                             <div class="icon">
                                 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -3158,7 +3175,7 @@
                             </p>
                         </div>
                         <div
-                            class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
+                            class="observe flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--pse-red4)] hover:text-[var(--pse-red4)]">
                             <div class="icon">
                                 <svg width="32" height="32" viewBox="0 0 32 32" stroke="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -3174,7 +3191,7 @@
                 </div>
 
                 <div class="footer" id="copyright">
-                    <div class="copyright">
+                    <div class="copyright observe">
                         <p class="text-[var(--text-dark)]">
                             This site is hand-crafted and coded, with care. ‭❤
                         </p>
@@ -3185,12 +3202,19 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+
     <!-- JS Scripts -->
-    <script src="js/mobileNavBtn.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/mobileNavBtn.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>
