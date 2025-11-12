@@ -360,6 +360,7 @@ nav.main-nav {
   z-index: 200;
   display: flex;
   pointer-events: none;
+  /* gap: -1px; */
 }
 
 .bar {

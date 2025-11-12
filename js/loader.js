@@ -35,14 +35,3 @@ gsap.to(".bar", 1.5, {
     },
     ease: "power4.inOut",
 });
-
-gsap.from(".animate-this", 1.5, {
-    delay: 4,
-    y: 200,
-    opacity: 0,
-    stagger: {
-        amount: 0.5,
-    },
-    ease: "power4.inOut",
-});
-
