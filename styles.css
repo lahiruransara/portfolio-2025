@@ -52,7 +52,7 @@ body {
 
   --text-dark: var(--zinc-950);
   --text-light: var(--zinc-50);
-  --text-secondary: var(--zinc-500);
+  --text-secondary: var(--zinc-600);
 
   /* Font Sizes */
   --fs-xl: clamp(2rem, 6.5vw + 1rem, 15rem);
@@ -98,7 +98,7 @@ body {
 
   --text-dark: var(--zinc-950);
   --text-light: var(--zinc-50);
-  --text-secondary: var(--zinc-500);
+  --text-secondary: var(--zinc-600);
 
   --pse-red1: #ff7469;
   --pse-red2: #f22e49;
@@ -167,6 +167,7 @@ body {
 .button:hover {
   .text {
     color: var(--text-light);
+    stroke: var(--text-light);
   }
 }
 
@@ -199,6 +200,18 @@ body {
   border-radius: inherit;
 }
 
+.button-icon::before {
+  content: "";
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: -1;
+  height: 64px;
+  width: 64px;
+  backdrop-filter: blur(8px) brightness(96%) saturate(120%);
+  background-color: color-mix(in srgb, var(--primary-300) 50%, transparent);
+  border-radius: inherit;
+}
 
 
 .resume-btn {
@@ -283,9 +296,6 @@ body {
   transform: translate(-50%, -50%);
   transform-origin: center center;
   transition: transform 300ms ease;
-  z-index: 100;
-
-  /* filter: blur(40px); */
 }
 
 .cursor-home {
@@ -413,5 +423,4 @@ nav.main-nav {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  /* background-color: red; */
 }

@@ -25,7 +25,7 @@
   </div> -->
 
   <!-- cursor -->
-  <div class="cursor cursor-home hidden lg:block blend"></div>
+  <div class="cursor cursor-home hidden lg:block z-[-100]"></div>
 
   <!-- Navigation -->
   <nav class="nav fixed w-full px-[5%] z-[100]">
@@ -115,7 +115,7 @@
   </nav>
 
   <!-- Header -->
-  <section class="isolate header flex gap-4 md:gap-8 flex-col w-full h-screen justify-center items-center">
+  <section class="header flex gap-4 md:gap-8 flex-col w-full h-screen justify-center items-center">
     <div class="gradient-canvas z-[-200]"></div>
     <div class="custom-container row1 w-full flex justify-center md:justify-end animate-this">
       <h1 class="font-extralight text-[var(--text-dark)] text-[size:var(--fs-xl)] leading-none">
@@ -173,10 +173,10 @@
 
       <!-- Resume button -->
       <div
-        class="resume-btn hoverbtn w-fit py-1 pl-5 pr-1 flex items-center gap-4 rounded-full bg-[var(--primary-600)]/2 border-2 border-[var(--primary-600)]/20 cursor-pointer reveal">
-        <p class="btn-text font-medium text-xl text-[var(--primary-600)]">Resume</p>
-        <div class="btn-icon p-4 bg-[var(--primary-100)]/20 rounded-full border-2 border-[var(--primary-600)]/2">
-          <svg class="btn-svg" stroke="var(--primary-600)" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        class="button hoverbtn w-fit py-1 pl-5 pr-1 flex items-center gap-4 rounded-full cursor-pointer reveal">
+        <p class="text font-medium text-xl text-[var(--primary-600)]">Resume</p>
+        <div class="button-icon p-4 rounded-full">
+          <svg class="text" stroke="var(--primary-600)" width="32" height="32" viewBox="0 0 32 32" fill="none">
             <path d="M8 24L24 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M11 8H24V21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
