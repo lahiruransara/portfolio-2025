@@ -1,19 +1,37 @@
 import * as THREE from 'https://unpkg.com/three@0.169.0/build/three.module.js';
 import { vertexShader, fluidShader, displayShader } from "./shaders.js"
 
+const currentPage = document.body.dataset.page;
+
 const colorSets = {
-  dark: {
-    color1: "#380077",
-    color2: "#ac73ff",
-    color3: "#09090b",
-    color4: "#1a1a1e",
-  },
-  light: {
-    color1: "#8f14ff",
-    color2: "#f5f0ff",
-    color3: "#fafafa",
-    color4: "#f4f4f5",
-  },
+    index: {
+        dark: {
+            color1: "#380077",
+            color2: "#ac73ff",
+            color3: "#09090b",
+            color4: "#1a1a1e",
+        },
+        light: {
+            color1: "#8f14ff",
+            color2: "#f5f0ff",
+            color3: "#fafafa",
+            color4: "#f4f4f5",
+        },
+    },
+    pse: {
+        dark: {
+            color1: "#E53935",
+            color2: "#721c1a",
+            color3: "#09090b",
+            color4: "#1a1a1e",
+        },
+        light: {
+            color1: "#E53935",
+            color2: "#ff7469",
+            color3: "#fafafa",
+            color4: "#f4f4f5",
+        },
+    },
 };
 
 const config = {
@@ -28,11 +46,16 @@ const config = {
     softness: 1.0,
 };
 
-// Function to update config colors based on dark mode
+// Function to update config colors based on dark mode and page
 function updateColorsByTheme() {
-  const isDark = document.body.classList.contains("dark-mode");
-  Object.assign(config, isDark ? colorSets.dark : colorSets.light);
-//   console.log("Theme updated:", isDark ? "dark" : "light", config);
+    const isDark = document.body.classList.contains("dark-mode");
+    const theme = isDark ? "dark" : "light";
+
+    // Use current page colors
+    const pageColors = colorSets[currentPage]?.[theme] || colorSets.index.light;
+
+    Object.assign(config, pageColors);
+    // console.log(`🎨 Updated colors for ${currentPage} (${theme})`, config);
 }
 
 // Initialize once on load
@@ -51,7 +74,7 @@ function hexToRgb(hex) {
 }
 
 const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
-const renderer = new THREE.WebGLRenderer({ antialias: true});
+const renderer = new THREE.WebGLRenderer({ antialias: true });
 
 const gradientCanvas = document.querySelector(".gradient-canvas");
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -110,7 +133,7 @@ const displayMaterial = new THREE.ShaderMaterial({
         },
         iFluid: { value: null },
         uDistortionAmount: { value: config.distortionAmount },
-        uColor1: { value: new THREE.Vector3(...hexToRgb(config.color1)) }, 
+        uColor1: { value: new THREE.Vector3(...hexToRgb(config.color1)) },
         uColor2: { value: new THREE.Vector3(...hexToRgb(config.color2)) },
         uColor3: { value: new THREE.Vector3(...hexToRgb(config.color3)) },
         uColor4: { value: new THREE.Vector3(...hexToRgb(config.color4)) },
@@ -171,10 +194,10 @@ function animate() {
     displayMaterial.uniforms.uDistortionAmount.value = config.distortionAmount;
     displayMaterial.uniforms.uColorIntensity.value = config.colorIntensity;
     displayMaterial.uniforms.uSoftness.value = config.softness;
-    displayMaterial.uniforms.uColor1.value.set( ...hexToRgb(config.color1));
-    displayMaterial.uniforms.uColor2.value.set( ...hexToRgb(config.color2));
-    displayMaterial.uniforms.uColor3.value.set( ...hexToRgb(config.color3));
-    displayMaterial.uniforms.uColor4.value.set( ...hexToRgb(config.color4));
+    displayMaterial.uniforms.uColor1.value.set(...hexToRgb(config.color1));
+    displayMaterial.uniforms.uColor2.value.set(...hexToRgb(config.color2));
+    displayMaterial.uniforms.uColor3.value.set(...hexToRgb(config.color3));
+    displayMaterial.uniforms.uColor4.value.set(...hexToRgb(config.color4));
 
     fluidMaterial.uniforms.iPreviousFrame.value = previousFluidTarget.texture;
     renderer.setRenderTarget(currentFluidTarget);
