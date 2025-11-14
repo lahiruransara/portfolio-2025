@@ -11,7 +11,7 @@
 <body class="bg-[var(--zinc-50)] duration-300 ease-in-out" data-page="index">
   <h1 class="counter font-majormono text-[var(--text-secondary)] text-[size:var(--fs-xl)]">0</h1>
 
-  <!-- <div class="overlay">
+  <div class="overlay">
     <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
@@ -22,10 +22,18 @@
     <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
-  </div> -->
+  </div>
 
   <!-- cursor -->
-  <div class="cursor cursor-home hidden lg:block z-[-100]"></div>
+  <!-- <div class="cursor cursor-home hidden lg:block z-[-100]"></div> -->
+  <div class="cursors-set">
+    <div class="cursor cursor-1 hidden lg:block bg-[var(--primary-700)]"></div>
+    <div class="cursor cursor-2 hidden lg:block bg-[var(--primary-600)]"></div>
+    <div class="cursor cursor-3 hidden lg:block bg-[var(--primary-500)]"></div>
+    <div class="cursor cursor-4 hidden lg:block bg-[var(--primary-400)]"></div>
+    <div class="cursor cursor-5 hidden lg:block bg-[var(--primary-300)]"></div>
+  </div>
+
 
   <!-- Navigation -->
   <nav class="nav fixed w-full px-[5%] z-[100]">
@@ -33,7 +41,7 @@
       <a href="https://test.lahiruransara.com">
         <div class="left-items cursor-pointer flex items-center justify-center size-fit">
           <div
-            class="logo cursor-pointer shrinkbtn flex items-center justify-center fill-[var(--text-dark)] stroke-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:stroke-[var(--primary-600)] duration-300 transition-colors ease-in-out">
+            class="logo cursor-pointer hoverbtn flex items-center justify-center fill-[var(--text-dark)] stroke-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:stroke-[var(--primary-600)] duration-300 transition-colors ease-in-out">
             <svg width="50" height="50" viewBox="0 0 50 50">
               <path
                 d="M14.0186 1H48.9671V10.3255L26.8352 32.4911L36.712 42.383H42.4078V26.0257L49.0001 19.4234V49H33.9702L17.5033 32.5079L42.4927 7.48034H14.0186V1Z"
@@ -49,8 +57,7 @@
       <div class="right-items flex items-center justify-center gap-6 size-fit">
         <!-- Menu Button for Mobile -->
         <div class="button flex md:hidden justify-center items-center w-[48px] h-[48px] rounded-full cursor-pointer">
-          <a
-            class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full z-3">
+          <a class="target-burger flex items-center justify-center w-[48px] h-[48px] rounded-full z-3">
             <ul class="buns absolute">
               <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
               <li class="bun absolute transition-transform duration-300 ease-in-out"></li>
@@ -153,8 +160,8 @@
   <section class="custom-container relative mx-auto">
     <!-- About me -->
     <div class="about flex gap-4 md:gap-8 flex-col w-full py-30 lg:py-40 h-auto justify-center">
-      <img class="dp w-[200px] h-[200px] rounded-full reveal" src="Images/dp.png" alt="display picture" />
-      <div class="flex flex-col gap-2 md:gap-4 xl:gap-6">
+      <img class="dp w-[200px] h-[200px] rounded-full reveal blend" src="Images/dp.png" alt="display picture" />
+      <div class="flex flex-col gap-2 md:gap-4 xl:gap-6 blend">
         <div class="flex flex-col gap-1 w-full lg:w-11/12">
           <h2 class="text-4xl md:text-6xl xl:text-8xl leading-tight text-[var(--text-dark)] reveal">Hi, I’m Lahiru —
           </h2>
@@ -172,8 +179,7 @@
       </div>
 
       <!-- Resume button -->
-      <div
-        class="button hoverbtn w-fit py-1 pl-5 pr-1 flex items-center gap-4 rounded-full cursor-pointer reveal">
+      <div class="button hoverbtn w-fit py-1 pl-5 pr-1 flex items-center gap-4 rounded-full cursor-pointer reveal">
         <p class="text font-medium text-xl text-[var(--primary-600)]">Resume</p>
         <div class="button-icon p-4 rounded-full">
           <svg class="text" stroke="var(--primary-600)" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -192,7 +198,7 @@
         <div class="project flex flex-col gap-4 reveal">
           <a href="/CampaignManager.html">
             <div
-              class="proj-card shrinkbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
+              class="proj-card hoverbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
               <svg width="322" height="58" viewBox="0 0 322 58" fill="none">
                 <path
                   d="M42.8009 21.456C42.8009 24.438 42.111 27.153 40.7313 29.6009C39.3516 32.0043 37.3042 33.9181 34.5893 35.3424C31.9188 36.7666 28.6698 37.4787 24.8421 37.4787H18.9672V52.5H4.14617V5.23307H24.8421C30.6281 5.23307 35.0566 6.70182 38.1276 9.63931C41.2431 12.5768 42.8009 16.5157 42.8009 21.456ZM23.1731 25.7955C26.2441 25.7955 27.7796 24.349 27.7796 21.456C27.7796 18.5631 26.2441 17.1166 23.1731 17.1166H18.9672V25.7955H23.1731ZM65.9947 52.9673C60.3422 52.9673 55.6689 51.6544 51.9748 49.0284C48.3252 46.358 46.3446 42.4636 46.0331 37.3452H61.7887C62.0113 40.0602 63.213 41.4176 65.3938 41.4176C66.195 41.4176 66.8626 41.2396 67.3967 40.8836C67.9753 40.483 68.2646 39.8821 68.2646 39.081C68.2646 37.9683 67.6637 37.0782 66.462 36.4106C65.2603 35.6984 63.391 34.8973 60.8541 34.0071C57.8276 32.939 55.3129 31.893 53.3101 30.8694C51.3517 29.8457 49.6604 28.3547 48.2362 26.3964C46.812 24.438 46.1221 21.9234 46.1666 18.8524C46.1666 15.7813 46.9455 13.1777 48.5032 11.0413C50.1055 8.86043 52.2641 7.21365 54.9791 6.10096C57.7385 4.98828 60.8318 4.43193 64.2589 4.43193C70.0449 4.43193 74.6291 5.76716 78.0117 8.43761C81.4388 11.1081 83.2413 14.8689 83.4194 19.7202H67.4634C67.4189 18.385 67.0851 17.4281 66.462 16.8495C65.8389 16.2709 65.0823 15.9816 64.1921 15.9816C63.569 15.9816 63.0572 16.2042 62.6566 16.6492C62.2561 17.0498 62.0558 17.6284 62.0558 18.385C62.0558 19.4532 62.6344 20.3434 63.7916 21.0555C64.9933 21.7231 66.8848 22.5465 69.4663 23.5256C72.4483 24.6383 74.8962 25.7065 76.81 26.7302C78.7683 27.7538 80.4596 29.1781 81.8838 31.0029C83.3081 32.8277 84.0202 35.1198 84.0202 37.8793C84.0202 40.7723 83.3081 43.376 81.8838 45.6904C80.4596 47.9602 78.39 49.7405 75.6751 51.0313C72.9601 52.322 69.7333 52.9673 65.9947 52.9673ZM104.049 17.0498V22.858H118.736V34.0071H104.049V40.6833H120.739V52.5H89.2276V5.23307H120.739V17.0498H104.049Z"
@@ -214,7 +220,7 @@
         <div class="project flex flex-col gap-4 reveal">
           <a href="/WisdomApp.html">
             <div
-              class="proj-card shrinkbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
+              class="proj-card hoverbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
               <svg width="110" height="123" viewBox="0 0 110 123" fill="none">
                 <path
                   d="M96.4327 116.492C90.7604 114.618 84.1237 111.406 81.3135 109.771C81.5933 108.855 82.2115 106.672 82.8859 105.144C83.7145 103.266 85.0581 100.151 86.0381 97.2243C87.166 93.8564 87.2119 90.9885 86.1259 88.2887C85.2203 86.0378 83.3508 80.7838 81.0327 77.2159C78.7246 73.6633 76.9819 73.4499 76.5329 73.3949L76.5272 73.3942C75.8916 73.3163 74.4242 73.4522 72.6549 76.5776C70.8856 79.703 69.1647 85.6787 68.8639 88.3164C68.563 90.9541 68.9826 92.7938 69.8802 96.1818C70.8281 99.7596 73.7102 104.238 74.9221 105.997C73.8458 105.265 71.2738 103.488 69.9214 102.584C68.2309 101.454 67.0209 100.546 62.9797 97.2733C59.7392 94.6486 57.4146 92.2162 55.9286 91.0312C56.377 90.1812 57.8082 87.8538 59.9464 85.3443C62.6191 82.2075 66.2356 78.4313 66.9104 74.2146C67.448 70.8554 66.3408 62.743 65.363 59.3145C64.3852 55.886 63.1958 54.4288 61.7636 54.1593C60.5052 53.9224 58.7821 55.1594 57.0586 56.8132C55.3352 58.467 50.6195 64.2446 49.6391 69.6415C48.6587 75.0383 49.7672 80.0637 50.3772 82.4083C50.8093 84.0694 51.5702 86.1828 51.9434 87.041C51.3593 86.4184 49.7902 84.7618 48.2685 83.1029C46.3664 81.0293 40.6952 74.1586 38.2557 70.9705C36.3042 68.4201 33.4823 64.284 32.333 62.5503C32.5688 62.2407 33.1295 61.249 34.0364 60.0218C35.0702 58.6229 37.9973 56.0184 40.8912 52.1182C43.7852 48.218 43.7386 45.7903 43.8488 43.077C43.959 40.3638 43.4972 34.9157 42.3927 31.5781C41.6022 29.1892 40.9191 27.9541 39.5214 27.5944C38.1238 27.2348 36.2505 28.7841 35.157 29.6998C34.0635 30.6155 31.7556 33.3728 30.5294 35.1449C29.3031 36.917 28.3049 38.6586 27.7472 40.3482C26.9433 42.7836 26.7584 46.4674 26.8933 48.9164C26.9962 50.7849 27.7399 54.5114 28.1501 56.0501C27.2514 54.5578 25.2267 51.1376 24.3253 49.5494C23.4238 47.9612 21.4199 44.1331 20.5331 42.4477C20.4831 42.1506 20.5468 40.541 21.5295 36.3391C22.7579 31.0867 25.1818 24.7259 23.4433 19.271C22.1223 15.1261 16.7891 7.15163 13.6959 3.80504C10.6027 0.458451 8.58896 0.662676 8.06032 0.752215C7.53167 0.841754 6.43134 1.28079 5.28728 3.16221C4.14323 5.04363 2.74533 10.5871 2.4536 13.8784C2.16188 17.1697 1.73476 19.6738 2.9229 23.874C4.49903 29.4458 9.42506 35.8272 12.124 38.5391C14.2831 40.7086 17.1281 42.6876 18.3017 43.432C18.8551 44.5001 20.4304 47.6112 22.2566 50.9208C24.0828 54.2304 27.5957 59.7735 29.0902 62.1561C27.9408 61.3691 25.4123 59.6164 23.8575 58.8018C21.9141 57.7834 20.4664 57.1938 17.2537 56.4641C14.0411 55.7344 7.25407 57.1288 4.1753 58.3674C1.19164 59.5677 0.227155 60.716 0.102371 61.5293C0.0514776 61.861 -0.283929 63.3917 2.56405 66.0436C5.41204 68.6955 13.8701 73.8957 18.5542 73.8149C22.588 73.7454 28.2649 71.3883 31.3187 70.6776C33.7617 70.1091 34.5572 70.1391 34.6495 70.2252C35.2509 71.0437 36.9219 73.2912 38.7951 75.7336C40.6682 78.176 45.3381 83.5736 47.439 85.9671C47.1534 85.7696 45.9226 85.137 43.284 84.1863C39.9857 82.9978 35.7968 82.2208 31.5933 82.5521C27.779 82.8527 20.6243 86.6511 18.7425 88.2469C17.5253 89.2791 15.5711 90.9707 15.9766 92.5589C16.4354 94.3556 18.6681 95.5222 21.8958 97.0635C25.1234 98.6048 34.1282 100.946 37.9782 99.8301C41.7382 98.7406 48.1372 94.4394 50.017 93.4094C51.5209 92.5854 52.8534 92.1075 53.3317 91.9716C54.556 93.1411 57.5466 95.9342 59.7145 97.7502C61.8825 99.5662 67.2909 103.706 69.7241 105.549C68.3074 105.25 65.1418 104.629 63.8125 104.537C62.1508 104.422 57.0061 104.235 53.1204 105.618C48.6974 107.193 42.75 112.55 40.9126 115.309C40.1824 116.406 39.7299 117.709 40.0583 118.463C40.532 119.549 41.5819 120.593 44.2279 121.274C48.4332 122.355 58.5672 123.108 62.0196 121.719C65.4719 120.33 69.3317 116.159 72.0835 113.47C74.285 111.319 75.4405 110.537 76.5652 109.982C76.5652 109.982 87.8283 116.203 93.9415 118.328C98.1828 119.801 105.623 121.713 108.938 122.437L109.465 120.069C106.667 119.527 102.214 118.403 96.4327 116.492Z"
@@ -230,7 +236,7 @@
         <div class="project flex flex-col gap-4 reveal">
           <a href="/CoronaAdmin.html">
             <div
-              class="proj-card shrinkbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
+              class="proj-card hoverbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
               <svg width="210" height="86" viewBox="0 0 210 86" fill="none">
                 <path
                   d="M109.901 0.318071C110.1 0.31736 110.299 0.31665 110.504 0.315918C110.924 0.316205 111.343 0.320124 111.763 0.32749C112.394 0.337524 113.025 0.333588 113.657 0.327849C117.114 0.331058 119.958 0.912839 122.523 3.36214C124.243 5.3899 124.905 7.57584 124.915 10.186C124.917 10.4222 124.919 10.6584 124.921 10.9018C124.926 11.6846 124.93 12.4674 124.933 13.2502C124.935 13.6523 124.935 13.6523 124.936 14.0626C124.943 15.4832 124.947 16.9039 124.949 18.3245C124.953 19.7858 124.963 21.247 124.975 22.7082C124.982 23.8367 124.985 24.9651 124.986 26.0935C124.987 26.6318 124.991 27.17 124.996 27.7082C125.034 31.64 124.863 34.9331 122.003 37.9226C119.325 40.1982 116.547 40.3383 113.187 40.3657C112.75 40.3706 112.313 40.3786 111.876 40.3899C111.242 40.4061 110.608 40.4125 109.974 40.4168C109.595 40.4226 109.217 40.4285 108.828 40.4345C107.789 40.2639 107.176 40.0276 106.385 39.3278C105.57 38.1486 105.77 36.6463 105.785 35.2668C105.782 34.9099 105.779 34.553 105.776 34.1852C105.769 33.2084 105.771 32.2322 105.776 31.2554C105.781 30.2321 105.777 29.2089 105.774 28.1857C105.771 26.4674 105.775 24.7493 105.783 23.0311C105.793 21.0461 105.79 19.0613 105.78 17.0763C105.772 15.3704 105.771 13.6646 105.776 11.9588C105.778 10.9406 105.779 9.92255 105.773 8.90438C105.767 7.76916 105.775 6.63429 105.785 5.49909C105.781 5.16246 105.778 4.82583 105.774 4.479C105.81 2.26964 105.81 2.26964 106.387 1.43861C107.496 0.458908 108.457 0.317226 109.901 0.318071Z"
@@ -277,7 +283,7 @@
         <div class="project flex flex-col gap-4 reveal">
           <a href="/UnderConstruction.html">
             <div
-              class="proj-card shrinkbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
+              class="proj-card hoverbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
               <svg width="172" height="166" viewBox="0 0 172 166" fill="none">
                 <path
                   d="M61.9518 34.92C50.3718 41.16 42.3718 50.87 35.8918 62.01C33.6518 65.86 32.2318 70.17 29.5218 74C27.8918 72.75 27.6418 70.96 27.2318 69.38C23.5618 55.16 28.1718 43.51 39.0318 34.32C52.5318 22.9 68.2218 16.97 86.0518 17.27C90.2118 17.34 94.1718 18.45 97.8418 20.44C98.8118 20.97 100.002 21.49 98.3518 22.8C90.3918 29.12 85.9318 37.91 81.5118 46.73C78.5018 52.74 75.7218 58.87 71.9918 64.5C67.0818 71.92 60.3818 76.65 51.7218 78.72C48.4618 79.5 45.2918 80.68 42.0318 81.47C39.3818 82.12 38.1518 83.71 37.6618 86.31C35.5418 97.63 37.0618 107.9 45.8818 116.19C47.4418 117.65 49.1418 118.88 51.0418 119.86C58.8818 123.92 65.3418 122.12 69.7118 114.41C72.2918 109.87 74.5718 105.15 76.9718 100.51C78.9718 96.64 80.8218 92.69 82.9518 88.89C85.3518 84.62 86.1018 80.26 84.3418 75.63C82.5718 70.99 83.2918 66.68 85.4318 62.32C90.2218 52.56 96.2718 43.57 102.022 34.39C103.042 32.75 104.002 32.64 105.682 33.47C107.652 34.44 106.912 35.52 106.252 36.76C102.252 44.22 97.8918 51.49 94.5218 59.28C93.2918 62.13 92.2318 65.06 91.2118 68C90.1918 70.94 90.2818 73.86 91.7018 76.7C93.5518 80.4 93.3218 84.05 91.7218 87.86C86.2618 100.85 79.5418 113.22 73.0418 125.68C69.8718 131.76 63.2718 134 55.5418 132.11C40.6518 128.48 30.4218 116.09 30.2118 100.01C29.9218 77.65 38.9918 58.97 54.4218 43.17C57.0218 40.51 59.9918 38.2 62.7818 35.72C63.2318 35.53 63.7218 35.14 63.4218 34.73C62.9918 34.15 62.3918 34.47 61.9418 34.92H61.9518Z"
@@ -377,7 +383,7 @@
         <div class="project flex flex-col gap-4 reveal">
           <a href="/UnderConstruction.html">
             <div
-              class="proj-card shrinkbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
+              class="proj-card hoverbtn flex justify-center items-center w-96 h-56 rounded-xl bg-[var(--zinc-600)]/2 hover:bg-[var(--primary-600)]/2 border-2 border-[var(--zinc-600)]/20">
               <svg width="264" height="73" viewBox="0 0 264 73" fill="none">
                 <path
                   d="M64.3708 37.0219C64.1636 19.35 49.6697 5.19206 31.9978 5.39926C14.3259 5.60645 0.167964 20.1003 0.375158 37.7722C0.582353 55.4441 15.0762 69.6021 32.7481 69.3949L50.7469 69.1838C58.4784 69.0932 64.6724 62.7521 64.5818 55.0207L64.3708 37.0219Z"
@@ -451,7 +457,7 @@
         <div class="w-6/12 flex flex-col gap-3 xl:flex-row">
           <div class="flex flex-col gap-3 w-6/12 h-fit">
             <a href="https://www.linkedin.com/in/lahiruransara/"
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+              class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
               <div class="icon">
                 <svg width="32" height="33" viewBox="0 0 32 33" stroke="none">
                   <path
@@ -461,7 +467,7 @@
               <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">LinkedIn</p>
             </a>
             <a href="https://www.instagram.com/lahiru_ransara/"
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+              class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
               <div class="icon">
                 <svg width="32" height="33" viewBox="0 0 32 33" stroke="none">
                   <path
@@ -471,7 +477,7 @@
               <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Instagram</p>
             </a>
             <a href="https://www.upwork.com/freelancers/~01497ffb9358027100"
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+              class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
               <div class="icon">
                 <svg width="32" height="33" viewBox="0 0 32 33" stroke="none">
                   <path
@@ -483,7 +489,7 @@
           </div>
           <div class="flex flex-col gap-3 w-6/12 h-fit">
             <a href="https://dribbble.com/LahiruR"
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--primary-600)] hover:text-[var(--primary-600)]">
+              class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer stroke-[var(--zinc-900)] text-[var(--text-dark)] hover:stroke-[var(--primary-600)] hover:text-[var(--primary-600)]">
               <div class="icon">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <path
@@ -506,7 +512,7 @@
               <p class="text-2xl md:text-3xl lg:text-4xl leading-none font-semibold">Dribbble</p>
             </a>
             <a href="https://www.behance.net/lahiruR"
-              class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+              class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
               <div class="icon">
                 <svg width="32" height="32" viewBox="0 0 32 32" stroke="none">
                   <path
@@ -519,7 +525,7 @@
         </div>
         <div class="flex flex-col w-auto gap-3 h-fit">
           <a href="mailto:hello@lahiruransara.com"
-            class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+            class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
             <div class="icon">
               <svg width="32" height="32" viewBox="0 0 32 32">
                 <path
@@ -531,7 +537,7 @@
             </p>
           </a>
           <a href="tel:+19866009246"
-            class="flex shrinkbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
+            class="flex hoverbtn items-center gap-3 w-fit duration-300 transition-colors ease-in-out hover:cursor-pointer fill-[var(--zinc-900)] text-[var(--text-dark)] hover:fill-[var(--primary-600)] hover:text-[var(--primary-600)]">
             <div class="icon">
               <svg width="32" height="32" viewBox="0 0 32 32" stroke="none">
                 <path

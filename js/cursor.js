@@ -1,49 +1,53 @@
-const cursor = document.querySelector(".cursor");
+const cursors = document.querySelectorAll(".cursor");
 const btns = document.querySelectorAll(".hoverbtn");
-const shrinkBtns = document.querySelectorAll(".shrinkbtn");
 
-const cursorSize = 8;
 let mouseX = 0;
 let mouseY = 0;
-let currentX = 0;
-let currentY = 0;
 
-// Track actual mouse position
+const lerp = (x, y, a) => x * (1 - a) + y * a;
+
+// Starting positions for each circle
+const positions = Array.from(cursors).map(() => ({ x: 0, y: 0 }));
+
+// Track real mouse position
 document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX + cursorSize / 2;
-  mouseY = e.clientY + cursorSize / 2;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
-// Smooth cursor animation loop
-function animateCursor() {
-  const ease = 0.05;
-  currentX += (mouseX - currentX) * ease;
-  currentY += (mouseY - currentY) * ease;
+// Delay profiles (tweak these)
+let easeNormal = [0.28, 0.24, 0.21, 0.18, 0.15];   // fast + tight
+let easeHover  = [0.18, 0.16, 0.14, 0.12, 0.10];   // slower + stretched
 
-  cursor.style.left = `${currentX}px`;
-  cursor.style.top = `${currentY}px`;
+// Current active delays
+let currentEase = easeNormal;
+
+function animateCursor() {
+  cursors.forEach((cursor, index) => {
+    const ease = currentEase[index];  // <-- dynamic delay value
+    const pos = positions[index];
+
+    pos.x = lerp(pos.x, mouseX, ease);
+    pos.y = lerp(pos.y, mouseY, ease);
+
+    cursor.style.left = pos.x + "px";
+    cursor.style.top = pos.y + "px";
+  });
 
   requestAnimationFrame(animateCursor);
 }
+
 animateCursor();
 
 // Hover effect for buttons
-btns.forEach(btn => {
+btns.forEach((btn) => {
   btn.addEventListener("mouseenter", () => {
-    cursor.classList.add("large");
+    currentEase = easeHover;   // switch to delayed trailing
+    cursors.forEach(c => c.classList.add("large"));
   });
 
   btn.addEventListener("mouseleave", () => {
-    cursor.classList.remove("large");
-  });
-});
-
-shrinkBtns.forEach(btn => {
-  btn.addEventListener("mouseenter", () => {
-    cursor.classList.add("small");
-  });
-
-  btn.addEventListener("mouseleave", () => {
-    cursor.classList.remove("small");
+    currentEase = easeNormal;  // switch back
+    cursors.forEach(c => c.classList.remove("large"));
   });
 });
