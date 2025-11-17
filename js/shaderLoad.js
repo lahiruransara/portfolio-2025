@@ -32,6 +32,34 @@ const colorSets = {
             color4: "#f4f4f5",
         },
     },
+    corona: {
+        dark: {
+            color1: "#8170ED",
+            color2: "#7ACF9C",
+            color3: "#09090b",
+            color4: "#E36176",
+        },
+        light: {
+            color1: "#8170ED",
+            color2: "#7ACF9C",
+            color3: "#fafafa",
+            color4: "#E36176",
+        },
+    },
+    wisdom: {
+        dark: {
+            color1: "#29AAE2",
+            color2: "#3AF2CA",
+            color3: "#09090b",
+            color4: "#9832FE",
+        },
+        light: {
+            color1: "#29AAE2",
+            color2: "#3AF2CA",
+            color3: "#fafafa",
+            color4: "#9832FE",
+        },
+    },
 };
 
 const config = {

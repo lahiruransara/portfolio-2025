@@ -5,25 +5,25 @@
 }
 
 .left, .right {
-    height: 48px;
-    width: 48px;
-    display: flex;;
+    /* height: 48px; */
+    /* width: 48px; */
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .arrow-btn .btn-svg {
-    fill: var(--text-dark);
+    /* fill: var(--text-dark); */
     transition: all 300ms ease;
 }
 
 .arrow-btn:hover {
-  border-color: var(--primary-600);
+  /* border-color: var(--primary-600); */
   transition: all 300ms ease;
 
   .btn-svg {
-    fill: var(--primary-50);
+    /* fill: var(--primary-50); */
     transition: all 300ms ease;
   }
 }
