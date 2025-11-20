@@ -236,12 +236,12 @@ body {
 
 .button:hover {
   .text {
-    color: var(--text-light);
-    stroke: var(--text-light);
+    /* color: var(--text-light); */
+    /* stroke: var(--text-light); */
   }
 
   .button-icon {
-    fill: var(--text-light);
+    /* fill: var(--text-light); */
   }
 }
 
@@ -345,6 +345,7 @@ body {
 .cursor.large {
   transform: translate(-50%, -50%) scale(8);
   filter: blur(4px);
+  /* opacity: 80%; */
 }
 
 /* Mobile Navigation Button */
@@ -460,7 +461,7 @@ nav.main-nav {
 }
 
 .theme-toggle:hover .iconLight {
-  fill: var(--text-light);
+  /* fill: var(--text-light); */
 }
 
 .theme-toggle .iconDark {
@@ -468,5 +469,5 @@ nav.main-nav {
 }
 
 .theme-toggle:hover .iconDark {
-  fill: var(--text-light);
+  /* fill: var(--text-light); */
 }

@@ -8,14 +8,20 @@
 }
 
 .group {
-    gap: 24px;
+    gap:8px;
     animation: spin 80s infinite linear;
+    padding-right: 8px;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .group {
+    gap: 24px;
     padding-right: 24px;
+  }
 }
 
 .card {
-    /* flex: 0 0 400px; */
-    /* background: lightskyblue; */
     justify-content: center;
     border-radius: 16px;
     overflow: hidden;
@@ -31,19 +37,24 @@
 }
 
 .group2 {
-    gap: 24px;
+    gap: 8px;
     animation: spin 50s infinite linear;
+    padding-right: 8px;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .group2 {
+    gap: 24px;
     padding-right: 24px;
+  }
 }
 
 .card2 {
-    /* flex: 0 0 400px; */
-    /* background: lightskyblue; */
     justify-content: center;
-    /* border-radius: 1000px; */
     overflow: hidden;
-    /* border: 2px solid var(--zinc-400); */
 }
+
 @keyframes spin {
     from {
         translate: 0;
@@ -51,4 +62,8 @@
     to {
         translate: -100%;
     }
+}
+
+@media screen {
+    
 }

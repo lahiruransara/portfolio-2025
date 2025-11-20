@@ -105,6 +105,7 @@ const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 
 const gradientCanvas = document.querySelector(".gradient-canvas");
+// console.log("Canvas size:", window.innerWidth, window.innerHeight);
 renderer.setSize(window.innerWidth, window.innerHeight);
 gradientCanvas.appendChild(renderer.domElement);
 
@@ -114,7 +115,7 @@ const fluidTarget1 = new THREE.WebGLRenderTarget(
     {
         minFilter: THREE.LinearFilter,
         magFilter: THREE.LinearFilter,
-        format: THREE.RGBFormat,
+        format: THREE.RGBAFormat,
         type: THREE.FloatType,
     }
 );
@@ -125,7 +126,7 @@ const fluidTarget2 = new THREE.WebGLRenderTarget(
     {
         minFilter: THREE.LinearFilter,
         magFilter: THREE.LinearFilter,
-        format: THREE.RGBFormat,
+        format: THREE.RGBAFormat, 
         type: THREE.FloatType,
     }
 );
@@ -181,25 +182,6 @@ let mouseX = 0,
 let prevMouseX = 0,
     prevMouseY = 0;
 let lastMoveTime = 0;
-
-// document.addEventListener("mousemove", (e) => {
-//     const rect = gradientCanvas.getBoundingClientRect();
-//     prevMouseX = mouseX;
-//     prevMouseY = mouseY;
-//     mouseX = e.clientX - rect.left;
-//     mouseY = rect.height - (e.clientY - rect.top);
-//     lastMoveTime = performance.now();
-//     fluidMaterial.uniforms.iMouse.value.set(
-//         mouseX,
-//         mouseY,
-//         prevMouseX,
-//         prevMouseY
-//     );
-// });
-
-// document.addEventListener("mouseleave", () => {
-//     fluidMaterial.uniforms.iMouse.value.set(0, 0, 0, 0);
-// });
 
 function animate() {
     requestAnimationFrame(animate);
