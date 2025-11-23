@@ -35,35 +35,3 @@
         translate: -100%;
     }
 }
-
-.group2 {
-    gap: 8px;
-    animation: spin 50s infinite linear;
-    padding-right: 8px;
-}
-
-/* Tablet and up */
-@media (min-width: 768px) {
-  .group2 {
-    gap: 24px;
-    padding-right: 24px;
-  }
-}
-
-.card2 {
-    justify-content: center;
-    overflow: hidden;
-}
-
-@keyframes spin {
-    from {
-        translate: 0;
-    }
-    to {
-        translate: -100%;
-    }
-}
-
-@media screen {
-    
-}
