@@ -1,39 +1,135 @@
-.carousel {
-    /* margin: 100px auto; */
-    overflow-x: auto;
+:root {
+  --item-size: 180px;
+  --card-size: 400px;
+  --duration: 60s;
+  --border: 24px
 }
 
-.carousel::-webkit-scrollbar {
-    display: none;
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --item-size: 100px;
+    --card-size: 320px;
+    --border: 16px;
+  }
 }
 
-.group {
-    gap: 8px;
-    animation: spin 80s infinite linear;
-    padding-right: 8px;
+/* Phone */
+@media (max-width: 768px) {
+  :root {
+    --item-size: 80px;
+    --card-size: 120px;
+    --border: 8px;
+  }
 }
 
-/* Tablet and up */
-@media (min-width: 768px) {
-    .group {
-        gap: 24px;
-        padding-right: 24px;
+@keyframes scrollLeft2 {
+    to {
+        left: calc(var(--card-size) * -1);
     }
 }
 
 .card {
-    justify-content: center;
-    border-radius: 16px;
+    left: max(calc(var(--card-size) * 7), 100%);
+    animation-name: scrollLeft2;
+    animation-duration: var(--duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -30s;
+    pointer-events: none;
+    border: 2px solid var(--zinc-300);
+    border-radius: var(--border);
     overflow: hidden;
-    border: 2px solid var(--zinc-400);
 }
 
-@keyframes spin {
-    from {
-        translate: 0;
-    }
+.card1 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 1) * -1);
+}
 
+.card2 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 2) * -1);
+}
+
+.card3 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 3) * -1);
+}
+
+.card4 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 4) * -1);
+}
+
+.card5 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 5) * -1);
+}
+
+.card6 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 6) * -1);
+}
+
+.card7 {
+    animation-delay: calc(var(--duration) / 7 * (7 - 7) * -1);
+}
+
+.carousel-audience {
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+.item {
+    left: max(calc(var(--item-size) * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: var(--duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -10s;
+    pointer-events: none;
+}
+
+@keyframes scrollLeft {
     to {
-        translate: -100%;
+        left: calc(var(--item-size) * -1);
     }
+}
+
+.item1 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 8) * -1);
+}
+
+.item9 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 9) * -1);
+}
+
+.item10 {
+    animation-delay: calc(var(--duration) / 10 * (10 - 10) * -1);
 }
