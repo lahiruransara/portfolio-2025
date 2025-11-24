@@ -141,6 +141,11 @@ body {
   /* background-color: #1a1a1e; */
   position: relative;
   overflow: hidden;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+		transform: scale(.95);
+	}
 }
 
 /* Border */
@@ -222,6 +227,11 @@ body {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+		transform: scale(.9);
+	}
 }
 
 .button .text {
@@ -273,6 +283,11 @@ body {
 .logo {
   width: 2.5rem;
   height: 2.5rem;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+		transform: scale(.9);
+	}
 }
 
 @media (min-width: 48rem) {
@@ -306,6 +321,14 @@ body {
 .full-bleed-inverse-worldwise {
   box-shadow: 0 0 0 100vmax var(--wisdom-blue);
   clip-path: inset(0 -100vmax);
+}
+
+.contact-link {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+		transform: scale(.95);
+	}
 }
 
 .blend {
@@ -426,4 +449,12 @@ nav.main-nav {
 
 .theme-toggle .iconDark {
   fill: var(--text-dark);
+}
+
+.hover-scale {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+		transform: scale(.95);
+	}
 }
