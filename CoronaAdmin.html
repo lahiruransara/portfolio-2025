@@ -37,7 +37,7 @@
   </div>
 
   <!-- Navigation -->
-  <div class="nav fixed w-full px-[5%] z-[100]">
+  <nav class="nav fixed w-full px-[5%] z-[100]">
     <div class="flex justify-center items-center py-4 md:py-10">
       <a href="https://test.lahiruransara.com">
         <div class="left-items cursor-pointer">
@@ -99,7 +99,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 
   <!-- Mobile Navigation -->
   <nav class="main-nav bg-[var(--zinc-50)] fixed w-full h-full left-0 top-0">
@@ -188,11 +188,12 @@
         </svg>
 
         <!-- Community button -->
-        <a class="button flex items-center content-center gap-4 px-8 py-3.5 cursor-pointer hoverbtn backdrop-blur-md" href="https://www.figma.com/community/file/1262092703434642604/corona-admin-design-system-community">
-          <svg class="button-icon fill-[var(--text-dark)] duration-300" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <a class="button flex items-center content-center gap-4 px-8 py-3.5 cursor-pointer hoverbtn backdrop-blur-md"
+          href="https://www.figma.com/community/file/1262092703434642604/corona-admin-design-system-community">
+          <svg class="button-icon fill-[var(--text-dark)] duration-300" width="20" height="20" viewBox="0 0 20 20"
+            fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M12.4996 1.6665C13.1766 1.66646 13.8377 1.87262 14.3947 2.25753C14.9518 2.64245 15.3784 3.18788 15.6178 3.82123C15.8572 4.45458 15.898 5.14582 15.7349 5.80296C15.5718 6.4601 15.2124 7.05198 14.7046 7.49984C15.3257 8.04635 15.7214 8.80432 15.8147 9.62636C15.908 10.4484 15.6923 11.2758 15.2095 11.9476C14.7267 12.6195 14.0113 13.0877 13.2024 13.2614C12.3935 13.4351 11.5489 13.3018 10.8329 12.8873V14.9998C10.8329 15.5568 10.6933 16.1049 10.4268 16.5941C10.1604 17.0832 9.77567 17.4978 9.30776 17.7999C8.83984 18.1021 8.30367 18.2821 7.74823 18.3237C7.1928 18.3653 6.6358 18.267 6.12814 18.0378C5.62048 17.8086 5.17833 17.4559 4.8421 17.0119C4.50586 16.5678 4.28626 16.0466 4.20335 15.4958C4.12045 14.945 4.17689 14.3822 4.3675 13.8589C4.55812 13.3355 4.87685 12.8683 5.29456 12.4998C4.93991 12.187 4.65588 11.8023 4.46134 11.3713C4.2668 10.9402 4.1662 10.4727 4.16622 9.99984C4.1662 9.52693 4.2668 9.05944 4.46134 8.6284C4.65588 8.19737 4.93991 7.81266 5.29456 7.49984C4.78674 7.05198 4.42735 6.4601 4.26421 5.80296C4.10108 5.14582 4.14193 4.45458 4.38134 3.82123C4.62075 3.18788 5.04735 2.64245 5.60439 2.25753C6.16142 1.87262 6.82247 1.66646 7.49956 1.6665H12.4996ZM9.16622 13.3332H7.49956C7.16992 13.3332 6.84769 13.4309 6.57361 13.6141C6.29952 13.7972 6.0859 14.0575 5.95976 14.362C5.83361 14.6666 5.80061 15.0017 5.86491 15.325C5.92922 15.6483 6.08796 15.9453 6.32105 16.1783C6.55413 16.4114 6.8511 16.5702 7.17441 16.6345C7.49771 16.6988 7.83282 16.6658 8.13736 16.5396C8.44191 16.4135 8.7022 16.1999 8.88534 15.9258C9.06847 15.6517 9.16622 15.3295 9.16622 14.9998V13.3332ZM9.16622 8.33317H7.49956C7.05753 8.33317 6.63361 8.50877 6.32105 8.82133C6.00848 9.13389 5.83289 9.55781 5.83289 9.99984C5.83289 10.4419 6.00848 10.8658 6.32105 11.1783C6.63361 11.4909 7.05753 11.6665 7.49956 11.6665H9.16622V8.33317ZM12.4996 8.33317C12.0575 8.33317 11.6336 8.50877 11.321 8.82133C11.0085 9.13389 10.8329 9.55781 10.8329 9.99984C10.8329 10.4419 11.0085 10.8658 11.321 11.1783C11.6336 11.4909 12.0575 11.6665 12.4996 11.6665C12.9416 11.6665 13.3655 11.4909 13.6781 11.1783C13.9906 10.8658 14.1662 10.4419 14.1662 9.99984C14.1662 9.55781 13.9906 9.13389 13.6781 8.82133C13.3655 8.50877 12.9416 8.33317 12.4996 8.33317ZM12.4996 3.33317H10.8329V6.6665H12.4996C12.932 6.66844 13.3483 6.50218 13.6605 6.20285C13.9727 5.90353 14.1563 5.49457 14.1725 5.06239C14.1887 4.6302 14.0363 4.20863 13.7475 3.88674C13.4586 3.56485 13.056 3.36784 12.6246 3.33734L12.4996 3.33317ZM9.16622 3.33317H7.49956C7.05753 3.33317 6.63361 3.50877 6.32105 3.82133C6.00848 4.13389 5.83289 4.55781 5.83289 4.99984C5.83289 5.44186 6.00848 5.86579 6.32105 6.17835C6.63361 6.49091 7.05753 6.6665 7.49956 6.6665H9.16622V3.33317Z"
-              />
+              d="M12.4996 1.6665C13.1766 1.66646 13.8377 1.87262 14.3947 2.25753C14.9518 2.64245 15.3784 3.18788 15.6178 3.82123C15.8572 4.45458 15.898 5.14582 15.7349 5.80296C15.5718 6.4601 15.2124 7.05198 14.7046 7.49984C15.3257 8.04635 15.7214 8.80432 15.8147 9.62636C15.908 10.4484 15.6923 11.2758 15.2095 11.9476C14.7267 12.6195 14.0113 13.0877 13.2024 13.2614C12.3935 13.4351 11.5489 13.3018 10.8329 12.8873V14.9998C10.8329 15.5568 10.6933 16.1049 10.4268 16.5941C10.1604 17.0832 9.77567 17.4978 9.30776 17.7999C8.83984 18.1021 8.30367 18.2821 7.74823 18.3237C7.1928 18.3653 6.6358 18.267 6.12814 18.0378C5.62048 17.8086 5.17833 17.4559 4.8421 17.0119C4.50586 16.5678 4.28626 16.0466 4.20335 15.4958C4.12045 14.945 4.17689 14.3822 4.3675 13.8589C4.55812 13.3355 4.87685 12.8683 5.29456 12.4998C4.93991 12.187 4.65588 11.8023 4.46134 11.3713C4.2668 10.9402 4.1662 10.4727 4.16622 9.99984C4.1662 9.52693 4.2668 9.05944 4.46134 8.6284C4.65588 8.19737 4.93991 7.81266 5.29456 7.49984C4.78674 7.05198 4.42735 6.4601 4.26421 5.80296C4.10108 5.14582 4.14193 4.45458 4.38134 3.82123C4.62075 3.18788 5.04735 2.64245 5.60439 2.25753C6.16142 1.87262 6.82247 1.66646 7.49956 1.6665H12.4996ZM9.16622 13.3332H7.49956C7.16992 13.3332 6.84769 13.4309 6.57361 13.6141C6.29952 13.7972 6.0859 14.0575 5.95976 14.362C5.83361 14.6666 5.80061 15.0017 5.86491 15.325C5.92922 15.6483 6.08796 15.9453 6.32105 16.1783C6.55413 16.4114 6.8511 16.5702 7.17441 16.6345C7.49771 16.6988 7.83282 16.6658 8.13736 16.5396C8.44191 16.4135 8.7022 16.1999 8.88534 15.9258C9.06847 15.6517 9.16622 15.3295 9.16622 14.9998V13.3332ZM9.16622 8.33317H7.49956C7.05753 8.33317 6.63361 8.50877 6.32105 8.82133C6.00848 9.13389 5.83289 9.55781 5.83289 9.99984C5.83289 10.4419 6.00848 10.8658 6.32105 11.1783C6.63361 11.4909 7.05753 11.6665 7.49956 11.6665H9.16622V8.33317ZM12.4996 8.33317C12.0575 8.33317 11.6336 8.50877 11.321 8.82133C11.0085 9.13389 10.8329 9.55781 10.8329 9.99984C10.8329 10.4419 11.0085 10.8658 11.321 11.1783C11.6336 11.4909 12.0575 11.6665 12.4996 11.6665C12.9416 11.6665 13.3655 11.4909 13.6781 11.1783C13.9906 10.8658 14.1662 10.4419 14.1662 9.99984C14.1662 9.55781 13.9906 9.13389 13.6781 8.82133C13.3655 8.50877 12.9416 8.33317 12.4996 8.33317ZM12.4996 3.33317H10.8329V6.6665H12.4996C12.932 6.66844 13.3483 6.50218 13.6605 6.20285C13.9727 5.90353 14.1563 5.49457 14.1725 5.06239C14.1887 4.6302 14.0363 4.20863 13.7475 3.88674C13.4586 3.56485 13.056 3.36784 12.6246 3.33734L12.4996 3.33317ZM9.16622 3.33317H7.49956C7.05753 3.33317 6.63361 3.50877 6.32105 3.82133C6.00848 4.13389 5.83289 4.55781 5.83289 4.99984C5.83289 5.44186 6.00848 5.86579 6.32105 6.17835C6.63361 6.49091 7.05753 6.6665 7.49956 6.6665H9.16622V3.33317Z" />
           </svg>
           <p class="text whitespace-nowrap flex items-center justify-center font-light text-xl text-[var(--text-dark)]">
             Community file
@@ -206,6 +207,12 @@
       </div>
     </div>
   </section>
+
+  <!-- Image popup -->
+  <div class="popup-image">
+    <span>&times;</span>
+    <img src="Images/Typography.png" alt="typography">
+  </div>
 
   <section class="custom-container relative mx-auto blend">
 
@@ -222,8 +229,7 @@
         BootstrapDash CORONA Admin template into a structured, reusable design system. It’s publicly available on
         Figma Community for designers and developers who need a clean, componentized version of the UI for faster
         prototyping and handoff.</div>
-      <div
-        class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full lg:w-9/12 reveal">
+      <div class="text-base md:text-xl xl:text-3xl text-[var(--text-secondary)] leading-normal w-full lg:w-9/12 reveal">
         This Design system was built using <a class="font-semibold text-[var(--corona-green)] hoverbtn underline"
           href="https://bradfrost.com/blog/post/atomic-web-design/">atomic design principles</a> and has captured most
         of the components.</div>
@@ -281,24 +287,24 @@
 
     <!-- Images -->
     <div class="flex flex-col py-10 md:py-20 lg:py-30 gap-6">
-      <div class="flex w-full gap-1 md:gap-2 lg:gap-4">
-        <div class="w-[25%] reveal"><img src="Images/Typography.png" alt="typography"
+      <div class="flex w-full gap-1 md:gap-2 lg:gap-4 image-container">
+        <div class="w-[25%] image-hover-scale reveal image"><img src="Images/Typography.png" alt="typography"
             class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
-        <div class="w-[30%] reveal"><img src="Images/Colors.png" alt="colors"
+        <div class="w-[30%] image-hover-scale reveal image"><img src="Images/Colors.png" alt="colors"
             class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
-        <div class="w-[25%] reveal"><img src="Images/Buttons.png" alt="buttons"
+        <div class="w-[25%] image-hover-scale reveal image"><img src="Images/Buttons.png" alt="buttons"
             class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
         <div class="flex flex-col gap-1 md:gap-2 lg:gap-4 w-[20%]">
-          <div class="flex gap-1 md:gap-2 lg:gap-4">
-            <div class="w-full reveal"><img src="Images/Badge.png" alt="badge"
+          <div class="flex gap-1 md:gap-2 lg:gap-4 image-container">
+            <div class="w-full image-hover-scale reveal image"><img src="Images/Badge.png" alt="badge"
                 class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
-            <div class="w-full reveal"><img src="Images/Radio.png" alt="radio"
+            <div class="w-full image-hover-scale reveal image"><img src="Images/Radio.png" alt="radio"
                 class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
           </div>
-          <div class="flex gap-1 md:gap-2 lg:gap-4">
-            <div class="w-full reveal"><img src="Images/Input.png" alt="input"
+          <div class="flex gap-1 md:gap-2 lg:gap-4 image-container">
+            <div class="w-full image-hover-scale reveal image"><img src="Images/Input.png" alt="input"
                 class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
-            <div class="w-full reveal"><img src="Images/Checkbox.png" alt="checkbox"
+            <div class="w-full image-hover-scale reveal image"><img src="Images/Checkbox.png" alt="checkbox"
                 class="w-full shadow-sm rounded-sm md:rounded-md lg:rounded-xl"></div>
           </div>
         </div>
@@ -460,12 +466,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <script src="js/cursor.js"></script>
   <script src="js/darkMode.js"></script>
   <script src="js/mobileNavBtn.js"></script>
   <script src="js/smoothScroll.js"></script>
   <script src="js/loader.js"></script>
   <script src="js/textReveal.js"></script>
+  <script src="js/imagePopup.js"></script>
   <script type="module" src="js/shaderLoad.js"></script>
 </body>
 

@@ -458,3 +458,53 @@ nav.main-nav {
 		transform: scale(.95);
 	}
 }
+
+.image-hover-scale {
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+		transform: scale(.98);
+	}
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+@media (min-width: 96rem) {
+  .popup-image img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+}
