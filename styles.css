@@ -524,3 +524,34 @@ nav.main-nav {
   animation: growReading linear;
   animation-timeline: scroll(root);
 }
+
+
+/* New Page Transition */
+/* @keyframes move-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-35%);
+    opacity: 0.5;
+  }
+}
+
+@keyframes move-in {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+
+  to {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+}
+
+::view-transition-old(root) {
+  animation:  1.5s cubic-bezier(0.87, 0, 0.13, 1) both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 1.5s cubic-bezier(0.87, 0, 0.13, 1) both move-in;
+} */
