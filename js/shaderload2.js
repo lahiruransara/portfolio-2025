@@ -3,95 +3,20 @@ import { vertexShader, fluidShader, displayShader } from "./shaders.js"
 
 const currentPage = document.body.dataset.page;
 
-const colorSets = {
-    index: {
-        dark: {
-            color1: "#380077",
-            color2: "#ac73ff",
-            color3: "#09090b",
-            color4: "#1a1a1e",
-        },
-        light: {
-            color1: "#8f14ff",
-            color2: "#f5f0ff",
-            color3: "#fafafa",
-            color4: "#f4f4f5",
-        },
-    },
-    pse: {
-        dark: {
-            color1: "#E53935",
-            color2: "#721c1a",
-            color3: "#09090b",
-            color4: "#1a1a1e",
-        },
-        light: {
-            color1: "#E53935",
-            color2: "#ff7469",
-            color3: "#fafafa",
-            color4: "#f4f4f5",
-        },
-    },
-    corona: {
-        dark: {
-            color1: "#8170ED",
-            color2: "#7ACF9C",
-            color3: "#09090b",
-            color4: "#E36176",
-        },
-        light: {
-            color1: "#8170ED",
-            color2: "#7ACF9C",
-            color3: "#fafafa",
-            color4: "#E36176",
-        },
-    },
-    wisdom: {
-        dark: {
-            color1: "#29AAE2",
-            color2: "#3AF2CA",
-            color3: "#09090b",
-            color4: "#9832FE",
-        },
-        light: {
-            color1: "#29AAE2",
-            color2: "#3AF2CA",
-            color3: "#fafafa",
-            color4: "#9832FE",
-        },
-    },
-};
-
 const config = {
-    brushSize: 25.0,
-    brushStrength: 0.5,
-    distortionAmount: 2.5,
-    fluidDecay: 0.98,
-    trailLength: 0.8,
+    brushSize: 4.0,
+    brushStrength: 3,
+    distortionAmount: 2,
+    fluidDecay: 0.9,
+    trailLength: 0.1,
     stopDecay: 0.85,
-    ...colorSets.light, // start with light by default
-    colorIntensity: 1.0,
+    color1: "#505050ff",
+    color2: "#ffffffff",
+    color3: "#000000ff",
+    color4: "#303030ff",
+    colorIntensity: 0.6,
     softness: 1.0,
 };
-
-// Function to update config colors based on dark mode and page
-function updateColorsByTheme() {
-    const isDark = document.body.classList.contains("dark-mode");
-    const theme = isDark ? "dark" : "light";
-
-    // Use current page colors
-    const pageColors = colorSets[currentPage]?.[theme] || colorSets.index.light;
-
-    Object.assign(config, pageColors);
-    // console.log(`🎨 Updated colors for ${currentPage} (${theme})`, config);
-}
-
-// Initialize once on load
-updateColorsByTheme();
-
-// Observe changes to the body’s class attribute
-const observer = new MutationObserver(() => updateColorsByTheme());
-observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
 
 
 function hexToRgb(hex) {
@@ -115,7 +40,7 @@ const fluidTarget1 = new THREE.WebGLRenderTarget(
     {
         minFilter: THREE.LinearFilter,
         magFilter: THREE.LinearFilter,
-        format: THREE.RGBAFormat,
+        format: THREE.RGBAFormat, // Use RGBAFormat instead of RGBFormat
         type: THREE.FloatType,
     }
 );
