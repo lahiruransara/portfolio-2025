@@ -428,19 +428,40 @@ nav.main-nav {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+}
+
+.canvas-fading {
+  opacity: 0 !important;
 }
 
 .canvas-mask {
-  background-image: linear-gradient(to top,
-      var(--zinc-50),
-      color-mix(in srgb, var(--zinc-50) 0%, transparent));
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   overflow-x: hidden;
   overflow-y: hidden;
+  pointer-events: none;
+  
+  /* The background color transitions smoothly */
+  background-color: var(--zinc-50);
+  transition: background-color 300ms ease;
+
+  /* - Top (0%) to Middle (0%) is transparent: Canvas shows 100% 
+     - Middle (0%) to Bottom (100%) fades to black: Background color fades in
+  */
+  -webkit-mask-image: linear-gradient(to bottom, 
+      transparent 0%, 
+      transparent 0%, 
+      var(--zinc-900) 100%);
+  mask-image: linear-gradient(to bottom, 
+      transparent 0%, 
+      transparent 0%, 
+      var(--zinc-900) 100%);
+}
+
+.header {
+  transition: background-color 300ms ease;
 }
 
 .theme-toggle svg {

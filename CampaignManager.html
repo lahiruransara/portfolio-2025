@@ -5,6 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+    // Immediately check and apply the theme on page load
+    (function() {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+    })();
+  </script>
     <link rel="stylesheet" href="styles.css" />
     <title>Campaign Builder Manager</title>
 </head>
@@ -27,13 +38,13 @@
 
     <!-- cursor -->
     <!-- <div class="cursor cursor-home hidden lg:block z-[-100]"></div> -->
-    <div class="cursors-set">
+    <!-- <div class="cursors-set">
         <div class="cursor cursor-1 hidden lg:block bg-[var(--pse-red1)]"></div>
         <div class="cursor cursor-2 hidden lg:block bg-[var(--pse-red2)]"></div>
         <div class="cursor cursor-3 hidden lg:block bg-[var(--pse-red3)]"></div>
         <div class="cursor cursor-4 hidden lg:block bg-[var(--pse-red4)]"></div>
         <div class="cursor cursor-5 hidden lg:block bg-[var(--zinc-200)]"></div>
-    </div>
+    </div> -->
 
     <!-- Scroll Indicator -->
     <div class="reading-indicator bg-[var(--pse-red3)]"></div>
@@ -132,7 +143,7 @@
     <!-- Header -->
     <section class="relative flex items-center justify-center w-full h-auto pt-[136px]">
         <!-- BG Cover Gradient -->
-        <div class="gradient-canvas z-[-200]"></div>
+        <div class="gradient-canvas z-[-200]" id="gradient-canvas"></div>
         <div class="canvas-mask z-[-199]"></div>
 
         <div class="flex flex-col justify-center items-center md:flex-row gap-1 md:gap-20">

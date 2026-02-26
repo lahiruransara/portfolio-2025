@@ -1,4 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@0.169.0/build/three.module.js';
+import gsap from 'https://esm.sh/gsap';
 import { vertexShader, fluidShader, displayShader } from "./shaders.js"
 
 const currentPage = document.body.dataset.page;
@@ -64,10 +65,11 @@ const colorSets = {
 
 // 1. Determine the theme state first
 const isDark = document.body.classList.contains("dark-mode");
-const initialTheme = isDark ? "dark" : "light";
+// const initialTheme = isDark ? "dark" : "light";
+const savedTheme = localStorage.getItem('theme') === 'dark-mode' ? 'dark' : 'light';
 
 // 2. Determine which page set to use (assuming currentPage is defined)
-const initialColors = colorSets[currentPage]?.[initialTheme] || colorSets.index[initialTheme];
+const initialColors = colorSets[currentPage]?.[savedTheme] || colorSets.index[savedTheme];
 
 const config = {
     brushSize: 25.0,
@@ -87,10 +89,18 @@ function updateColorsByTheme() {
     const theme = isDark ? "dark" : "light";
 
     // Use current page colors
-    const pageColors = colorSets[currentPage]?.[theme] || colorSets.index[theme];
+    // const targetColors = colorSets[currentPage]?.[theme] || colorSets.index[theme];
+    const target = colorSets[currentPage]?.[theme] || colorSets.index[theme];
 
-    Object.assign(config, pageColors);
+    // Object.assign(config, targetColors);
     // console.log(`🎨 Updated colors for ${currentPage} (${theme})`, config);
+
+    const canvas = document.querySelector('#gradient-canvas');
+    canvas.classList.add("canvas-fading");
+    setTimeout(() => {
+        Object.assign(config, target);
+        canvas.classList.remove("canvas-fading");
+    }, 300);
 }
 
 // Initialize once on load
