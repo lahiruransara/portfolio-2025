@@ -1,5 +1,4 @@
 import * as THREE from 'https://unpkg.com/three@0.169.0/build/three.module.js';
-import gsap from 'https://esm.sh/gsap';
 import { vertexShader, fluidShader, displayShader } from "./shaders.js"
 
 const currentPage = document.body.dataset.page;
