@@ -1,48 +1,39 @@
-// Selectors
-const themeToggleBtn = document.querySelector('.theme-toggle');
-const themeToggleBtn2 = document.querySelector('.theme-toggle2');
-const lightIcon = themeToggleBtn.querySelector('.iconLight');
-const darkIcon = themeToggleBtn.querySelector('.iconDark');
-const lightIcon2 = themeToggleBtn2.querySelector('.iconLight');
-const darkIcon2 = themeToggleBtn2.querySelector('.iconDark');
-
-// State
-const theme = localStorage.getItem('theme');
-
-// On Mount
-if (theme === 'dark-mode') {
-    document.body.classList.add('dark-mode');
-    lightIcon.style.display = 'none';
-    lightIcon2.style.display = 'none';
-    darkIcon.style.display = 'inline-block';
-    darkIcon2.style.display = 'inline-block';
-} else {
-    // Ensure light mode is explicitly set by default
-    document.body.classList.remove('dark-mode');
-    darkIcon.style.display = 'none';
-    darkIcon2.style.display = 'none';
-    lightIcon.style.display = 'inline-block';
-    lightIcon2.style.display = 'inline-block';
-}
-
-// Handlers
-const handleThemeToggle = () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark-mode');
-        lightIcon.style.display = 'none';
-        lightIcon2.style.display = 'none';
-        darkIcon.style.display = 'inline-block';
-        darkIcon2.style.display = 'inline-block';
-    } else {
-        localStorage.removeItem('theme');
-        darkIcon.style.display = 'none';
-        darkIcon2.style.display = 'none';
-        lightIcon.style.display = 'inline-block';
-        lightIcon2.style.display = 'inline-block';
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Transfer the class from <html> to <body> for your existing CSS/Logic
+    if (document.documentElement.classList.contains('dark-mode')) {
+        document.body.classList.add('dark-mode');
     }
-};
 
-// Events
-themeToggleBtn.addEventListener('click', handleThemeToggle);
-themeToggleBtn2.addEventListener('click', handleThemeToggle);
+    const themeButtons = document.querySelectorAll('.theme-toggle, .theme-toggle2');
+
+    const syncUIAndConfig = () => {
+        const isNowDark = document.body.classList.contains('dark-mode');
+        
+        themeButtons.forEach(btn => {
+            const lightIcon = btn.querySelector('.iconLight');
+            const darkIcon = btn.querySelector('.iconDark');
+            if (lightIcon && darkIcon) {
+                lightIcon.style.display = isNowDark ? 'none' : 'inline-block';
+                darkIcon.style.display = isNowDark ? 'inline-block' : 'none';
+            }
+        });
+
+        if (typeof updateColorsByTheme === "function") {
+            updateColorsByTheme();
+        }
+    };
+
+    const handleThemeToggle = () => {
+        const isTurningDark = document.body.classList.toggle('dark-mode');
+        // Keep <html> in sync just in case
+        document.documentElement.classList.toggle('dark-mode', isTurningDark);
+        
+        localStorage.setItem('theme', isTurningDark ? 'dark-mode' : 'light-mode');
+        syncUIAndConfig();
+    };
+
+    syncUIAndConfig();
+    themeButtons.forEach(btn => btn.addEventListener('click', handleThemeToggle));
+});
+
+

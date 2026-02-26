@@ -87,7 +87,7 @@ function updateColorsByTheme() {
     const theme = isDark ? "dark" : "light";
 
     // Use current page colors
-    const pageColors = colorSets[currentPage]?.[theme] || colorSets.index.light;
+    const pageColors = colorSets[currentPage]?.[theme] || colorSets.index[theme];
 
     Object.assign(config, pageColors);
     // console.log(`🎨 Updated colors for ${currentPage} (${theme})`, config);
@@ -260,3 +260,5 @@ window.addEventListener("resize", () => {
 });
 
 animate();
+
+
