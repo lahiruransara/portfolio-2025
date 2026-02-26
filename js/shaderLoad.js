@@ -62,6 +62,13 @@ const colorSets = {
     },
 };
 
+// 1. Determine the theme state first
+const isDark = document.body.classList.contains("dark-mode");
+const initialTheme = isDark ? "dark" : "light";
+
+// 2. Determine which page set to use (assuming currentPage is defined)
+const initialColors = colorSets[currentPage]?.[initialTheme] || colorSets.index[initialTheme];
+
 const config = {
     brushSize: 25.0,
     brushStrength: 0.5,
@@ -69,7 +76,7 @@ const config = {
     fluidDecay: 0.98,
     trailLength: 0.8,
     stopDecay: 0.85,
-    ...colorSets.light, // start with light by default
+    ...initialColors,
     colorIntensity: 1.0,
     softness: 1.0,
 };
